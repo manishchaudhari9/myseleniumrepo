@@ -1,0 +1,6 @@
+com\selenium\testcases\portfoliosuite\LoginTest.class
+com\selenium\testcases\stocksuite\BuySellStockTest.class
+com\selenium\base\ParallelExec.class
+com\selenium\base\BaseTest.class
+com\selenium\testcases\stocksuite\AddDelStockTest.class
+com\selenium\testcases\portfoliosuite\PortFolioTest.class

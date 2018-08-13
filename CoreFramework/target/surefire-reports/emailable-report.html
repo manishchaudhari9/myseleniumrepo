@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Stock Suite</th></tr><tr><td><a href="#t0">Portfolio Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">93,961</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t1">Add Delete Stock Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">142,395</td><td></td><td></td></tr><tr><th colspan="7">My suite</th></tr><tr><th colspan="7">Portfolio Suite</th></tr><tr><td><a href="#t2">Login Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">95,065</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t3">Portfolio Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num attn">2</td><td class="num">115,073</td><td></td><td></td></tr><tr><th>Total</th><th class="num">1</th><th class="num attn">2</th><th class="num attn">5</th><th class="num">446,494</th><th colspan="2"></th></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Stock Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Portfolio Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.selenium.testcases.stocksuite.BuySellStockTest</td><td><a href="#m0">buyOrSellStockTest</a></td><td rowspan="1">1534125287361</td><td rowspan="1">90878</td></tr><tr><th colspan="4">Portfolio Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.selenium.testcases.stocksuite.BuySellStockTest</td><td><a href="#m1">checkTransactionHistoryTest</a></td><td rowspan="1">1534125379665</td><td rowspan="1">0</td></tr></tbody><tbody id="t1"><tr><th colspan="4">Add Delete Stock Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.selenium.testcases.stocksuite.AddDelStockTest</td><td><a href="#m2">addStockTest</a></td><td rowspan="1">1534125287360</td><td rowspan="1">88906</td></tr><tr class="failedeven"><td><a href="#m3">deleteStockTest</a></td><td rowspan="1">1534125377433</td><td rowspan="1">49929</td></tr></tbody><tbody><tr><th colspan="4">My suite</th></tr></tbody><tbody><tr><th colspan="4">Portfolio Suite</th></tr></tbody><tbody id="t2"><tr><th colspan="4">Login Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.selenium.testcases.portfoliosuite.LoginTest</td><td><a href="#m4">loginTest</a></td><td rowspan="1">1534125287360</td><td rowspan="1">91198</td></tr></tbody><tbody id="t3"><tr><th colspan="4">Portfolio Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.selenium.testcases.portfoliosuite.PortFolioTest</td><td><a href="#m5">createPortFolioTest</a></td><td rowspan="2">1534125400616</td><td rowspan="2">80</td></tr><tr class="failedeven"><td><a href="#m6">createPortFolioTest</a></td></tr><tr><th colspan="4">Portfolio Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.selenium.testcases.portfoliosuite.PortFolioTest</td><td><a href="#m7">deletePortFolioTest</a></td><td rowspan="1">1534125400777</td><td rowspan="1">0</td></tr></tbody></table><h2>Portfolio Test</h2><h3 id="m0">com.selenium.testcases.stocksuite.BuySellStockTest#buyOrSellStockTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Date=5/03/2018, Action=Sell, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Stock Name=Reliance Inds., Quantity=100, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.reflect.InvocationTargetException
+	at com.selenium.driver.DriverScript.executeKeywords(DriverScript.java:56)
+	at com.selenium.testcases.stocksuite.BuySellStockTest.buyOrSellStockTest(BuySellStockTest.java:23)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Option not found in list Manish
+	at com.selenium.keywords.GenericKeywords.reportFailure(GenericKeywords.java:349)
+	at com.selenium.keywords.GenericKeywords.select(GenericKeywords.java:163)
+	... 26 more
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.selenium.testcases.stocksuite.BuySellStockTest#checkTransactionHistoryTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method BuySellStockTest.checkTransactionHistoryTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.stocksuite.BuySellStockTest@61a485d2] depends on not successfully finished methods
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Add Delete Stock Test</h2><h3 id="m2">com.selenium.testcases.stocksuite.AddDelStockTest#addStockTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Date=5/03/2018, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Stock Name=Tata Steel Ltd, Quantity=100, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.reflect.InvocationTargetException
+	at com.selenium.driver.DriverScript.executeKeywords(DriverScript.java:56)
+	at com.selenium.testcases.stocksuite.AddDelStockTest.addStockTest(AddDelStockTest.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Option not found in list Manish
+	at com.selenium.keywords.GenericKeywords.reportFailure(GenericKeywords.java:349)
+	at com.selenium.keywords.GenericKeywords.select(GenericKeywords.java:163)
+	... 26 more
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">com.selenium.testcases.stocksuite.AddDelStockTest#deleteStockTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{PortfolioName=Manish, Runmode=Y, Stock Name=Tata Steel Ltd., Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.reflect.InvocationTargetException
+	at com.selenium.driver.DriverScript.executeKeywords(DriverScript.java:56)
+	at com.selenium.testcases.stocksuite.AddDelStockTest.deleteStockTest(AddDelStockTest.java:37)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Option not found in list Manish
+	at com.selenium.keywords.GenericKeywords.reportFailure(GenericKeywords.java:349)
+	at com.selenium.keywords.GenericKeywords.select(GenericKeywords.java:163)
+	... 26 more
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Login Test</h2><h3 id="m4">com.selenium.testcases.portfoliosuite.LoginTest#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Username=manish_chaudhari18, ExpectedResult=Loginsuccess, Password=ManishSarita, Runmode=Y, Browser=Chrome}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Portfolio Test</h2><h3 id="m5">com.selenium.testcases.portfoliosuite.PortFolioTest#createPortFolioTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{PortfolioName=SamplePort1411, Runmode=Y, Browser=Mozilla}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.reflect.InvocationTargetException
+	at com.selenium.driver.DriverScript.executeKeywords(DriverScript.java:56)
+	at com.selenium.testcases.portfoliosuite.PortFolioTest.createPortFolioTest(PortFolioTest.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: The driver executable does not exist: D:\Common\drivers\geckodriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:534)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:132)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:43)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:166)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:346)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:168)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:103)
+	at com.selenium.keywords.GenericKeywords.openBrowser(GenericKeywords.java:115)
+	... 26 more
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">com.selenium.testcases.portfoliosuite.PortFolioTest#createPortFolioTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{PortfolioName=SamplePort1311, Runmode=Y, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.reflect.InvocationTargetException
+	at com.selenium.driver.DriverScript.executeKeywords(DriverScript.java:56)
+	at com.selenium.testcases.portfoliosuite.PortFolioTest.createPortFolioTest(PortFolioTest.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Values Dont match. Got value as ManishChaudhari
+	at com.selenium.keywords.GenericKeywords.reportFailure(GenericKeywords.java:349)
+	at com.selenium.keywords.GenericKeywords.waitTillSelectionToBe(GenericKeywords.java:266)
+	at com.selenium.keywords.AppKeywords.verifyPortFolio(AppKeywords.java:73)
+	... 26 more
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m7">com.selenium.testcases.portfoliosuite.PortFolioTest#deletePortFolioTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method PortFolioTest.deletePortFolioTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@737996a0] depends on not successfully finished methods
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

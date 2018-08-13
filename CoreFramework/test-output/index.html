@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">3 suites</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Stock_Suite">
+              <span class="suite-name border-skipped">Stock Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Stock_Suite">
+                    <span>C:\SELENIUM\CoreFramework\src\test\resources\stocksuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Stock_Suite">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Stock_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Stock_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Stock_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Stock_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Stock_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods,  4 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Stock_Suite" class="hide-methods skipped suite-Stock_Suite"> (hide)</a> <!-- hide-methods skipped suite-Stock_Suite -->
+                      <a href="#" panel-name="suite-Stock_Suite" class="show-methods skipped suite-Stock_Suite"> (show)</a> <!-- show-methods skipped suite-Stock_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Stock_Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Stock_Suite" title="com.selenium.testcases.stocksuite.AddDelStockTest" hash-for-method="addStockTest({Date=5/03/2018, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Stock Name=Tata Steel Ltd, Quan...)">addStockTest({Date=5/03/2018, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Stock Name=Tata Steel Ltd, Quan...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Stock_Suite" title="com.selenium.testcases.stocksuite.BuySellStockTest" hash-for-method="buyOrSellStockTest({Date=5/03/2018, Action=Sell, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Stock Name=Relianc...)">buyOrSellStockTest({Date=5/03/2018, Action=Sell, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Stock Name=Relianc...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Stock_Suite" title="com.selenium.testcases.stocksuite.BuySellStockTest" hash-for-method="checkTransactionHistoryTest">checkTransactionHistoryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Stock_Suite" title="com.selenium.testcases.stocksuite.AddDelStockTest" hash-for-method="deleteStockTest({PortfolioName=Manish, Runmode=Y, Stock Name=Tata Steel Ltd., Browser=Chrome})">deleteStockTest({PortfolioName=Manish, Runmode=Y, Stock Name=Tata Steel Ltd., Browser=Chrome})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Stock_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Portfolio_Suite">
+              <span class="suite-name border-skipped">Portfolio Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Portfolio_Suite">
+                    <span>C:\SELENIUM\CoreFramework\src\test\resources\portfoliosuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Portfolio_Suite">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Portfolio_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Portfolio_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Portfolio_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Portfolio_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Portfolio_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods,  4 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Portfolio_Suite" class="hide-methods skipped suite-Portfolio_Suite"> (hide)</a> <!-- hide-methods skipped suite-Portfolio_Suite -->
+                      <a href="#" panel-name="suite-Portfolio_Suite" class="show-methods skipped suite-Portfolio_Suite"> (show)</a> <!-- show-methods skipped suite-Portfolio_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Portfolio_Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Portfolio_Suite" title="com.selenium.testcases.portfoliosuite.PortFolioTest" hash-for-method="createPortFolioTest({PortfolioName=SamplePort1411, Runmode=Y, Browser=Mozilla})">createPortFolioTest({PortfolioName=SamplePort1411, Runmode=Y, Browser=Mozilla})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Portfolio_Suite" title="com.selenium.testcases.portfoliosuite.PortFolioTest" hash-for-method="createPortFolioTest({PortfolioName=SamplePort1311, Runmode=Y, Browser=Chrome})">createPortFolioTest({PortfolioName=SamplePort1311, Runmode=Y, Browser=Chrome})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Portfolio_Suite" title="com.selenium.testcases.portfoliosuite.PortFolioTest" hash-for-method="deletePortFolioTest">deletePortFolioTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Portfolio_Suite" title="com.selenium.testcases.portfoliosuite.LoginTest" hash-for-method="loginTest({Username=manish_chaudhari18, ExpectedResult=Loginsuccess, Password=ManishSarita, Runmode=Y, Browser...)">loginTest({Username=manish_chaudhari18, ExpectedResult=Loginsuccess, Password=ManishSarita, Runmode=Y, Browser...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Portfolio_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Stock_Suite" class="panel Stock_Suite">
+          <div class="suite-Stock_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.selenium.testcases.stocksuite.BuySellStockTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyOrSellStockTest({Date=5/03/2018, Action=Sell, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Stock Name=Relianc...)">
+                  </a> <!-- buyOrSellStockTest({Date=5/03/2018, Action=Sell, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Stock Name=Relianc...) -->
+                  <span class="method-name">buyOrSellStockTest</span>
+                  <span class="parameters">({Date=5/03/2018, Action=Sell, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Stock Name=Reliance Inds., Quantity=100, Browser=Chrome})</span>
+                  <div class="stack-trace">org.testng.SkipException: Runmode is set to NO
+	at com.selenium.testcases.stocksuite.BuySellStockTest.buyOrSellStockTest(BuySellStockTest.java:21)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTransactionHistoryTest">
+                  </a> <!-- checkTransactionHistoryTest -->
+                  <span class="method-name">checkTransactionHistoryTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method BuySellStockTest.checkTransactionHistoryTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.stocksuite.BuySellStockTest@6d8a00e3] depends on not successfully finished methods
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Stock_Suite-class-skipped -->
+          <div class="suite-Stock_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.selenium.testcases.stocksuite.AddDelStockTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addStockTest({Date=5/03/2018, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Stock Name=Tata Steel Ltd, Quan...)">
+                  </a> <!-- addStockTest({Date=5/03/2018, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Stock Name=Tata Steel Ltd, Quan...) -->
+                  <span class="method-name">addStockTest</span>
+                  <span class="parameters">({Date=5/03/2018, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Stock Name=Tata Steel Ltd, Quantity=100, Browser=Chrome})</span>
+                  <div class="stack-trace">org.testng.SkipException: Runmode is set to NO
+	at com.selenium.testcases.stocksuite.AddDelStockTest.addStockTest(AddDelStockTest.java:22)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteStockTest({PortfolioName=Manish, Runmode=Y, Stock Name=Tata Steel Ltd., Browser=Chrome})">
+                  </a> <!-- deleteStockTest({PortfolioName=Manish, Runmode=Y, Stock Name=Tata Steel Ltd., Browser=Chrome}) -->
+                  <span class="method-name">deleteStockTest</span>
+                  <span class="parameters">({PortfolioName=Manish, Runmode=Y, Stock Name=Tata Steel Ltd., Browser=Chrome})</span>
+                  <div class="stack-trace">org.testng.SkipException: Runmode is set to NO
+	at com.selenium.testcases.stocksuite.AddDelStockTest.deleteStockTest(AddDelStockTest.java:35)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Stock_Suite-class-skipped -->
+        </div> <!-- panel Stock_Suite -->
+        <div panel-name="suite-My_suite" class="panel My_suite">
+        </div> <!-- panel My_suite -->
+        <div panel-name="suite-Portfolio_Suite" class="panel Portfolio_Suite">
+          <div class="suite-Portfolio_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.selenium.testcases.portfoliosuite.PortFolioTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPortFolioTest({PortfolioName=SamplePort1411, Runmode=Y, Browser=Mozilla})">
+                  </a> <!-- createPortFolioTest({PortfolioName=SamplePort1411, Runmode=Y, Browser=Mozilla}) -->
+                  <span class="method-name">createPortFolioTest</span>
+                  <span class="parameters">({PortfolioName=SamplePort1411, Runmode=Y, Browser=Mozilla})</span>
+                  <div class="stack-trace">org.testng.SkipException: Runmode is set to NO
+	at com.selenium.testcases.portfoliosuite.PortFolioTest.createPortFolioTest(PortFolioTest.java:22)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPortFolioTest({PortfolioName=SamplePort1311, Runmode=Y, Browser=Chrome})">
+                  </a> <!-- createPortFolioTest({PortfolioName=SamplePort1311, Runmode=Y, Browser=Chrome}) -->
+                  <span class="method-name">createPortFolioTest</span>
+                  <span class="parameters">({PortfolioName=SamplePort1311, Runmode=Y, Browser=Chrome})</span>
+                  <div class="stack-trace">org.testng.SkipException: Runmode is set to NO
+	at com.selenium.testcases.portfoliosuite.PortFolioTest.createPortFolioTest(PortFolioTest.java:22)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deletePortFolioTest">
+                  </a> <!-- deletePortFolioTest -->
+                  <span class="method-name">deletePortFolioTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method PortFolioTest.deletePortFolioTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@458ad742] depends on not successfully finished methods
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Portfolio_Suite-class-skipped -->
+          <div class="suite-Portfolio_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.selenium.testcases.portfoliosuite.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest({Username=manish_chaudhari18, ExpectedResult=Loginsuccess, Password=ManishSarita, Runmode=Y, Browser...)">
+                  </a> <!-- loginTest({Username=manish_chaudhari18, ExpectedResult=Loginsuccess, Password=ManishSarita, Runmode=Y, Browser...) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">({Username=manish_chaudhari18, ExpectedResult=Loginsuccess, Password=ManishSarita, Runmode=Y, Browser=Chrome})</span>
+                  <div class="stack-trace">org.testng.SkipException: Runmode is set to NO
+	at com.selenium.testcases.portfoliosuite.LoginTest.loginTest(LoginTest.java:23)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Portfolio_Suite-class-skipped -->
+        </div> <!-- panel Portfolio_Suite -->
+        <div panel-name="test-xml-Stock_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\SELENIUM\CoreFramework\src\test\resources\stocksuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Stock Suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;Add Delete Stock Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.selenium.testcases.stocksuite.AddDelStockTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Add Delete Stock Test --&gt;
+  &lt;test name=&quot;Portfolio Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.selenium.testcases.stocksuite.BuySellStockTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Portfolio Test --&gt;
+&lt;/suite&gt; &lt;!-- Stock Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-My_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\SELENIUM\CoreFramework\src\test\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;My suite&quot;&gt;
+  &lt;suite-files&gt;
+    &lt;suite-file path=&quot;./src/test/resources/portfoliosuite.xml&quot;/&gt;
+    &lt;suite-file path=&quot;./src/test/resources/stocksuite.xml&quot;/&gt;
+  &lt;/suite-files&gt;
+&lt;/suite&gt; &lt;!-- My suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-Portfolio_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\SELENIUM\CoreFramework\src\test\resources\portfoliosuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Portfolio Suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;Login Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.selenium.testcases.portfoliosuite.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login Test --&gt;
+  &lt;test name=&quot;Portfolio Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.selenium.testcases.portfoliosuite.PortFolioTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Portfolio Test --&gt;
+&lt;/suite&gt; &lt;!-- Portfolio Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Stock_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Stock Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Add Delete Stock Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Portfolio Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-My_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for My suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Portfolio_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Portfolio Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Login Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Portfolio Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Stock_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Stock Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-My_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for My suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Portfolio_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Portfolio Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Stock_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Stock Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Stock_Suite');
+function tableData_Stock_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'deleteStockTest')
+data.setCell(0, 2, 'com.selenium.testcases.stocksuite.AddDelStockTest')
+data.setCell(0, 3, 4);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'buyOrSellStockTest')
+data.setCell(1, 2, 'com.selenium.testcases.stocksuite.BuySellStockTest')
+data.setCell(1, 3, 2);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addStockTest')
+data.setCell(2, 2, 'com.selenium.testcases.stocksuite.AddDelStockTest')
+data.setCell(2, 3, 1);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'checkTransactionHistoryTest')
+data.setCell(3, 2, 'com.selenium.testcases.stocksuite.BuySellStockTest')
+data.setCell(3, 3, 0);
+window.suiteTableData['Stock_Suite']= { tableData: data, tableDiv: 'times-div-Stock_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 7 ms</span>
+              <div id="times-div-Stock_Suite">
+              </div> <!-- times-div-Stock_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-My_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for My suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_My_suite');
+function tableData_My_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(0);
+window.suiteTableData['My_suite']= { tableData: data, tableDiv: 'times-div-My_suite'}
+return data;
+}
+              </script>
+              <div id="times-div-My_suite">
+              </div> <!-- times-div-My_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Portfolio_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Portfolio Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Portfolio_Suite');
+function tableData_Portfolio_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'createPortFolioTest')
+data.setCell(0, 2, 'com.selenium.testcases.portfoliosuite.PortFolioTest')
+data.setCell(0, 3, 11);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'com.selenium.testcases.portfoliosuite.LoginTest')
+data.setCell(1, 3, 11);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'createPortFolioTest')
+data.setCell(2, 2, 'com.selenium.testcases.portfoliosuite.PortFolioTest')
+data.setCell(2, 3, 1);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'deletePortFolioTest')
+data.setCell(3, 2, 'com.selenium.testcases.portfoliosuite.PortFolioTest')
+data.setCell(3, 3, 0);
+window.suiteTableData['Portfolio_Suite']= { tableData: data, tableDiv: 'times-div-Portfolio_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 23 ms</span>
+              <div id="times-div-Portfolio_Suite">
+              </div> <!-- times-div-Portfolio_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Stock_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Stock Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-My_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for My suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Portfolio_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Portfolio Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Stock_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-My_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Portfolio_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Stock_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.testcases.stocksuite.AddDelStockTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.testcases.stocksuite.BuySellStockTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">buyOrSellStockTest({Date=5/03/2018, Action=Sell, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Stock Name=Relianc...)</span>
+                <span class="method-start">93 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">93 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">95 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.testcases.stocksuite.AddDelStockTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">121 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addStockTest({Date=5/03/2018, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Stock Name=Tata Steel Ltd, Quan...)</span>
+                <span class="method-start">177 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">178 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">325 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteStockTest({PortfolioName=Manish, Runmode=Y, Stock Name=Tata Steel Ltd., Browser=Chrome})</span>
+                <span class="method-start">326 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">330 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-My_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Portfolio_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.testcases.portfoliosuite.PortFolioTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.testcases.portfoliosuite.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.testcases.portfoliosuite.PortFolioTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">796 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.testcases.portfoliosuite.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">796 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.testcases.portfoliosuite.PortFolioTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createPortFolioTest({PortfolioName=SamplePort1311, Runmode=Y, Browser=Chrome})</span>
+                <span class="method-start">983 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.testcases.portfoliosuite.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginTest({Username=manish_chaudhari18, ExpectedResult=Loginsuccess, Password=ManishSarita, Runmode=Y, Browser...)</span>
+                <span class="method-start">983 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.testcases.portfoliosuite.PortFolioTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">995 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.testcases.portfoliosuite.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">995 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.testcases.portfoliosuite.PortFolioTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createPortFolioTest({PortfolioName=SamplePort1411, Runmode=Y, Browser=Mozilla})</span>
+                <span class="method-start">1397 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">1397 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">1398 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
