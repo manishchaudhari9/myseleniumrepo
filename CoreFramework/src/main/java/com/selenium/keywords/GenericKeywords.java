@@ -1,4 +1,5 @@
 package com.selenium.keywords;
+package org.testng.asserts;
 
 import java.io.File;
 import java.io.IOException;
