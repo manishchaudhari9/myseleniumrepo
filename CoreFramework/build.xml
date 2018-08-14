@@ -91,7 +91,7 @@
     </target>
 
 	<path id="test.xslt">
-		<fileset dir="C:/JAVA-SELENIUM/jars/saxon" includes="**/*.jar"/>
+		<fileset dir="D:/Whizdom-Trainings/jars/saxon" includes="**/*.jar"/>
 	</path>
 	
 	  <target name="makexsltreports">

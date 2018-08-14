@@ -3,14 +3,17 @@ package com.selenium.mail;
  
 
 
+import javax.activation.DataHandler;
+import javax.activation.DataSource;
+import javax.activation.FileDataSource;
+import javax.mail.*;
+import javax.mail.internet.*;
+
+
 import java.io.File;
 import java.io.FileInputStream;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Properties;
-
-import javax.mail.Session;
-import javax.mail.internet.MimeMessage;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
  
 
@@ -19,9 +22,9 @@ public class ZipAndSendMail
 	Properties emailProperties;
 	Session mailSession;
 	MimeMessage emailMessage;
-	static String[] toEmails = { "its.thakur@gmail.com","sejalbhayana@gmail.com" };
-	static String fromUser = "its.thakur";//just the id alone without @gmail.com
-	static String password = "Jungle@123";
+	static String[] toEmails = { "manish.chaudhari9@gmail.com" };
+	static String fromUser = "manish.chaudhari";//just the id alone without @gmail.com
+	static String password = "Test@123";
 
 	
     public static void main(String[] args) throws Exception
