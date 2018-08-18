@@ -13,9 +13,7 @@ public class Parallel {
 	public static void main(String[] args) throws FileNotFoundException, ParserConfigurationException, IOException, org.xml.sax.SAXException {
 		TestNG testng = new TestNG();
 		testng.setTestSuites(Arrays.asList(new String[] {System.getProperty("user.dir")+"//src/test/resources/testng.xml"}));
-
-		testng.setSuiteThreadPoolSize(2);
-		
+		testng.setSuiteThreadPoolSize(2);		
 		testng.run();
     }	
 

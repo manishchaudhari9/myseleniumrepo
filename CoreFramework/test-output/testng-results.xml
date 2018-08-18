@@ -2,20 +2,20 @@
 <testng-results skipped="7" failed="0" ignored="0" total="8" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Stock Suite" duration-ms="550" started-at="2018-08-14T03:06:28Z" finished-at="2018-08-14T03:06:29Z">
+  <suite name="Stock Suite" duration-ms="2777" started-at="2018-08-18T19:10:13Z" finished-at="2018-08-18T19:10:16Z">
     <groups>
     </groups>
-    <test name="Portfolio Test" duration-ms="486" started-at="2018-08-14T03:06:28Z" finished-at="2018-08-14T03:06:28Z">
+    <test name="Portfolio Test" duration-ms="1375" started-at="2018-08-18T19:10:13Z" finished-at="2018-08-18T19:10:14Z">
       <class name="com.selenium.testcases.stocksuite.BuySellStockTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.selenium.testcases.stocksuite.BuySellStockTest@f6c48ac]" name="init" is-config="true" duration-ms="234" started-at="2018-08-13T23:06:28Z" finished-at="2018-08-13T23:06:28Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.selenium.testcases.stocksuite.BuySellStockTest@f6c48ac]" name="init" is-config="true" duration-ms="724" started-at="2018-08-18T15:10:13Z" finished-at="2018-08-18T15:10:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.stocksuite.BuySellStockTest@f6c48ac]" name="initTest" is-config="true" duration-ms="111" started-at="2018-08-13T23:06:28Z" finished-at="2018-08-13T23:06:28Z">
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.stocksuite.BuySellStockTest@f6c48ac]" name="initTest" is-config="true" duration-ms="1" started-at="2018-08-18T15:10:14Z" finished-at="2018-08-18T15:10:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method status="SKIP" signature="buyOrSellStockTest(java.util.Hashtable)[pri:1, instance:com.selenium.testcases.stocksuite.BuySellStockTest@f6c48ac]" name="buyOrSellStockTest" duration-ms="13" started-at="2018-08-13T23:06:28Z" data-provider="getData" finished-at="2018-08-13T23:06:28Z">
+        <test-method status="SKIP" signature="buyOrSellStockTest(java.util.Hashtable)[pri:1, instance:com.selenium.testcases.stocksuite.BuySellStockTest@f6c48ac]" name="buyOrSellStockTest" duration-ms="9" started-at="2018-08-18T15:10:14Z" data-provider="getData" finished-at="2018-08-18T15:10:14Z">
           <params>
             <param index="0">
               <value>
@@ -56,11 +56,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- buyOrSellStockTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.stocksuite.BuySellStockTest@f6c48ac]" name="quit" is-config="true" duration-ms="64" started-at="2018-08-13T23:06:28Z" finished-at="2018-08-13T23:06:28Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.stocksuite.BuySellStockTest@f6c48ac]" name="quit" is-config="true" duration-ms="558" started-at="2018-08-18T15:10:14Z" finished-at="2018-08-18T15:10:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method status="SKIP" signature="checkTransactionHistoryTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.stocksuite.BuySellStockTest@f6c48ac]" name="checkTransactionHistoryTest" duration-ms="0" started-at="2018-08-13T23:06:28Z" data-provider="getData" depends-on-methods="com.selenium.testcases.stocksuite.BuySellStockTest.buyOrSellStockTest" finished-at="2018-08-13T23:06:28Z">
+        <test-method status="SKIP" signature="checkTransactionHistoryTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.stocksuite.BuySellStockTest@f6c48ac]" name="checkTransactionHistoryTest" duration-ms="0" started-at="2018-08-18T15:10:14Z" data-provider="getData" depends-on-methods="com.selenium.testcases.stocksuite.BuySellStockTest.buyOrSellStockTest" finished-at="2018-08-18T15:10:14Z">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method BuySellStockTest.checkTransactionHistoryTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.stocksuite.BuySellStockTest@f6c48ac] depends on not successfully finished methods]]>
@@ -88,17 +88,17 @@
         </test-method> <!-- checkTransactionHistoryTest -->
       </class> <!-- com.selenium.testcases.stocksuite.BuySellStockTest -->
     </test> <!-- Portfolio Test -->
-    <test name="Add Delete Stock Test" duration-ms="539" started-at="2018-08-14T03:06:28Z" finished-at="2018-08-14T03:06:29Z">
+    <test name="Add Delete Stock Test" duration-ms="2765" started-at="2018-08-18T19:10:13Z" finished-at="2018-08-18T19:10:16Z">
       <class name="com.selenium.testcases.stocksuite.AddDelStockTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.selenium.testcases.stocksuite.AddDelStockTest@4667ae56]" name="init" is-config="true" duration-ms="138" started-at="2018-08-13T23:06:28Z" finished-at="2018-08-13T23:06:28Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.selenium.testcases.stocksuite.AddDelStockTest@4667ae56]" name="init" is-config="true" duration-ms="756" started-at="2018-08-18T15:10:13Z" finished-at="2018-08-18T15:10:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.stocksuite.AddDelStockTest@4667ae56]" name="initTest" is-config="true" duration-ms="0" started-at="2018-08-13T23:06:28Z" finished-at="2018-08-13T23:06:28Z">
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.stocksuite.AddDelStockTest@4667ae56]" name="initTest" is-config="true" duration-ms="521" started-at="2018-08-18T15:10:14Z" finished-at="2018-08-18T15:10:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method status="SKIP" signature="addStockTest(java.util.Hashtable)[pri:1, instance:com.selenium.testcases.stocksuite.AddDelStockTest@4667ae56]" name="addStockTest" duration-ms="3" started-at="2018-08-13T23:06:28Z" data-provider="getData" finished-at="2018-08-13T23:06:28Z">
+        <test-method status="SKIP" signature="addStockTest(java.util.Hashtable)[pri:1, instance:com.selenium.testcases.stocksuite.AddDelStockTest@4667ae56]" name="addStockTest" duration-ms="50" started-at="2018-08-18T15:10:14Z" data-provider="getData" finished-at="2018-08-18T15:10:14Z">
           <params>
             <param index="0">
               <value>
@@ -139,15 +139,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addStockTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.stocksuite.AddDelStockTest@4667ae56]" name="quit" is-config="true" duration-ms="184" started-at="2018-08-13T23:06:28Z" finished-at="2018-08-13T23:06:28Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.stocksuite.AddDelStockTest@4667ae56]" name="quit" is-config="true" duration-ms="748" started-at="2018-08-18T15:10:14Z" finished-at="2018-08-18T15:10:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.stocksuite.AddDelStockTest@4667ae56]" name="initTest" is-config="true" duration-ms="1" started-at="2018-08-13T23:06:28Z" finished-at="2018-08-13T23:06:28Z">
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.stocksuite.AddDelStockTest@4667ae56]" name="initTest" is-config="true" duration-ms="1" started-at="2018-08-18T15:10:15Z" finished-at="2018-08-18T15:10:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method status="SKIP" signature="deleteStockTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.stocksuite.AddDelStockTest@4667ae56]" name="deleteStockTest" duration-ms="12" started-at="2018-08-13T23:06:28Z" data-provider="getData" finished-at="2018-08-13T23:06:28Z">
+        <test-method status="SKIP" signature="deleteStockTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.stocksuite.AddDelStockTest@4667ae56]" name="deleteStockTest" duration-ms="43" started-at="2018-08-18T15:10:15Z" data-provider="getData" finished-at="2018-08-18T15:10:15Z">
           <params>
             <param index="0">
               <value>
@@ -188,31 +188,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteStockTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.stocksuite.AddDelStockTest@4667ae56]" name="quit" is-config="true" duration-ms="139" started-at="2018-08-13T23:06:28Z" finished-at="2018-08-13T23:06:29Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.stocksuite.AddDelStockTest@4667ae56]" name="quit" is-config="true" duration-ms="539" started-at="2018-08-18T15:10:15Z" finished-at="2018-08-18T15:10:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.selenium.testcases.stocksuite.AddDelStockTest -->
     </test> <!-- Add Delete Stock Test -->
   </suite> <!-- Stock Suite -->
-  <suite name="My suite" duration-ms="0" started-at="2018-08-14T03:06:29Z" finished-at="2018-08-14T03:06:29Z">
+  <suite name="My suite" duration-ms="0" started-at="2018-08-18T19:10:16Z" finished-at="2018-08-18T19:10:16Z">
     <groups>
     </groups>
   </suite> <!-- My suite -->
-  <suite name="Portfolio Suite" duration-ms="89175" started-at="2018-08-14T03:04:59Z" finished-at="2018-08-14T03:06:28Z">
+  <suite name="Portfolio Suite" duration-ms="152427" started-at="2018-08-18T19:07:40Z" finished-at="2018-08-18T19:10:13Z">
     <groups>
     </groups>
-    <test name="Portfolio Test" duration-ms="3571" started-at="2018-08-14T03:04:59Z" finished-at="2018-08-14T03:05:02Z">
+    <test name="Portfolio Test" duration-ms="11449" started-at="2018-08-18T19:07:40Z" finished-at="2018-08-18T19:07:52Z">
       <class name="com.selenium.testcases.portfoliosuite.PortFolioTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@39c0f4a]" name="init" is-config="true" duration-ms="1849" started-at="2018-08-13T23:04:59Z" finished-at="2018-08-13T23:05:01Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@39c0f4a]" name="init" is-config="true" duration-ms="4593" started-at="2018-08-18T15:07:40Z" finished-at="2018-08-18T15:07:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@39c0f4a]" name="initTest" is-config="true" duration-ms="518" started-at="2018-08-13T23:05:01Z" finished-at="2018-08-13T23:05:01Z">
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@39c0f4a]" name="initTest" is-config="true" duration-ms="1767" started-at="2018-08-18T15:07:45Z" finished-at="2018-08-18T15:07:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method status="SKIP" signature="createPortFolioTest(java.util.Hashtable)[pri:1, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@39c0f4a]" name="createPortFolioTest" duration-ms="26" started-at="2018-08-13T23:05:01Z" data-provider="getData" finished-at="2018-08-13T23:05:01Z">
+        <test-method status="SKIP" signature="createPortFolioTest(java.util.Hashtable)[pri:1, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@39c0f4a]" name="createPortFolioTest" duration-ms="130" started-at="2018-08-18T15:07:47Z" data-provider="getData" finished-at="2018-08-18T15:07:47Z">
           <params>
             <param index="0">
               <value>
@@ -253,15 +253,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPortFolioTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@39c0f4a]" name="quit" is-config="true" duration-ms="759" started-at="2018-08-13T23:05:01Z" finished-at="2018-08-13T23:05:02Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@39c0f4a]" name="quit" is-config="true" duration-ms="3304" started-at="2018-08-18T15:07:47Z" finished-at="2018-08-18T15:07:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@39c0f4a]" name="initTest" is-config="true" duration-ms="0" started-at="2018-08-13T23:05:02Z" finished-at="2018-08-13T23:05:02Z">
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@39c0f4a]" name="initTest" is-config="true" duration-ms="1" started-at="2018-08-18T15:07:50Z" finished-at="2018-08-18T15:07:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method status="SKIP" signature="createPortFolioTest(java.util.Hashtable)[pri:1, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@39c0f4a]" name="createPortFolioTest" duration-ms="8" started-at="2018-08-13T23:05:02Z" data-provider="getData" finished-at="2018-08-13T23:05:02Z">
+        <test-method status="SKIP" signature="createPortFolioTest(java.util.Hashtable)[pri:1, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@39c0f4a]" name="createPortFolioTest" duration-ms="48" started-at="2018-08-18T15:07:50Z" data-provider="getData" finished-at="2018-08-18T15:07:50Z">
           <params>
             <param index="0">
               <value>
@@ -302,11 +302,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPortFolioTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@39c0f4a]" name="quit" is-config="true" duration-ms="315" started-at="2018-08-13T23:05:02Z" finished-at="2018-08-13T23:05:02Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@39c0f4a]" name="quit" is-config="true" duration-ms="1448" started-at="2018-08-18T15:07:50Z" finished-at="2018-08-18T15:07:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method status="SKIP" signature="deletePortFolioTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@39c0f4a]" name="deletePortFolioTest" duration-ms="0" started-at="2018-08-13T23:05:02Z" data-provider="getData" depends-on-methods="com.selenium.testcases.portfoliosuite.PortFolioTest.createPortFolioTest" finished-at="2018-08-13T23:05:02Z">
+        <test-method status="SKIP" signature="deletePortFolioTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@39c0f4a]" name="deletePortFolioTest" duration-ms="0" started-at="2018-08-18T15:07:52Z" data-provider="getData" depends-on-methods="com.selenium.testcases.portfoliosuite.PortFolioTest.createPortFolioTest" finished-at="2018-08-18T15:07:52Z">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method PortFolioTest.deletePortFolioTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@39c0f4a] depends on not successfully finished methods]]>
@@ -334,17 +334,17 @@
         </test-method> <!-- deletePortFolioTest -->
       </class> <!-- com.selenium.testcases.portfoliosuite.PortFolioTest -->
     </test> <!-- Portfolio Test -->
-    <test name="Login Test" duration-ms="89175" started-at="2018-08-14T03:04:59Z" finished-at="2018-08-14T03:06:28Z">
+    <test name="Login Test" duration-ms="152427" started-at="2018-08-18T19:07:40Z" finished-at="2018-08-18T19:10:13Z">
       <class name="com.selenium.testcases.portfoliosuite.LoginTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@3ffc5af1]" name="init" is-config="true" duration-ms="1849" started-at="2018-08-13T23:04:59Z" finished-at="2018-08-13T23:05:01Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@3ffc5af1]" name="init" is-config="true" duration-ms="4302" started-at="2018-08-18T15:07:40Z" finished-at="2018-08-18T15:07:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@3ffc5af1]" name="initTest" is-config="true" duration-ms="518" started-at="2018-08-13T23:05:01Z" finished-at="2018-08-13T23:05:01Z">
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@3ffc5af1]" name="initTest" is-config="true" duration-ms="1813" started-at="2018-08-18T15:07:45Z" finished-at="2018-08-18T15:07:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@3ffc5af1]" name="loginTest" duration-ms="85999" started-at="2018-08-13T23:05:01Z" data-provider="getData" finished-at="2018-08-13T23:06:27Z">
+        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@3ffc5af1]" name="loginTest" duration-ms="144159" started-at="2018-08-18T15:07:47Z" data-provider="getData" finished-at="2018-08-18T15:10:11Z">
           <params>
             <param index="0">
               <value>
@@ -355,7 +355,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@3ffc5af1]" name="quit" is-config="true" duration-ms="749" started-at="2018-08-13T23:06:27Z" finished-at="2018-08-13T23:06:28Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@3ffc5af1]" name="quit" is-config="true" duration-ms="1828" started-at="2018-08-18T15:10:11Z" finished-at="2018-08-18T15:10:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->

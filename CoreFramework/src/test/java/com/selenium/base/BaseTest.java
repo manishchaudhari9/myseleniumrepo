@@ -25,8 +25,6 @@ public class BaseTest {
 	public ExtentReports rep;
 	public ExtentTest test;
 	
-	
-	
 	@BeforeTest
 	public void init(){
 		// init testName

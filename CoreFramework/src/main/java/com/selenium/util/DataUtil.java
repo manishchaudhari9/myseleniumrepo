@@ -4,7 +4,6 @@ import java.util.Hashtable;
 
 public class DataUtil {
 
-	
 	public static Object[][] getTestData(String testName, Xls_Reader xls){
 		// find the row Number of the testcase
 		int testStartRowNum=1;
@@ -47,8 +46,7 @@ public class DataUtil {
 			myData[i][0]=table;
 			i++;
 			System.out.println("----------------");
-		}
-		
+		}	
 	return myData;
 	
 	}

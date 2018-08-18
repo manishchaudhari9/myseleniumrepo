@@ -79,10 +79,7 @@ public class GenericKeywords {
 	public void setData(Hashtable<String, String> data) {
 		this.data = data;
 	}
-    /*****************************************/
-	
-	
-	
+    /*****************************************/	
 
 	public void openBrowser(){
 		String browser=data.get(dataKey);
@@ -104,7 +101,6 @@ public class GenericKeywords {
 			try {
 				driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
 			} catch (MalformedURLException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			
@@ -157,8 +153,6 @@ public class GenericKeywords {
 		setObjectKey(objectKey);
 		type();
 	}
-	
-	
 	
 	public void select(){
 		test.log(Status.INFO,"Selecting from "+prop.getProperty(objectKey)+" . Data - "+data.get(dataKey));

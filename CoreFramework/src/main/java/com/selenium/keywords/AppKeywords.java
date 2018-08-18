@@ -16,9 +16,12 @@ import com.aventstack.extentreports.Status;
 public class AppKeywords extends GenericKeywords{
 
 	public void login(){
-		test.log(Status.INFO, "Logging in"); 
-		getObject("money_xpath").click();
-		getObject("signin_xpath").click();
+		test.log(Status.INFO, "Logging in");
+		click("money_xpath");
+		click("signin_xpath");
+		
+//		getObject("money_xpath").click();
+//		getObject("signin_xpath").click();
 		String username="";
 		String password="";
 		
@@ -29,6 +32,9 @@ public class AppKeywords extends GenericKeywords{
 			username=data.get("Username");
 			password=data.get("Password");
 		}
+		type("username_id", username);
+		click("emailsubmit_id");
+		
 		getObject("username_id").sendKeys(username);
 		getObject("emailsubmit_id").click();
 		WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -55,9 +61,6 @@ public class AppKeywords extends GenericKeywords{
 			actualResult="Loginfailure";
 		if(!actualResult.equals(expectedResult))
 			reportFailure("Got  result "+actualResult );
-
-		
-		
 	}
 	
 	public void defaultLogin(){
