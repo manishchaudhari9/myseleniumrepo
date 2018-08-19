@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">3 suites</span>
+      <span class="top-banner-font-1">3 suites, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Stock_Suite">
-              <span class="suite-name border-skipped">Stock Suite</span>
+              <span class="suite-name border-failed">Stock Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,  4 skipped,  </span>
+                    <span class="method-stats">4 methods, 3 failed,  1 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Stock_Suite" class="hide-methods failed suite-Stock_Suite"> (hide)</a> <!-- hide-methods failed suite-Stock_Suite -->
+                      <a href="#" panel-name="suite-Stock_Suite" class="show-methods failed suite-Stock_Suite"> (show)</a> <!-- show-methods failed suite-Stock_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Stock_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Stock_Suite" title="com.selenium.testcases.stocksuite.AddDelStockTest" hash-for-method="addStockTest({ExpectedStockName=Tata Steel, Date=8/19/2018, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Q...)">addStockTest({ExpectedStockName=Tata Steel, Date=8/19/2018, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Q...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Stock_Suite" title="com.selenium.testcases.stocksuite.BuySellStockTest" hash-for-method="buyOrSellStockTest({Date=8/19/2018, Action=Buy, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Quantity=100, Stock...)">buyOrSellStockTest({Date=8/19/2018, Action=Buy, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Quantity=100, Stock...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Stock_Suite" title="com.selenium.testcases.stocksuite.BuySellStockTest" hash-for-method="checkTransactionHistoryTest({PortfolioName=Manish, Runmode=Y, StockName=Tata Motors Ltd., Browser=Mozilla})">checkTransactionHistoryTest({PortfolioName=Manish, Runmode=Y, StockName=Tata Motors Ltd., Browser=Mozilla})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Stock_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -102,22 +126,7 @@
                     <div class="method-list-content skipped suite-Stock_Suite">
                       <span>
                         <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Stock_Suite" title="com.selenium.testcases.stocksuite.AddDelStockTest" hash-for-method="addStockTest({Date=5/03/2018, PurchasePrice=200, PortfolioName=ashish, Runmode=Y, Stock Name=Tata Steel Ltd, Quan...)">addStockTest({Date=5/03/2018, PurchasePrice=200, PortfolioName=ashish, Runmode=Y, Stock Name=Tata Steel Ltd, Quan...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Stock_Suite" title="com.selenium.testcases.stocksuite.BuySellStockTest" hash-for-method="buyOrSellStockTest({Date=5/03/2018, Action=Sell, PurchasePrice=200, PortfolioName=ashish, Runmode=Y, Stock Name=Relianc...)">buyOrSellStockTest({Date=5/03/2018, Action=Sell, PurchasePrice=200, PortfolioName=ashish, Runmode=Y, Stock Name=Relianc...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Stock_Suite" title="com.selenium.testcases.stocksuite.BuySellStockTest" hash-for-method="checkTransactionHistoryTest">checkTransactionHistoryTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Stock_Suite" title="com.selenium.testcases.stocksuite.AddDelStockTest" hash-for-method="deleteStockTest({PortfolioName=ashish, Runmode=Y, Stock Name=Tata Steel Ltd., Browser=Chrome})">deleteStockTest({PortfolioName=ashish, Runmode=Y, Stock Name=Tata Steel Ltd., Browser=Chrome})</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Stock_Suite" title="com.selenium.testcases.stocksuite.AddDelStockTest" hash-for-method="deleteStockTest">deleteStockTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Stock_Suite -->
@@ -132,7 +141,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Portfolio_Suite">
-              <span class="suite-name border-skipped">Portfolio Suite</span>
+              <span class="suite-name border-failed">Portfolio Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -185,7 +194,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,  3 skipped,  1 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,  1 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Portfolio_Suite" class="hide-methods failed suite-Portfolio_Suite"> (hide)</a> <!-- hide-methods failed suite-Portfolio_Suite -->
+                      <a href="#" panel-name="suite-Portfolio_Suite" class="show-methods failed suite-Portfolio_Suite"> (show)</a> <!-- show-methods failed suite-Portfolio_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Portfolio_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Portfolio_Suite" title="com.selenium.testcases.portfoliosuite.PortFolioTest" hash-for-method="createPortFolioTest({PortfolioName=TestingPortfolio1, Runmode=Y, Browser=Mozilla})">createPortFolioTest({PortfolioName=TestingPortfolio1, Runmode=Y, Browser=Mozilla})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Portfolio_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -194,16 +217,6 @@
                       <a href="#" panel-name="suite-Portfolio_Suite" class="show-methods skipped suite-Portfolio_Suite"> (show)</a> <!-- show-methods skipped suite-Portfolio_Suite -->
                     </span>
                     <div class="method-list-content skipped suite-Portfolio_Suite">
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Portfolio_Suite" title="com.selenium.testcases.portfoliosuite.PortFolioTest" hash-for-method="createPortFolioTest({PortfolioName=SamplePort1411, Runmode=Y, Browser=Mozilla})">createPortFolioTest({PortfolioName=SamplePort1411, Runmode=Y, Browser=Mozilla})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Portfolio_Suite" title="com.selenium.testcases.portfoliosuite.PortFolioTest" hash-for-method="createPortFolioTest({PortfolioName=SamplePort1311, Runmode=Y, Browser=Chrome})">createPortFolioTest({PortfolioName=SamplePort1311, Runmode=Y, Browser=Chrome})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Portfolio_Suite" title="com.selenium.testcases.portfoliosuite.PortFolioTest" hash-for-method="deletePortFolioTest">deletePortFolioTest</a> <!-- method navigator-link -->
@@ -235,44 +248,103 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Stock_Suite" class="panel Stock_Suite">
-          <div class="suite-Stock_Suite-class-skipped">
+          <div class="suite-Stock_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.selenium.testcases.stocksuite.BuySellStockTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="buyOrSellStockTest({Date=5/03/2018, Action=Sell, PurchasePrice=200, PortfolioName=ashish, Runmode=Y, Stock Name=Relianc...)">
-                  </a> <!-- buyOrSellStockTest({Date=5/03/2018, Action=Sell, PurchasePrice=200, PortfolioName=ashish, Runmode=Y, Stock Name=Relianc...) -->
+                  <a name="buyOrSellStockTest({Date=8/19/2018, Action=Buy, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Quantity=100, Stock...)">
+                  </a> <!-- buyOrSellStockTest({Date=8/19/2018, Action=Buy, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Quantity=100, Stock...) -->
                   <span class="method-name">buyOrSellStockTest</span>
-                  <span class="parameters">({Date=5/03/2018, Action=Sell, PurchasePrice=200, PortfolioName=ashish, Runmode=Y, Stock Name=Reliance Inds., Quantity=100, Browser=Chrome})</span>
-                  <div class="stack-trace">org.testng.SkipException: Runmode is set to NO
-	at com.selenium.testcases.stocksuite.BuySellStockTest.buyOrSellStockTest(BuySellStockTest.java:21)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 16 stack frames
+                  <span class="parameters">({Date=8/19/2018, Action=Buy, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Quantity=100, StockName=Tata Motors Ltd., Browser=Mozilla})</span>
+                  <div class="stack-trace">java.lang.reflect.InvocationTargetException
+	at com.selenium.driver.DriverScript.executeKeywords(DriverScript.java:46)
+	at com.selenium.testcases.stocksuite.BuySellStockTest.buyOrSellStockTest(BuySellStockTest.java:23)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 10, Size: 10
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at com.selenium.keywords.AppKeywords.getRowWithCellData(AppKeywords.java:253)
+	at com.selenium.keywords.AppKeywords.buySellStock(AppKeywords.java:141)
+	... 26 more
+... Removed 20 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="checkTransactionHistoryTest">
-                  </a> <!-- checkTransactionHistoryTest -->
+                  <a name="checkTransactionHistoryTest({PortfolioName=Manish, Runmode=Y, StockName=Tata Motors Ltd., Browser=Mozilla})">
+                  </a> <!-- checkTransactionHistoryTest({PortfolioName=Manish, Runmode=Y, StockName=Tata Motors Ltd., Browser=Mozilla}) -->
                   <span class="method-name">checkTransactionHistoryTest</span>
-                  <div class="stack-trace">java.lang.Throwable: Method BuySellStockTest.checkTransactionHistoryTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.stocksuite.BuySellStockTest@f6c48ac] depends on not successfully finished methods
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 9 stack frames
+                  <span class="parameters">({PortfolioName=Manish, Runmode=Y, StockName=Tata Motors Ltd., Browser=Mozilla})</span>
+                  <div class="stack-trace">java.lang.reflect.InvocationTargetException
+	at com.selenium.driver.DriverScript.executeKeywords(DriverScript.java:46)
+	at com.selenium.testcases.stocksuite.BuySellStockTest.checkTransactionHistoryTest(BuySellStockTest.java:34)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 10, Size: 10
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at com.selenium.keywords.AppKeywords.getRowWithCellData(AppKeywords.java:253)
+	at com.selenium.keywords.AppKeywords.checkHistory(AppKeywords.java:163)
+	... 26 more
+... Removed 20 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Stock_Suite-class-skipped -->
+          </div> <!-- suite-Stock_Suite-class-failed -->
+          <div class="suite-Stock_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.selenium.testcases.stocksuite.AddDelStockTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addStockTest({ExpectedStockName=Tata Steel, Date=8/19/2018, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Q...)">
+                  </a> <!-- addStockTest({ExpectedStockName=Tata Steel, Date=8/19/2018, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Q...) -->
+                  <span class="method-name">addStockTest</span>
+                  <span class="parameters">({ExpectedStockName=Tata Steel, Date=8/19/2018, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Quantity=100, StockName=Tata Steel Ltd, Browser=Mozilla})</span>
+                  <div class="stack-trace">java.lang.reflect.InvocationTargetException
+	at com.selenium.driver.DriverScript.executeKeywords(DriverScript.java:46)
+	at com.selenium.testcases.stocksuite.AddDelStockTest.addStockTest(AddDelStockTest.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.StaleElementReferenceException: The element reference of &lt;td&gt; is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;MANISH-PC&apos;, ip: &apos;192.168.1.237&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_162&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 11024, moz:profile: C:\Users\Manish\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: e6a50978-a8e3-41fe-9c10-7e5ae3cdc06e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
+	at com.selenium.keywords.AppKeywords.getRowWithCellData(AppKeywords.java:254)
+	at com.selenium.keywords.AppKeywords.addStock(AppKeywords.java:106)
+	... 26 more
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Stock_Suite-class-failed -->
           <div class="suite-Stock_Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
@@ -281,33 +353,15 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addStockTest({Date=5/03/2018, PurchasePrice=200, PortfolioName=ashish, Runmode=Y, Stock Name=Tata Steel Ltd, Quan...)">
-                  </a> <!-- addStockTest({Date=5/03/2018, PurchasePrice=200, PortfolioName=ashish, Runmode=Y, Stock Name=Tata Steel Ltd, Quan...) -->
-                  <span class="method-name">addStockTest</span>
-                  <span class="parameters">({Date=5/03/2018, PurchasePrice=200, PortfolioName=ashish, Runmode=Y, Stock Name=Tata Steel Ltd, Quantity=100, Browser=Chrome})</span>
-                  <div class="stack-trace">org.testng.SkipException: Runmode is set to NO
-	at com.selenium.testcases.stocksuite.AddDelStockTest.addStockTest(AddDelStockTest.java:22)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="deleteStockTest({PortfolioName=ashish, Runmode=Y, Stock Name=Tata Steel Ltd., Browser=Chrome})">
-                  </a> <!-- deleteStockTest({PortfolioName=ashish, Runmode=Y, Stock Name=Tata Steel Ltd., Browser=Chrome}) -->
+                  <a name="deleteStockTest">
+                  </a> <!-- deleteStockTest -->
                   <span class="method-name">deleteStockTest</span>
-                  <span class="parameters">({PortfolioName=ashish, Runmode=Y, Stock Name=Tata Steel Ltd., Browser=Chrome})</span>
-                  <div class="stack-trace">org.testng.SkipException: Runmode is set to NO
-	at com.selenium.testcases.stocksuite.AddDelStockTest.deleteStockTest(AddDelStockTest.java:35)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 16 stack frames
+                  <div class="stack-trace">java.lang.Throwable: Method AddDelStockTest.deleteStockTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.stocksuite.AddDelStockTest@61a485d2] depends on not successfully finished methods
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 9 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -317,6 +371,46 @@
         <div panel-name="suite-My_suite" class="panel My_suite">
         </div> <!-- panel My_suite -->
         <div panel-name="suite-Portfolio_Suite" class="panel Portfolio_Suite">
+          <div class="suite-Portfolio_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.selenium.testcases.portfoliosuite.PortFolioTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPortFolioTest({PortfolioName=TestingPortfolio1, Runmode=Y, Browser=Mozilla})">
+                  </a> <!-- createPortFolioTest({PortfolioName=TestingPortfolio1, Runmode=Y, Browser=Mozilla}) -->
+                  <span class="method-name">createPortFolioTest</span>
+                  <span class="parameters">({PortfolioName=TestingPortfolio1, Runmode=Y, Browser=Mozilla})</span>
+                  <div class="stack-trace">java.lang.reflect.InvocationTargetException
+	at com.selenium.driver.DriverScript.executeKeywords(DriverScript.java:46)
+	at com.selenium.testcases.portfoliosuite.PortFolioTest.createPortFolioTest(PortFolioTest.java:27)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.JavascriptException: ReferenceError: jQuery is not defined
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;MANISH-PC&apos;, ip: &apos;192.168.1.237&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_162&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9788, moz:profile: C:\Users\Manish\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: ab207020-5b0c-430d-a94e-53fede7cd62d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:482)
+	at com.selenium.keywords.GenericKeywords.waitForPageToLoad(GenericKeywords.java:213)
+	... 26 more
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Portfolio_Suite-class-failed -->
           <div class="suite-Portfolio_Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
@@ -325,46 +419,14 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createPortFolioTest({PortfolioName=SamplePort1411, Runmode=Y, Browser=Mozilla})">
-                  </a> <!-- createPortFolioTest({PortfolioName=SamplePort1411, Runmode=Y, Browser=Mozilla}) -->
-                  <span class="method-name">createPortFolioTest</span>
-                  <span class="parameters">({PortfolioName=SamplePort1411, Runmode=Y, Browser=Mozilla})</span>
-                  <div class="stack-trace">org.testng.SkipException: Runmode is set to NO
-	at com.selenium.testcases.portfoliosuite.PortFolioTest.createPortFolioTest(PortFolioTest.java:22)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="createPortFolioTest({PortfolioName=SamplePort1311, Runmode=Y, Browser=Chrome})">
-                  </a> <!-- createPortFolioTest({PortfolioName=SamplePort1311, Runmode=Y, Browser=Chrome}) -->
-                  <span class="method-name">createPortFolioTest</span>
-                  <span class="parameters">({PortfolioName=SamplePort1311, Runmode=Y, Browser=Chrome})</span>
-                  <div class="stack-trace">org.testng.SkipException: Runmode is set to NO
-	at com.selenium.testcases.portfoliosuite.PortFolioTest.createPortFolioTest(PortFolioTest.java:22)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="deletePortFolioTest">
                   </a> <!-- deletePortFolioTest -->
                   <span class="method-name">deletePortFolioTest</span>
-                  <div class="stack-trace">java.lang.Throwable: Method PortFolioTest.deletePortFolioTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@39c0f4a] depends on not successfully finished methods
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+                  <div class="stack-trace">java.lang.Throwable: Method PortFolioTest.deletePortFolioTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@26f67b76] depends on not successfully finished methods
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
 ... Removed 9 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -382,7 +444,7 @@
                   <a name="loginTest({Username=manish_chaudhari18, ExpectedResult=Loginsuccess, Password=ManishSarita, Runmode=Y, Browser...)">
                   </a> <!-- loginTest({Username=manish_chaudhari18, ExpectedResult=Loginsuccess, Password=ManishSarita, Runmode=Y, Browser...) -->
                   <span class="method-name">loginTest</span>
-                  <span class="parameters">({Username=manish_chaudhari18, ExpectedResult=Loginsuccess, Password=ManishSarita, Runmode=Y, Browser=Chrome})</span>
+                  <span class="parameters">({Username=manish_chaudhari18, ExpectedResult=Loginsuccess, Password=ManishSarita, Runmode=Y, Browser=Mozilla})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -529,24 +591,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addStockTest')
 data.setCell(0, 2, 'com.selenium.testcases.stocksuite.AddDelStockTest')
-data.setCell(0, 3, 50);
+data.setCell(0, 3, 90728);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'deleteStockTest')
-data.setCell(1, 2, 'com.selenium.testcases.stocksuite.AddDelStockTest')
-data.setCell(1, 3, 43);
+data.setCell(1, 1, 'buyOrSellStockTest')
+data.setCell(1, 2, 'com.selenium.testcases.stocksuite.BuySellStockTest')
+data.setCell(1, 3, 84031);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'buyOrSellStockTest')
+data.setCell(2, 1, 'checkTransactionHistoryTest')
 data.setCell(2, 2, 'com.selenium.testcases.stocksuite.BuySellStockTest')
-data.setCell(2, 3, 9);
+data.setCell(2, 3, 75654);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'checkTransactionHistoryTest')
-data.setCell(3, 2, 'com.selenium.testcases.stocksuite.BuySellStockTest')
+data.setCell(3, 1, 'deleteStockTest')
+data.setCell(3, 2, 'com.selenium.testcases.stocksuite.AddDelStockTest')
 data.setCell(3, 3, 0);
 window.suiteTableData['Stock_Suite']= { tableData: data, tableDiv: 'times-div-Stock_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 102 ms</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-Stock_Suite">
               </div> <!-- times-div-Stock_Suite -->
             </div> <!-- times-div -->
@@ -590,28 +652,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest')
-data.setCell(0, 2, 'com.selenium.testcases.portfoliosuite.LoginTest')
-data.setCell(0, 3, 144159);
+data.setCell(0, 1, 'createPortFolioTest')
+data.setCell(0, 2, 'com.selenium.testcases.portfoliosuite.PortFolioTest')
+data.setCell(0, 3, 120550);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'createPortFolioTest')
-data.setCell(1, 2, 'com.selenium.testcases.portfoliosuite.PortFolioTest')
-data.setCell(1, 3, 130);
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'com.selenium.testcases.portfoliosuite.LoginTest')
+data.setCell(1, 3, 101715);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'createPortFolioTest')
+data.setCell(2, 1, 'deletePortFolioTest')
 data.setCell(2, 2, 'com.selenium.testcases.portfoliosuite.PortFolioTest')
-data.setCell(2, 3, 48);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'deletePortFolioTest')
-data.setCell(3, 2, 'com.selenium.testcases.portfoliosuite.PortFolioTest')
-data.setCell(3, 3, 0);
+data.setCell(2, 3, 1);
 window.suiteTableData['Portfolio_Suite']= { tableData: data, tableDiv: 'times-div-Portfolio_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Portfolio_Suite">
               </div> <!-- times-div-Portfolio_Suite -->
             </div> <!-- times-div -->
@@ -665,59 +723,71 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.selenium.testcases.stocksuite.BuySellStockTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.selenium.testcases.stocksuite.AddDelStockTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.selenium.testcases.stocksuite.AddDelStockTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.selenium.testcases.stocksuite.BuySellStockTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">68 ms</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">290 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">buyOrSellStockTest({Date=8/19/2018, Action=Buy, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Quantity=100, Stock...)</span>
+                <span class="method-start">291 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.testcases.stocksuite.AddDelStockTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">319 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addStockTest({ExpectedStockName=Tata Steel, Date=8/19/2018, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Q...)</span>
+                <span class="method-start">320 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.selenium.testcases.stocksuite.BuySellStockTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">initTest</span>
-                <span class="method-start">778 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">buyOrSellStockTest({Date=5/03/2018, Action=Sell, PurchasePrice=200, PortfolioName=ashish, Runmode=Y, Stock Name=Relianc...)</span>
-                <span class="method-start">779 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">792 ms</span>
+                <span class="method-start">84323 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initTest</span>
+                <span class="method-start">87208 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkTransactionHistoryTest({PortfolioName=Manish, Runmode=Y, StockName=Tata Motors Ltd., Browser=Mozilla})</span>
+                <span class="method-start">87209 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.selenium.testcases.stocksuite.AddDelStockTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">initTest</span>
-                <span class="method-start">834 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">addStockTest({Date=5/03/2018, PurchasePrice=200, PortfolioName=ashish, Runmode=Y, Stock Name=Tata Steel Ltd, Quan...)</span>
-                <span class="method-start">1355 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">1410 ms</span>
+                <span class="method-start">91048 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initTest</span>
-                <span class="method-start">2163 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">deleteStockTest({PortfolioName=ashish, Runmode=Y, Stock Name=Tata Steel Ltd., Browser=Chrome})</span>
-                <span class="method-start">2164 ms</span>
-              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.testcases.stocksuite.BuySellStockTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">2218 ms</span>
+                <span class="method-start">162863 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -744,58 +814,45 @@ return data;
               <div class="chronological-class-name">com.selenium.testcases.portfoliosuite.PortFolioTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">16 ms</span>
+                <span class="method-start">6 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.selenium.testcases.portfoliosuite.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initTest</span>
-                <span class="method-start">4582 ms</span>
+                <span class="method-start">2352 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.selenium.testcases.portfoliosuite.PortFolioTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initTest</span>
-                <span class="method-start">4628 ms</span>
+                <span class="method-start">2352 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createPortFolioTest({PortfolioName=TestingPortfolio1, Runmode=Y, Browser=Mozilla})</span>
+                <span class="method-start">2974 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.selenium.testcases.portfoliosuite.LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginTest({Username=manish_chaudhari18, ExpectedResult=Loginsuccess, Password=ManishSarita, Runmode=Y, Browser...)</span>
-                <span class="method-start">6395 ms</span>
+                <span class="method-start">2974 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">104691 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.selenium.testcases.portfoliosuite.PortFolioTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">createPortFolioTest({PortfolioName=SamplePort1311, Runmode=Y, Browser=Chrome})</span>
-                <span class="method-start">6395 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">6533 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initTest</span>
-                <span class="method-start">9838 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">createPortFolioTest({PortfolioName=SamplePort1411, Runmode=Y, Browser=Mozilla})</span>
-                <span class="method-start">9839 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">quit</span>
-                <span class="method-start">9894 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.selenium.testcases.portfoliosuite.LoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">quit</span>
-                <span class="method-start">150562 ms</span>
+                <span class="method-start">123525 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

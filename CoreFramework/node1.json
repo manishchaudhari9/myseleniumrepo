@@ -3,12 +3,12 @@
   [
     {
       "browserName": "firefox",
-      "maxInstances": 5,
+      "maxInstances": 3,
       "seleniumProtocol": "WebDriver"
     },
     {
       "browserName": "chrome",
-      "maxInstances": 5,
+      "maxInstances": 3,
       "seleniumProtocol": "WebDriver"
     }
   ],
@@ -22,7 +22,7 @@
   "nodePolling": 5000,
   "role": "node",
   "unregisterIfStillDownAfter": 60000,
-  "downPollingLimit": 2,
+  "downPollingLimit": 1,
   "debug": false,
   "servlets" : [],
   "withoutServlets": [],

@@ -3,7 +3,7 @@ package com.selenium.testcases.portfoliosuite;
 import java.util.Hashtable;
 
 import org.testng.SkipException;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import com.aventstack.extentreports.Status;
 import com.selenium.base.BaseTest;
@@ -11,7 +11,6 @@ import com.selenium.util.Constants;
 import com.selenium.util.DataUtil;
 
 public class LoginTest extends BaseTest {
-
 	
 	@Test(dataProvider="getData")
 	public void loginTest(Hashtable<String,String> data) throws Exception{

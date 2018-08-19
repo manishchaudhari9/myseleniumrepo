@@ -1,5 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Portfolio Suite" parallel="tests">
+<!-- <suite name="Portfolio Suite" parallel="tests"> -->
+<suite name="Portfolio Suite">
+
 <test name="Login Test">
     <classes>
         <class name="com.selenium.testcases.portfoliosuite.LoginTest" ></class>  

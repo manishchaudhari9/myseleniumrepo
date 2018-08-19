@@ -124,8 +124,8 @@
       <url>http://forplay.googlecode.com/svn/mavenrepo</url>
     </repository>
   </repositories>
- <build>
-    
+  
+ <build>   
       <plugins>
           <plugin>
         	<groupId>org.apache.maven.plugins</groupId>
@@ -141,17 +141,17 @@
               <artifactId>maven-surefire-plugin</artifactId>
               <configuration>
                 <suiteXmlFiles>
-    						    <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+    					<suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                  </suiteXmlFiles>
                 <properties>
             		<property>
                			<name>suitethreadpoolsize</name>
-                		<value>2</value>
+                		<value>1</value>
             		</property>
         		</properties>
               </configuration>
             </plugin>
          
     </plugins>
-      </build>
-    </project>
+ </build>
+</project>

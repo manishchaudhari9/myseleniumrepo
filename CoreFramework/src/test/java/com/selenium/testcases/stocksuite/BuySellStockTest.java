@@ -11,8 +11,8 @@ import com.selenium.util.Constants;
 import com.selenium.util.DataUtil;
 
 public class BuySellStockTest extends BaseTest{
-
-	@Test(dataProvider="getData",priority=1)
+	
+	@Test(dataProvider="getData", priority=1)
 	public void buyOrSellStockTest(Hashtable<String,String> data) throws Exception{
 		test.log(Status.INFO, "Starting "+ testName);
 
@@ -23,7 +23,7 @@ public class BuySellStockTest extends BaseTest{
 	    ds.executeKeywords(testName, xls, data);
 	}
 	
-	@Test(dataProvider="getData",dependsOnMethods={"buyOrSellStockTest"},priority=2)
+	@Test(dataProvider="getData", priority=2)	//dependsOnMethods={"buyOrSellStockTest"}
 	public void checkTransactionHistoryTest(Hashtable<String,String> data) throws Exception{
 		test.log(Status.INFO, "Starting "+ testName);
 
@@ -33,8 +33,5 @@ public class BuySellStockTest extends BaseTest{
 		}		
 	    ds.executeKeywords(testName, xls, data);
 	}
-
-	
-	
 	
 }

@@ -17,11 +17,11 @@ public class AppKeywords extends GenericKeywords{
 
 	public void login(){
 		test.log(Status.INFO, "Logging in");
-		click("money_xpath");
-		click("signin_xpath");
+//		click("money_xpath");
+//		click("signin_xpath");
 		
-//		getObject("money_xpath").click();
-//		getObject("signin_xpath").click();
+		getObject("money_xpath").click();
+		getObject("signin_xpath").click();
 		String username="";
 		String password="";
 		
@@ -32,14 +32,16 @@ public class AppKeywords extends GenericKeywords{
 			username=data.get("Username");
 			password=data.get("Password");
 		}
-		type("username_id", username);
-		click("emailsubmit_id");
+//		type("username_id", username);
+//		click("emailsubmit_id");
 		
 		getObject("username_id").sendKeys(username);
 		getObject("emailsubmit_id").click();
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOf(getObject("password_id")));
 		
+//		type("password_id", password);
+//		click("continue_id");
 		getObject("password_id").sendKeys(password);
 		getObject("continue_id").click();
 		// security warining - mozilla
@@ -71,6 +73,13 @@ public class AppKeywords extends GenericKeywords{
 		System.out.println("Default username "+username );
 		System.out.println("Default password "+password );
 	}
+
+	public void CreatePortfolio(){
+		test.log(Status.INFO, "Creating portfolio ");
+		waitTillSelectionToBe("portfolioSelection_xpath",data.get(dataKey));
+		
+	}
+	
 	
 	public void verifyPortFolio(){
 		test.log(Status.INFO, "Verifying portfolio name "+data.get(dataKey));
@@ -82,7 +91,7 @@ public class AppKeywords extends GenericKeywords{
 		test.log(Status.INFO, "Adding Stockdetails");
 		waitForPageToLoad();
 		click("addStockButton_id");
-		type("stockName_id","Stock Name");
+		type("stockName_id","StockName");
 		click("firstOption_xpath");
 		click("addStockCalendar_id");
 		selectDate(data.get("Date"));
@@ -92,33 +101,48 @@ public class AppKeywords extends GenericKeywords{
 		waitForPageToLoad();
 		test.log(Status.INFO, "Stock added and form submitted");
 		test.log(Status.INFO, "Validating company in table");
-		int rNum=getRowWithCellData(data.get("Stock Name"));
-		if(rNum==-1)
+		test.log(Status.INFO, "Expected stock name: "+data.get("ExpectedStockName"));
+		
+		int rNum=getRowWithCellData(data.get("ExpectedStockName"));
+		
+		if(rNum==-1){
 			reportFailure("Could not find the Stock");
+		}else{
+			test.log(Status.INFO, "Stock added successfully");
+		}
+			
 	}
 	
 	public void deleteStock(){
 		waitForPageToLoad();
-		int rNum=getRowWithCellData(data.get("Stock Name"));
-		if(rNum==-1)
-			reportFailure("Stock not found in list "+data.get("Stock Name"));
+		int rNum=getRowWithCellData(data.get("StockName"));
+		if(rNum==-1){
+			reportFailure("Stock not found in list "+data.get("StockName"));
+		}
+			
 		driver.findElement(By.xpath("//table[@id='stock']/tbody/tr["+rNum+"]/td[1]")).click();
 		driver.findElements(By.xpath("//input[@name='Delete']")).get(rNum-1).click();
-
+		wait(3);
 		driver.switchTo().alert().accept();
 		waitForPageToLoad();
 		driver.switchTo().defaultContent();
-		rNum=getRowWithCellData(data.get("Stock Name"));
-		System.out.println(rNum);
-		reportFailure("Stock found after deletion "+data.get("Stock Name"));
+		
+		rNum=getRowWithCellData(data.get("StockName"));
+		
+		if(rNum!=-1){
+			reportFailure("Stock found after deletion "+data.get("StockName"));
+		}else{
+			test.log(Status.INFO, "Stock deleted successfully");
+		}
 	}
 	
 	public void buySellStock(){
 		test.log(Status.INFO, "Finding Stock");
-		int rNum=getRowWithCellData(data.get("Stock Name"));
-		if(rNum==-1)
-			reportFailure("Stock not found in list "+data.get("Stock Name") );
-		
+		int rNum=getRowWithCellData(data.get("StockName"));
+		if(rNum==-1){
+			reportFailure("Stock not found in list "+data.get("StockName") );
+		}
+				
 		driver.findElement(By.xpath("//table[@id='stock']/tbody/tr["+rNum+"]/td[1]")).click();
 		driver.findElements(By.xpath("//input[@class='buySell']")).get(rNum-1).click();
 		test.log(Status.INFO, "Performing action - "+data.get("Action"));
@@ -136,9 +160,10 @@ public class AppKeywords extends GenericKeywords{
 	public void checkHistory(){
 		waitForPageToLoad();
 		test.log(Status.INFO, "Checking history");
-		int rNum=getRowWithCellData(data.get("Stock Name"));
-		if(rNum==-1)
-			reportFailure("Stock not found in list "+data.get("Stock Name") );
+		int rNum=getRowWithCellData(data.get("StockName"));
+		if(rNum==-1){
+			reportFailure("Stock not found in list "+data.get("StockName") );
+		}	
 	
 		driver.findElement(By.xpath("//table[@id='stock']/tbody/tr["+rNum+"]/td[1]")).click();
 		driver.findElements(By.xpath("//input[@class='equityTransaction']")).get(rNum-1).click();
@@ -158,10 +183,16 @@ public class AppKeywords extends GenericKeywords{
 		test.log(Status.INFO,"Total shares - "+totalShares );
 		test.log(Status.INFO,"Total Amount spent "+totalAmount );
 		double average = Double.valueOf(totalAmount)/Double.valueOf(totalShares);
-		test.log(Status.INFO,"Average - "+average );
-		test.log(Status.INFO,"Actual - "+actual );
+		double actualDeciVal = Double.valueOf(actual);
 		
-		reportFailure("Actual average is "+ actual+"Expected was "+average);
+		test.log(Status.INFO,"Average - "+average );
+		test.log(Status.INFO,"actualDeciVal - "+actualDeciVal );
+		if(round(average,2)!=round(actualDeciVal,2)){
+			reportFailure("Actual average is "+ actualDeciVal+"Expected was "+average);
+		}else{
+			test.log(Status.INFO,"Actual average is "+ actualDeciVal+"Expected was "+average);
+		}
+		
 		// fix the decimals - Math
 	}
 	
@@ -184,29 +215,41 @@ public class AppKeywords extends GenericKeywords{
 					// select the day
 					driver.findElement(By.xpath("//td[text()='"+day+"']")).click();
 					break;
-				}else{
-					
+				}else{				
 					if(selected.compareTo(current) > 0)
 						driver.findElement(By.xpath("//*[@id='datepicker']/table/tbody/tr[1]/td[4]/button")).click();
 					else if(selected.compareTo(current) < 0)
 						driver.findElement(By.xpath("//*[@id='datepicker']/table/tbody/tr[1]/td[2]/button")).click();
-
 				}
 			}
 
 		} catch (ParseException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
 	}
 	
+//	public int getRowWithCellData(String data){
+//		List<WebElement> rows = driver.findElements(By.xpath("//table[@id='stock']/tbody/tr"));
+//		for(int rNum=0;rNum<rows.size();rNum++){
+//			WebElement row = rows.get(rNum);
+//			List<WebElement> cells = row.findElements(By.tagName("td"));
+//			for(int cNum=0;cNum<cells.size();cNum++){
+//				WebElement cell = cells.get(cNum);
+//				if(!cell.getText().trim().equals("") && data.contains(cell.getText()))
+//					return ++rNum;
+//			}
+//		}
+//		
+//		return -1;// not found
+//	}
+	
 	public int getRowWithCellData(String data){
 		List<WebElement> rows = driver.findElements(By.xpath("//table[@id='stock']/tbody/tr"));
-		for(int rNum=0;rNum<rows.size();rNum++){
+		for(int rNum=1;rNum<=rows.size();rNum++){
 			WebElement row = rows.get(rNum);
 			List<WebElement> cells = row.findElements(By.tagName("td"));
-			for(int cNum=0;cNum<cells.size();cNum++){
+			for(int cNum=1;cNum<=cells.size();cNum++){
 				WebElement cell = cells.get(cNum);
 				if(!cell.getText().trim().equals("") && data.contains(cell.getText()))
 					return ++rNum;

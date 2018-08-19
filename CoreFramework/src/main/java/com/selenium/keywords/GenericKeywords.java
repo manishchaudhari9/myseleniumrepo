@@ -45,7 +45,7 @@ public class GenericKeywords {
 	public SoftAssert softAssert = new SoftAssert();
 	
 	
-	/*********************Setter functions***************************/
+	/********************* Setter functions ***************************/
 	public String getProceedOnFail() {
 		return proceedOnFail;
 	}
@@ -53,7 +53,6 @@ public class GenericKeywords {
 	public void setProceedOnFail(String proceedOnFail) {
 		this.proceedOnFail = proceedOnFail;
 	}
-
 
 	public void setEnvProp(Properties envProp) {
 		this.envProp = envProp;
@@ -85,33 +84,47 @@ public class GenericKeywords {
 		String browser=data.get(dataKey);
 		test.log(Status.INFO,"Opening Browser "+browser );
 		if(prop.getProperty("gridRun").equals("Y")) {
-			// run on grid
 			
+			// run on grid
 			DesiredCapabilities cap=null;
-			if(browser.equals("Mozilla")) {
+			if(browser.equalsIgnoreCase("Mozilla")) {
 				cap = DesiredCapabilities.firefox();
 				cap.setJavascriptEnabled(true);
 				cap.setPlatform(Platform.WINDOWS);
-			}else if(browser.equals("Chrome")) {
+			}else if(browser.equalsIgnoreCase("Chrome")) {
 				cap = DesiredCapabilities.chrome();
 				cap.setJavascriptEnabled(true);
 				cap.setPlatform(Platform.WINDOWS);
+			}else if(browser.equalsIgnoreCase("IE")) {
+				cap = DesiredCapabilities.internetExplorer();
+				cap.setJavascriptEnabled(true);
+				cap.setPlatform(Platform.WINDOWS);
+			}else if(browser.equalsIgnoreCase("Edge")) {
+				cap = DesiredCapabilities.edge();
+				cap.setJavascriptEnabled(true);
+				cap.setPlatform(Platform.WINDOWS);
+			}else if(browser.equalsIgnoreCase("Safari")) {
+				cap = DesiredCapabilities.safari();
+				cap.setJavascriptEnabled(true);
+				cap.setPlatform(Platform.MAC);
+			}else if(browser.equalsIgnoreCase("Safari")) {
+				cap = DesiredCapabilities.safari();
+				cap.setJavascriptEnabled(true);
+				cap.setPlatform(Platform.MAC);
 			}
 			
 			try {
 				driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
 			} catch (MalformedURLException e) {
 				e.printStackTrace();
-			}
-			
-			
+			}	
 			
 		}else {// run on normal browser
 			if(browser.equals("Mozilla")){
 				// options
 				System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "null");
 				// invoke profile
-				System.setProperty("webdriver.gecko.driver", "D:\\Common\\drivers\\geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver", "C:\\JAVA-SELENIUM\\drivers\\geckodriver.exe");
 				driver = new FirefoxDriver();
 			}else if(browser.equals("Chrome")){
 				// init options
@@ -167,6 +180,16 @@ public class GenericKeywords {
 		test.log(Status.INFO,"Clearing "+prop.getProperty(objectKey));
 		getObject(objectKey).clear();
 	}
+
+	
+	public double round(double value, int places) {
+	    if (places < 0) throw new IllegalArgumentException();
+
+	    long factor = (long) Math.pow(10, places);
+	    value = value * factor;
+	    long tmp = Math.round(value);
+	    return (double) tmp / factor;
+	}
 	
 	public void waitForPageToLoad(){
 		JavascriptExecutor js = (JavascriptExecutor)driver;
@@ -174,15 +197,15 @@ public class GenericKeywords {
 		
 		while(i!=10){
 		String state = (String)js.executeScript("return document.readyState;");
-		System.out.println(state);
+		System.out.println("WebPage readyState : "+state);
 
 		if(state.equals("complete"))
 			break;
 		else
 			wait(2);
-
 		i++;
 		}
+		
 		// check for jquery status
 		i=0;
 		while(i!=10){
@@ -219,7 +242,6 @@ public class GenericKeywords {
 		try {
 			Thread.sleep(timeSec*1000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -259,16 +281,14 @@ public class GenericKeywords {
 				i++;	
 		}
 		// reach here
-		reportFailure("Values Dont match. Got value as "+actual);
-		
-		
+		reportFailure("Values Dont match. Got value as "+actual);		
 	}
 	
 	public void quit(){
 		if(driver!=null)
 			driver.quit();
 	}
-	/*********************Utitlity Functions************************/
+	/********************* Utitlity Methods ************************/
 	// central function to extract Objects
 	public WebElement getObject(String objectKey){
 		WebElement e=null;
@@ -321,12 +341,11 @@ public class GenericKeywords {
 				for(int i=0;i<options.size();i++){
 					if(options.get(i).getText().equals(data.get(dataKey)))
 						return true;
-				}
-				
+				}				
 				return false;
 	}
 	
-	/*******Reporting function********/
+	/******* Reporting Method ********/
 	public void reportFailure(String failureMsg){
 		// fail the test
 		test.log(Status.FAIL, failureMsg);
@@ -338,10 +357,12 @@ public class GenericKeywords {
 			softAssert.fail(failureMsg);
 		}else{
 			softAssert.fail(failureMsg);
-			softAssert.assertAll();
+//			softAssert.assertAll();
+			assertAll();
 		}
 	}
 	
+	/******* Screenshot Method *******/
 	public void takeSceenShot(){
 		// fileName of the screenshot
 		Date d=new Date();
@@ -354,7 +375,6 @@ public class GenericKeywords {
 			//put screenshot file in reports
 			test.log(Status.FAIL,"Screenshot-> "+ test.addScreenCaptureFromPath(ExtentManager.screenshotFolderPath+screenshotFile));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		

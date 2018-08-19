@@ -1,42 +1,85 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Stock Suite</th></tr><tr><td><a href="#t0">Portfolio Test</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">1,375</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t1">Add Delete Stock Test</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">2,765</td><td></td><td></td></tr><tr><th colspan="7">My suite</th></tr><tr><th colspan="7">Portfolio Suite</th></tr><tr><td><a href="#t2">Portfolio Test</a></td><td class="num">0</td><td class="num attn">3</td><td class="num">0</td><td class="num">11,449</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t3">Login Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">152,427</td><td></td><td></td></tr><tr><th>Total</th><th class="num">1</th><th class="num attn">7</th><th class="num">0</th><th class="num">168,016</th><th colspan="2"></th></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Stock Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Portfolio Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.selenium.testcases.stocksuite.BuySellStockTest</td><td><a href="#m0">buyOrSellStockTest</a></td><td rowspan="1">1534619414238</td><td rowspan="1">9</td></tr><tr class="skippedeven"><td><a href="#m1">checkTransactionHistoryTest</a></td><td rowspan="1">1534619414810</td><td rowspan="1">0</td></tr></tbody><tbody id="t1"><tr><th colspan="4">Add Delete Stock Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.selenium.testcases.stocksuite.AddDelStockTest</td><td><a href="#m2">addStockTest</a></td><td rowspan="1">1534619414814</td><td rowspan="1">50</td></tr><tr class="skippedeven"><td><a href="#m3">deleteStockTest</a></td><td rowspan="1">1534619415623</td><td rowspan="1">43</td></tr></tbody><tbody><tr><th colspan="4">My suite</th></tr></tbody><tbody><tr><th colspan="4">Portfolio Suite</th></tr></tbody><tbody id="t2"><tr><th colspan="4">Portfolio Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="3">com.selenium.testcases.portfoliosuite.PortFolioTest</td><td><a href="#m4">createPortFolioTest</a></td><td rowspan="2">1534619270702</td><td rowspan="2">48</td></tr><tr class="skippedeven"><td><a href="#m5">createPortFolioTest</a></td></tr><tr class="skippedeven"><td><a href="#m6">deletePortFolioTest</a></td><td rowspan="1">1534619272230</td><td rowspan="1">0</td></tr></tbody><tbody id="t3"><tr><th colspan="4">Login Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.selenium.testcases.portfoliosuite.LoginTest</td><td><a href="#m7">loginTest</a></td><td rowspan="1">1534619267258</td><td rowspan="1">144159</td></tr></tbody></table><h2>Portfolio Test</h2><h3 id="m0">com.selenium.testcases.stocksuite.BuySellStockTest#buyOrSellStockTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Date=5/03/2018, Action=Sell, PurchasePrice=200, PortfolioName=ashish, Runmode=Y, Stock Name=Reliance Inds., Quantity=100, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Runmode is set to NO
-	at com.selenium.testcases.stocksuite.BuySellStockTest.buyOrSellStockTest(BuySellStockTest.java:21)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.selenium.testcases.stocksuite.BuySellStockTest#checkTransactionHistoryTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method BuySellStockTest.checkTransactionHistoryTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.stocksuite.BuySellStockTest@f6c48ac] depends on not successfully finished methods
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Add Delete Stock Test</h2><h3 id="m2">com.selenium.testcases.stocksuite.AddDelStockTest#addStockTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Date=5/03/2018, PurchasePrice=200, PortfolioName=ashish, Runmode=Y, Stock Name=Tata Steel Ltd, Quantity=100, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Runmode is set to NO
-	at com.selenium.testcases.stocksuite.AddDelStockTest.addStockTest(AddDelStockTest.java:22)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">com.selenium.testcases.stocksuite.AddDelStockTest#deleteStockTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{PortfolioName=ashish, Runmode=Y, Stock Name=Tata Steel Ltd., Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Runmode is set to NO
-	at com.selenium.testcases.stocksuite.AddDelStockTest.deleteStockTest(AddDelStockTest.java:35)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Portfolio Test</h2><h3 id="m4">com.selenium.testcases.portfoliosuite.PortFolioTest#createPortFolioTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{PortfolioName=SamplePort1411, Runmode=Y, Browser=Mozilla}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Runmode is set to NO
-	at com.selenium.testcases.portfoliosuite.PortFolioTest.createPortFolioTest(PortFolioTest.java:22)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">com.selenium.testcases.portfoliosuite.PortFolioTest#createPortFolioTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{PortfolioName=SamplePort1311, Runmode=Y, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Runmode is set to NO
-	at com.selenium.testcases.portfoliosuite.PortFolioTest.createPortFolioTest(PortFolioTest.java:22)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">com.selenium.testcases.portfoliosuite.PortFolioTest#deletePortFolioTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method PortFolioTest.deletePortFolioTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@39c0f4a] depends on not successfully finished methods
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Login Test</h2><h3 id="m7">com.selenium.testcases.portfoliosuite.LoginTest#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Username=manish_chaudhari18, ExpectedResult=Loginsuccess, Password=ManishSarita, Runmode=Y, Browser=Chrome}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Stock Suite</th></tr><tr><td><a href="#t0">Add Delete Stock Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">94,778</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t1">Portfolio Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">165,582</td><td></td><td></td></tr><tr><th colspan="7">My suite</th></tr><tr><th colspan="7">Portfolio Suite</th></tr><tr><td><a href="#t2">Login Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">108,231</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t3">Portfolio Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">126,657</td><td></td><td></td></tr><tr><th>Total</th><th class="num">1</th><th class="num attn">2</th><th class="num attn">4</th><th class="num">495,248</th><th colspan="2"></th></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Stock Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Add Delete Stock Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.selenium.testcases.stocksuite.AddDelStockTest</td><td><a href="#m0">addStockTest</a></td><td rowspan="1">1534721423507</td><td rowspan="1">90728</td></tr><tr><th colspan="4">Add Delete Stock Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.selenium.testcases.stocksuite.AddDelStockTest</td><td><a href="#m1">deleteStockTest</a></td><td rowspan="1">1534721517965</td><td rowspan="1">0</td></tr></tbody><tbody id="t1"><tr><th colspan="4">Portfolio Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.selenium.testcases.stocksuite.BuySellStockTest</td><td><a href="#m2">buyOrSellStockTest</a></td><td rowspan="1">1534721423478</td><td rowspan="1">84031</td></tr><tr class="failedeven"><td><a href="#m3">checkTransactionHistoryTest</a></td><td rowspan="1">1534721510396</td><td rowspan="1">75654</td></tr></tbody><tbody><tr><th colspan="4">My suite</th></tr></tbody><tbody><tr><th colspan="4">Portfolio Suite</th></tr></tbody><tbody id="t2"><tr><th colspan="4">Login Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.selenium.testcases.portfoliosuite.LoginTest</td><td><a href="#m4">loginTest</a></td><td rowspan="1">1534721299456</td><td rowspan="1">101715</td></tr></tbody><tbody id="t3"><tr><th colspan="4">Portfolio Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.selenium.testcases.portfoliosuite.PortFolioTest</td><td><a href="#m5">createPortFolioTest</a></td><td rowspan="1">1534721299456</td><td rowspan="1">120550</td></tr><tr><th colspan="4">Portfolio Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.selenium.testcases.portfoliosuite.PortFolioTest</td><td><a href="#m6">deletePortFolioTest</a></td><td rowspan="1">1534721423133</td><td rowspan="1">1</td></tr></tbody></table><h2>Add Delete Stock Test</h2><h3 id="m0">com.selenium.testcases.stocksuite.AddDelStockTest#addStockTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{ExpectedStockName=Tata Steel, Date=8/19/2018, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Quantity=100, StockName=Tata Steel Ltd, Browser=Mozilla}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.reflect.InvocationTargetException
+	at com.selenium.driver.DriverScript.executeKeywords(DriverScript.java:46)
+	at com.selenium.testcases.stocksuite.AddDelStockTest.addStockTest(AddDelStockTest.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.StaleElementReferenceException: The element reference of &lt;td&gt; is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;MANISH-PC&apos;, ip: &apos;192.168.1.237&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_162&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 11024, moz:profile: C:\Users\Manish\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: e6a50978-a8e3-41fe-9c10-7e5ae3cdc06e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
+	at com.selenium.keywords.AppKeywords.getRowWithCellData(AppKeywords.java:254)
+	at com.selenium.keywords.AppKeywords.addStock(AppKeywords.java:106)
+	... 26 more
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.selenium.testcases.stocksuite.AddDelStockTest#deleteStockTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method AddDelStockTest.deleteStockTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.stocksuite.AddDelStockTest@61a485d2] depends on not successfully finished methods
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Portfolio Test</h2><h3 id="m2">com.selenium.testcases.stocksuite.BuySellStockTest#buyOrSellStockTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Date=8/19/2018, Action=Buy, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Quantity=100, StockName=Tata Motors Ltd., Browser=Mozilla}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.reflect.InvocationTargetException
+	at com.selenium.driver.DriverScript.executeKeywords(DriverScript.java:46)
+	at com.selenium.testcases.stocksuite.BuySellStockTest.buyOrSellStockTest(BuySellStockTest.java:23)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 10, Size: 10
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at com.selenium.keywords.AppKeywords.getRowWithCellData(AppKeywords.java:253)
+	at com.selenium.keywords.AppKeywords.buySellStock(AppKeywords.java:141)
+	... 26 more
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">com.selenium.testcases.stocksuite.BuySellStockTest#checkTransactionHistoryTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{PortfolioName=Manish, Runmode=Y, StockName=Tata Motors Ltd., Browser=Mozilla}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.reflect.InvocationTargetException
+	at com.selenium.driver.DriverScript.executeKeywords(DriverScript.java:46)
+	at com.selenium.testcases.stocksuite.BuySellStockTest.checkTransactionHistoryTest(BuySellStockTest.java:34)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 10, Size: 10
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at com.selenium.keywords.AppKeywords.getRowWithCellData(AppKeywords.java:253)
+	at com.selenium.keywords.AppKeywords.checkHistory(AppKeywords.java:163)
+	... 26 more
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Login Test</h2><h3 id="m4">com.selenium.testcases.portfoliosuite.LoginTest#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Username=manish_chaudhari18, ExpectedResult=Loginsuccess, Password=ManishSarita, Runmode=Y, Browser=Mozilla}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Portfolio Test</h2><h3 id="m5">com.selenium.testcases.portfoliosuite.PortFolioTest#createPortFolioTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{PortfolioName=TestingPortfolio1, Runmode=Y, Browser=Mozilla}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.reflect.InvocationTargetException
+	at com.selenium.driver.DriverScript.executeKeywords(DriverScript.java:46)
+	at com.selenium.testcases.portfoliosuite.PortFolioTest.createPortFolioTest(PortFolioTest.java:27)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.JavascriptException: ReferenceError: jQuery is not defined
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;MANISH-PC&apos;, ip: &apos;192.168.1.237&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_162&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9788, moz:profile: C:\Users\Manish\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: ab207020-5b0c-430d-a94e-53fede7cd62d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:482)
+	at com.selenium.keywords.GenericKeywords.waitForPageToLoad(GenericKeywords.java:213)
+	... 26 more
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">com.selenium.testcases.portfoliosuite.PortFolioTest#deletePortFolioTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method PortFolioTest.deletePortFolioTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@26f67b76] depends on not successfully finished methods
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

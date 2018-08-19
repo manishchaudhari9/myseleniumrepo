@@ -2,12 +2,9 @@ package com.selenium.base;
 
 import java.io.FileInputStream;
 import java.lang.reflect.Method;
-import java.util.Properties;
+import java.util.*;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
+import org.testng.annotations.*;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -24,9 +21,14 @@ public class BaseTest {
 	public DriverScript ds;
 	public ExtentReports rep;
 	public ExtentTest test;
+
+	
 	
 	@BeforeTest
 	public void init(){
+		
+//		Map<String, Object> vars = new HashMap<String,Object>();
+				
 		// init testName
 		System.out.println("*** "+ this.getClass().getSimpleName());
 		testName=this.getClass().getSimpleName();
@@ -55,7 +57,7 @@ public class BaseTest {
 		// init DS
 		 ds = new DriverScript();
 		 ds.setEnvProp(envProp);
-		 ds.setProp(prop);		 		
+		 ds.setProp(prop);
 	}
 
 	@BeforeMethod
@@ -65,6 +67,8 @@ public class BaseTest {
 		ds.setExtentTest(test);
 	}
 	
+
+//	@AfterTest
 	@AfterMethod
 	public void quit(){
 		// quit the driver
@@ -77,7 +81,7 @@ public class BaseTest {
 	
 	@DataProvider
 	public Object[][] getData(Method method){
-		// i can use xls file object to read data
+		// You can also use xls file object to read data
 		//System.out.println("Inside data Provider "+method.getName());
 		testName=method.getName();
 		return DataUtil.getTestData(testName, xls);
