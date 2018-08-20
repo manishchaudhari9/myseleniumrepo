@@ -26,12 +26,9 @@ public class BaseTest {
 	
 	@BeforeTest
 	public void init(){
-		
-//		Map<String, Object> vars = new HashMap<String,Object>();
-				
 		// init testName
 		System.out.println("*** "+ this.getClass().getSimpleName());
-		testName=this.getClass().getSimpleName();
+		testName=this.getClass().getSimpleName();	//Actually this is a @Test method name.
 		String arr[] = this.getClass().getPackage().getName().split("\\.");
 		String suiteName= arr[arr.length-1];
 		
@@ -42,6 +39,7 @@ public class BaseTest {
 		try {
 			FileInputStream fs = new FileInputStream(System.getProperty("user.dir")+"//src//test//resources//env.properties");
 			prop.load(fs);// init env.properties
+			
 			String env=prop.getProperty("env");
 			fs = new FileInputStream(System.getProperty("user.dir")+"//src//test//resources//"+env+".properties");
 			envProp.load(fs);
@@ -68,7 +66,6 @@ public class BaseTest {
 	}
 	
 
-//	@AfterTest
 	@AfterMethod
 	public void quit(){
 		// quit the driver

@@ -3,26 +3,26 @@
   [
     {
       "browserName": "firefox",
-      "maxInstances": 3,
+      "maxInstances": 5,	//Max 3 browser instances can run on this node
       "seleniumProtocol": "WebDriver"
     },
     {
       "browserName": "chrome",
-      "maxInstances": 3,
+      "maxInstances": 5,	//Max 3 browser instances can run on this node
       "seleniumProtocol": "WebDriver"
     }
   ],
   "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
-  "maxSession": 1,
+  "maxSession": 1,	//Only one browser will will be active/work at a time. Keep 1 for best performance from GRID
   "port": 5558,
   "register": true,
   "registerCycle": 5000,
-  "hub": "http://localhost:4444",
+  "hub": "http://localhost:4444",	//Hub IP address
   "nodeStatusCheckTimeout": 5000,
   "nodePolling": 5000,
   "role": "node",
   "unregisterIfStillDownAfter": 60000,
-  "downPollingLimit": 1,
+  "downPollingLimit": 2,
   "debug": false,
   "servlets" : [],
   "withoutServlets": [],

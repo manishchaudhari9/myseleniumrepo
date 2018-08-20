@@ -1,2 +1,2 @@
 cd C:\JAVA-SELENIUM\localgitrep\CoreFramework
-ant compile run
+ant compile run_parallel

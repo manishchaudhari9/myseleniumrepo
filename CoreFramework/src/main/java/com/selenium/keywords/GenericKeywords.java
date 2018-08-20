@@ -216,10 +216,8 @@ public class GenericKeywords {
 			 	break;
 			else
 				 wait(2);
-			 i++;
-				
+			 i++;		
 			}
-		
 		}
 	
 	public void acceptAlert(){

@@ -1,8 +1,9 @@
 Hub setup->
-java -jar C:\JAVA-SELENIUM\Softwares\selenium-server-standalone-3.13.0.jar -role hub
+java -jar C:\JAVA-SELENIUM\Softwares\selenium-server-standalone-3.14.0.jar -role hub
 
-Node 1 setup-> 
+//Execute the below commands on the Node machine to setup the node and also copy the node1.json file on the node machine.
+Node 1 setup->
 java -Dwebdriver.gecko.driver="C:\JAVA-SELENIUM\drivers\geckodriver.exe" -Dwebdriver.chrome.driver="C:\JAVA-SELENIUM\drivers\chromedriver.exe" -Dwebdriver.ie.driver="C:\JAVA-SELENIUM\drivers\IEDriverServer.exe" -jar C:\JAVA-SELENIUM\Softwares\selenium-server-standalone-3.13.0.jar -role node -nodeConfig C:\JAVA-SELENIUM\localgitrep\CoreFramework\node1.json
 
 Node 2 setup->
-java -Dwebdriver.gecko.driver="C:\JAVA-SELENIUM\drivers\geckodriver.exe" -Dwebdriver.chrome.driver="C:\JAVA-SELENIUM\drivers\chromedriver.exe" -Dwebdriver.ie.driver="C:\JAVA-SELENIUM\drivers\IEDriverServer.exe" -jar C:\JAVA-SELENIUM\Softwares\selenium-server-standalone-3.13.0.jar -role node -nodeConfig C:\JAVA-SELENIUM\localgitrep\CoreFramework\node2.json
+java -Dwebdriver.gecko.driver="C:\JAVA-SELENIUM\drivers\geckodriver.exe" -Dwebdriver.chrome.driver="C:\JAVA-SELENIUM\drivers\chromedriver.exe" -Dwebdriver.ie.driver="C:\JAVA-SELENIUM\drivers\IEDriverServer.exe" -jar C:\JAVA-SELENIUM\Softwares\selenium-servers-standalone-3.13.0.jar -role node -nodeConfig C:\JAVA-SELENIUM\localgitrep\CoreFramework\node2.json

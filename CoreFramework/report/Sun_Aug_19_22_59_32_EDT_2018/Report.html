@@ -46,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Aug 19, 2018 06:42:32 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Aug 19, 2018 10:59:32 PM</span>
 				</a>
 			</li>
 			<li>
@@ -72,6 +72,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -120,17 +121,17 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>createPortFolioTest</span>
-						<span class='test-time'>Aug 19, 2018 06:42:32 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>loginTest</span>
+						<span class='test-time'>Aug 19, 2018 10:59:33 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 19, 2018 06:42:32 PM</span>
-	<span class='label end-time'>Aug 19, 2018 06:44:02 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 29s+349ms</span>
+	<span class='label start-time'>Aug 19, 2018 10:59:33 PM</span>
+	<span class='label end-time'>Aug 19, 2018 11:01:56 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 22s+278ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -144,117 +145,85 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:42:32 PM</td>
-					<td class='step-details'>Starting createPortFolioTest</td>
+					<td class='timestamp'>10:59:33 PM</td>
+					<td class='step-details'>Starting loginTest</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:42:32 PM</td>
-					<td class='step-details'>CreatePortFolioTest --- openBrowser --- null --- Chrome</td>
+					<td class='timestamp'>10:59:33 PM</td>
+					<td class='step-details'>LoginTest --- openBrowser --- null --- Chrome</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:42:32 PM</td>
+					<td class='timestamp'>10:59:33 PM</td>
 					<td class='step-details'>Opening Browser Chrome</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:42:41 PM</td>
-					<td class='step-details'>CreatePortFolioTest --- navigate --- null --- null</td>
+					<td class='timestamp'>10:59:46 PM</td>
+					<td class='step-details'>LoginTest --- navigate --- null --- null</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:42:41 PM</td>
+					<td class='timestamp'>10:59:46 PM</td>
 					<td class='step-details'>Navigating to website http://in.rediff.com</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:42:59 PM</td>
-					<td class='step-details'>CreatePortFolioTest --- login --- null --- null</td>
+					<td class='timestamp'>10:59:55 PM</td>
+					<td class='step-details'>LoginTest --- login --- null --- null</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:42:59 PM</td>
+					<td class='timestamp'>10:59:55 PM</td>
 					<td class='step-details'>Logging in</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:43:36 PM</td>
+					<td class='timestamp'>11:01:13 PM</td>
 					<td class='step-details'>Switching to alert</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:43:57 PM</td>
-					<td class='step-details'>CreatePortFolioTest --- click --- createPortfolio --- null</td>
+					<td class='timestamp'>11:01:33 PM</td>
+					<td class='step-details'>LoginTest --- validateLogin --- null --- null</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:43:57 PM</td>
-					<td class='step-details'>Clicking createPortfolio</td>
+					<td class='timestamp'>11:01:34 PM</td>
+					<td class='step-details'>Validating Login</td>
 				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:43:57 PM</td>
-					<td class='step-details'>CreatePortFolioTest --- clear --- create --- null</td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:01:54 PM</td>
+					<td class='step-details'>Got  result Loginfailure</td>
 				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:43:57 PM</td>
-					<td class='step-details'>Clearing create</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:43:57 PM</td>
-					<td class='step-details'>CreatePortFolioTest --- type --- create --- TestingPortfolio1</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:43:57 PM</td>
-					<td class='step-details'>Typing in create . Data - TestingPortfolio1</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:43:58 PM</td>
-					<td class='step-details'>CreatePortFolioTest --- click --- createPortfolioButton --- null</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:43:58 PM</td>
-					<td class='step-details'>Clicking createPortfolioButton</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:43:58 PM</td>
-					<td class='step-details'>CreatePortFolioTest --- waitForPageToLoad --- null --- null</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:44:02 PM</td>
-					<td class='step-details'>CreatePortFolioTest --- verifyPortFolio --- null --- TestingPortfolio1</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:44:02 PM</td>
-					<td class='step-details'>Verifying portfolio name TestingPortfolio1</td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:01:56 PM</td>
+					<td class='step-details'>Screenshot-> com.aventstack.extentreports.ExtentTest@7cbaec8b</td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\JAVA-SELENIUM\localgitrep\CoreFramework\report\Sun_Aug_19_22_59_32_EDT_2018//screenshots//Sun_Aug_19_23_01_54_EDT_2018.png' width='10%' src='C:\JAVA-SELENIUM\localgitrep\CoreFramework\report\Sun_Aug_19_22_59_32_EDT_2018//screenshots//Sun_Aug_19_23_01_54_EDT_2018.png' data-src='C:\JAVA-SELENIUM\localgitrep\CoreFramework\report\Sun_Aug_19_22_59_32_EDT_2018//screenshots//Sun_Aug_19_23_01_54_EDT_2018.png'></li>
+							</ul>
 					</div>
 				</li>
 				
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>loginTest</span>
-						<span class='test-time'>Aug 19, 2018 06:42:32 PM</span>
+						<span class='test-name'>addStockTest</span>
+						<span class='test-time'>Aug 19, 2018 10:59:33 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 19, 2018 06:42:32 PM</span>
-	<span class='label end-time'>Aug 19, 2018 06:44:07 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 34s+256ms</span>
+	<span class='label start-time'>Aug 19, 2018 10:59:33 PM</span>
+	<span class='label end-time'>Aug 19, 2018 11:01:29 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 55s+494ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -268,53 +237,118 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:42:32 PM</td>
-					<td class='step-details'>Starting loginTest</td>
+					<td class='timestamp'>10:59:33 PM</td>
+					<td class='step-details'>Starting addStockTest</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:42:32 PM</td>
-					<td class='step-details'>LoginTest --- openBrowser --- null --- Chrome</td>
+					<td class='timestamp'>10:59:33 PM</td>
+					<td class='step-details'>AddStockTest --- openBrowser --- null --- Chrome</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:42:32 PM</td>
+					<td class='timestamp'>10:59:33 PM</td>
 					<td class='step-details'>Opening Browser Chrome</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:42:41 PM</td>
-					<td class='step-details'>LoginTest --- navigate --- null --- null</td>
+					<td class='timestamp'>10:59:46 PM</td>
+					<td class='step-details'>AddStockTest --- navigate --- null --- null</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:42:41 PM</td>
+					<td class='timestamp'>10:59:46 PM</td>
 					<td class='step-details'>Navigating to website http://in.rediff.com</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:43:12 PM</td>
-					<td class='step-details'>LoginTest --- login --- null --- null</td>
+					<td class='timestamp'>10:59:54 PM</td>
+					<td class='step-details'>AddStockTest --- login --- null --- null</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:43:12 PM</td>
+					<td class='timestamp'>10:59:54 PM</td>
 					<td class='step-details'>Logging in</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:43:46 PM</td>
+					<td class='timestamp'>11:00:52 PM</td>
 					<td class='step-details'>Switching to alert</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:44:07 PM</td>
-					<td class='step-details'>LoginTest --- validateLogin --- null --- null</td>
+					<td class='timestamp'>11:01:15 PM</td>
+					<td class='step-details'>AddStockTest --- select --- //select[@id='portfolioid'] --- Manish</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:44:07 PM</td>
-					<td class='step-details'>Validating Login</td>
+					<td class='timestamp'>11:01:15 PM</td>
+					<td class='step-details'>Selecting from //select[@id='portfolioid'] . Data - Manish</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:01:15 PM</td>
+					<td class='step-details'>AddStockTest --- waitForPageToLoad --- null --- null</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:01:15 PM</td>
+					<td class='step-details'>AddStockTest --- addStock --- null --- null</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:01:16 PM</td>
+					<td class='step-details'>Adding Stockdetails</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:01:16 PM</td>
+					<td class='step-details'>Clicking addStock</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:01:16 PM</td>
+					<td class='step-details'>Typing in addstockname . Data - Tata Steel Ltd</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:01:17 PM</td>
+					<td class='step-details'>Clicking //div[@id='ajax_listOfOptions']/div[1]</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:01:18 PM</td>
+					<td class='step-details'>Clicking stockPurchaseDate</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:01:23 PM</td>
+					<td class='step-details'>Typing in addstockqty . Data - 100</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:01:23 PM</td>
+					<td class='step-details'>Typing in addstockprice . Data - 200</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:01:24 PM</td>
+					<td class='step-details'>Clicking addStockButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:01:29 PM</td>
+					<td class='step-details'>Stock added and form submitted</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:01:29 PM</td>
+					<td class='step-details'>Validating company in table</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:01:29 PM</td>
+					<td class='step-details'>Expected stock name: Tata Steel</td>
 				</tr>
 			</tbody>
 		</table>
@@ -325,129 +359,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
-						<span class='test-name'>deletePortFolioTest</span>
-						<span class='test-time'>Aug 19, 2018 06:44:04 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug 19, 2018 06:44:04 PM</span>
-	<span class='label end-time'>Aug 19, 2018 06:45:27 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 22s+399ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:44:04 PM</td>
-					<td class='step-details'>Starting deletePortFolioTest</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:44:04 PM</td>
-					<td class='step-details'>DeletePortfolioTest --- openBrowser --- null --- Chrome</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:44:04 PM</td>
-					<td class='step-details'>Opening Browser Chrome</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:44:08 PM</td>
-					<td class='step-details'>DeletePortfolioTest --- navigate --- null --- null</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:44:08 PM</td>
-					<td class='step-details'>Navigating to website http://in.rediff.com</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:44:15 PM</td>
-					<td class='step-details'>DeletePortfolioTest --- login --- null --- null</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:44:15 PM</td>
-					<td class='step-details'>Logging in</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:45:02 PM</td>
-					<td class='step-details'>Switching to alert</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:45:23 PM</td>
-					<td class='step-details'>DeletePortfolioTest --- select --- //select[@id='portfolioid'] --- TestingPortfolio1</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:45:23 PM</td>
-					<td class='step-details'>Selecting from //select[@id='portfolioid'] . Data - TestingPortfolio1</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:45:26 PM</td>
-					<td class='step-details'>DeletePortfolioTest --- waitForPageToLoad --- null --- null</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:45:26 PM</td>
-					<td class='step-details'>DeletePortfolioTest --- click --- deletePortfolio --- null</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:45:26 PM</td>
-					<td class='step-details'>Clicking deletePortfolio</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:45:27 PM</td>
-					<td class='step-details'>DeletePortfolioTest --- acceptAlert --- null --- null</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:45:27 PM</td>
-					<td class='step-details'>Switching to alert</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:45:27 PM</td>
-					<td class='step-details'>Alert accepted successfully</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:45:27 PM</td>
-					<td class='step-details'>DeletePortfolioTest --- validateElementNotInList --- //select[@id='portfolioid'] --- TestingPortfolio1</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
-					<div class='test-heading'>
 						<span class='test-name'>buyOrSellStockTest</span>
-						<span class='test-time'>Aug 19, 2018 06:45:31 PM</span>
+						<span class='test-time'>Aug 19, 2018 11:01:34 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 19, 2018 06:45:31 PM</span>
-	<span class='label end-time'>Aug 19, 2018 06:47:30 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 58s+939ms</span>
+	<span class='label start-time'>Aug 19, 2018 11:01:34 PM</span>
+	<span class='label end-time'>Aug 19, 2018 11:03:37 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 2s+883ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -461,68 +381,58 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:45:31 PM</td>
+					<td class='timestamp'>11:01:34 PM</td>
 					<td class='step-details'>Starting buyOrSellStockTest</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:45:31 PM</td>
+					<td class='timestamp'>11:01:34 PM</td>
 					<td class='step-details'>BuyOrSellStockTest --- openBrowser --- null --- Chrome</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:45:31 PM</td>
+					<td class='timestamp'>11:01:34 PM</td>
 					<td class='step-details'>Opening Browser Chrome</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:45:36 PM</td>
+					<td class='timestamp'>11:01:39 PM</td>
 					<td class='step-details'>BuyOrSellStockTest --- navigate --- null --- null</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:45:36 PM</td>
+					<td class='timestamp'>11:01:39 PM</td>
 					<td class='step-details'>Navigating to website http://in.rediff.com</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:45:44 PM</td>
+					<td class='timestamp'>11:02:11 PM</td>
 					<td class='step-details'>BuyOrSellStockTest --- login --- null --- null</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:45:44 PM</td>
+					<td class='timestamp'>11:02:11 PM</td>
 					<td class='step-details'>Logging in</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:47:06 PM</td>
+					<td class='timestamp'>11:03:14 PM</td>
 					<td class='step-details'>Switching to alert</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:47:26 PM</td>
+					<td class='timestamp'>11:03:36 PM</td>
 					<td class='step-details'>BuyOrSellStockTest --- select --- //select[@id='portfolioid'] --- Manish</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:47:26 PM</td>
+					<td class='timestamp'>11:03:36 PM</td>
 					<td class='step-details'>Selecting from //select[@id='portfolioid'] . Data - Manish</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:47:30 PM</td>
+					<td class='timestamp'>11:03:37 PM</td>
 					<td class='step-details'>BuyOrSellStockTest --- waitForPageToLoad --- null --- null</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:47:30 PM</td>
-					<td class='step-details'>BuyOrSellStockTest --- buySellStock --- null --- null</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:47:30 PM</td>
-					<td class='step-details'>Finding Stock</td>
 				</tr>
 			</tbody>
 		</table>
@@ -531,17 +441,17 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
 					<div class='test-heading'>
-						<span class='test-name'>addStockTest</span>
-						<span class='test-time'>Aug 19, 2018 06:45:31 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>loginTest</span>
+						<span class='test-time'>Aug 19, 2018 11:01:57 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 19, 2018 06:45:31 PM</span>
-	<span class='label end-time'>Aug 19, 2018 06:47:19 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 48s+200ms</span>
+	<span class='label start-time'>Aug 19, 2018 11:01:57 PM</span>
+	<span class='label end-time'>Aug 19, 2018 11:02:33 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 36s+335ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -555,118 +465,274 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:45:31 PM</td>
-					<td class='step-details'>Starting addStockTest</td>
+					<td class='timestamp'>11:01:57 PM</td>
+					<td class='step-details'>Starting loginTest</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:45:31 PM</td>
-					<td class='step-details'>AddStockTest --- openBrowser --- null --- Chrome</td>
+					<td class='timestamp'>11:01:57 PM</td>
+					<td class='step-details'>LoginTest --- openBrowser --- null --- Mozilla</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:45:31 PM</td>
-					<td class='step-details'>Opening Browser Chrome</td>
+					<td class='timestamp'>11:01:57 PM</td>
+					<td class='step-details'>Opening Browser Mozilla</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:45:37 PM</td>
-					<td class='step-details'>AddStockTest --- navigate --- null --- null</td>
+					<td class='timestamp'>11:02:18 PM</td>
+					<td class='step-details'>LoginTest --- navigate --- null --- null</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:45:37 PM</td>
+					<td class='timestamp'>11:02:18 PM</td>
 					<td class='step-details'>Navigating to website http://in.rediff.com</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:45:45 PM</td>
-					<td class='step-details'>AddStockTest --- login --- null --- null</td>
+					<td class='timestamp'>11:02:29 PM</td>
+					<td class='step-details'>LoginTest --- login --- null --- null</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:45:45 PM</td>
+					<td class='timestamp'>11:02:29 PM</td>
+					<td class='step-details'>Logging in</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:02:33 PM</td>
+					<td class='step-details'>Object Not Found money_xpath</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>createPortFolioTest</span>
+						<span class='test-time'>Aug 19, 2018 11:02:34 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 19, 2018 11:02:34 PM</span>
+	<span class='label end-time'>Aug 19, 2018 11:04:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 35s+956ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:02:34 PM</td>
+					<td class='step-details'>Starting createPortFolioTest</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:02:34 PM</td>
+					<td class='step-details'>CreatePortFolioTest --- openBrowser --- null --- Chrome</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:02:34 PM</td>
+					<td class='step-details'>Opening Browser Chrome</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:02:42 PM</td>
+					<td class='step-details'>CreatePortFolioTest --- navigate --- null --- null</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:02:42 PM</td>
+					<td class='step-details'>Navigating to website http://in.rediff.com</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:02:51 PM</td>
+					<td class='step-details'>CreatePortFolioTest --- login --- null --- null</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:02:51 PM</td>
 					<td class='step-details'>Logging in</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:46:42 PM</td>
+					<td class='timestamp'>11:03:33 PM</td>
 					<td class='step-details'>Switching to alert</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:47:03 PM</td>
-					<td class='step-details'>AddStockTest --- select --- //select[@id='portfolioid'] --- Manish</td>
+					<td class='timestamp'>11:03:54 PM</td>
+					<td class='step-details'>CreatePortFolioTest --- click --- createPortfolio --- null</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:47:03 PM</td>
+					<td class='timestamp'>11:03:54 PM</td>
+					<td class='step-details'>Clicking createPortfolio</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:03:55 PM</td>
+					<td class='step-details'>CreatePortFolioTest --- clear --- create --- null</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:03:55 PM</td>
+					<td class='step-details'>Clearing create</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:03:55 PM</td>
+					<td class='step-details'>CreatePortFolioTest --- type --- create --- TestingPortfolio1</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:03:55 PM</td>
+					<td class='step-details'>Typing in create . Data - TestingPortfolio1</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:03:56 PM</td>
+					<td class='step-details'>CreatePortFolioTest --- click --- createPortfolioButton --- null</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:03:56 PM</td>
+					<td class='step-details'>Clicking createPortfolioButton</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:03:56 PM</td>
+					<td class='step-details'>CreatePortFolioTest --- waitForPageToLoad --- null --- null</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:03:56 PM</td>
+					<td class='step-details'>CreatePortFolioTest --- verifyPortFolio --- null --- TestingPortfolio1</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:03:56 PM</td>
+					<td class='step-details'>Verifying portfolio name TestingPortfolio1</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:04:09 PM</td>
+					<td class='step-details'>Values Dont match. Got value as Manish</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:04:10 PM</td>
+					<td class='step-details'>Screenshot-> com.aventstack.extentreports.ExtentTest@311b9d1f</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\JAVA-SELENIUM\localgitrep\CoreFramework\report\Sun_Aug_19_22_59_32_EDT_2018//screenshots//Sun_Aug_19_23_04_09_EDT_2018.png' width='10%' src='C:\JAVA-SELENIUM\localgitrep\CoreFramework\report\Sun_Aug_19_22_59_32_EDT_2018//screenshots//Sun_Aug_19_23_04_09_EDT_2018.png' data-src='C:\JAVA-SELENIUM\localgitrep\CoreFramework\report\Sun_Aug_19_22_59_32_EDT_2018//screenshots//Sun_Aug_19_23_04_09_EDT_2018.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>checkTransactionHistoryTest</span>
+						<span class='test-time'>Aug 19, 2018 11:03:38 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 19, 2018 11:03:38 PM</span>
+	<span class='label end-time'>Aug 19, 2018 11:05:02 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 23s+465ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:03:38 PM</td>
+					<td class='step-details'>Starting checkTransactionHistoryTest</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:03:38 PM</td>
+					<td class='step-details'>CheckTransactionHistoryTest --- openBrowser --- null --- Chrome</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:03:38 PM</td>
+					<td class='step-details'>Opening Browser Chrome</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:03:42 PM</td>
+					<td class='step-details'>CheckTransactionHistoryTest --- navigate --- null --- null</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:03:42 PM</td>
+					<td class='step-details'>Navigating to website http://in.rediff.com</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:04:10 PM</td>
+					<td class='step-details'>CheckTransactionHistoryTest --- login --- null --- null</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:04:10 PM</td>
+					<td class='step-details'>Logging in</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:04:40 PM</td>
+					<td class='step-details'>Switching to alert</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:05:01 PM</td>
+					<td class='step-details'>CheckTransactionHistoryTest --- select --- //select[@id='portfolioid'] --- Manish</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>11:05:01 PM</td>
 					<td class='step-details'>Selecting from //select[@id='portfolioid'] . Data - Manish</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:47:07 PM</td>
-					<td class='step-details'>AddStockTest --- waitForPageToLoad --- null --- null</td>
+					<td class='timestamp'>11:05:02 PM</td>
+					<td class='step-details'>CheckTransactionHistoryTest --- waitForPageToLoad --- null --- null</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:47:07 PM</td>
-					<td class='step-details'>AddStockTest --- addStock --- null --- null</td>
+					<td class='timestamp'>11:05:02 PM</td>
+					<td class='step-details'>CheckTransactionHistoryTest --- checkHistory --- null --- null</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:47:07 PM</td>
-					<td class='step-details'>Adding Stockdetails</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:47:07 PM</td>
-					<td class='step-details'>Clicking addStock</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:47:08 PM</td>
-					<td class='step-details'>Typing in addstockname . Data - Tata Steel Ltd</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:47:09 PM</td>
-					<td class='step-details'>Clicking //div[@id='ajax_listOfOptions']/div[1]</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:47:09 PM</td>
-					<td class='step-details'>Clicking stockPurchaseDate</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:47:14 PM</td>
-					<td class='step-details'>Typing in addstockqty . Data - 100</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:47:14 PM</td>
-					<td class='step-details'>Typing in addstockprice . Data - 200</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:47:15 PM</td>
-					<td class='step-details'>Clicking addStockButton</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:47:19 PM</td>
-					<td class='step-details'>Stock added and form submitted</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:47:19 PM</td>
-					<td class='step-details'>Validating company in table</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:47:19 PM</td>
-					<td class='step-details'>Expected stock name: Tata Steel</td>
+					<td class='timestamp'>11:05:02 PM</td>
+					<td class='step-details'>Checking history</td>
 				</tr>
 			</tbody>
 		</table>
@@ -706,10 +772,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>5</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>3</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>3</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -724,7 +790,7 @@
 					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>82</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='5.682%'>5</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='94.318%'>83</span> others
 				</div>
 			</div>
 		</div>
@@ -743,31 +809,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>5</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>82</div>
+					<div class='panel-lead'>88</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 19, 2018 06:42:32 PM</div>
+					<div class='panel-lead'>Aug 19, 2018 10:59:32 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 19, 2018 06:47:32 PM</div>
+			 		<div class='panel-lead'>Aug 19, 2018 11:05:04 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>300,395ms</div>
+					<div class='panel-lead'>331,137ms</div>
 				</div>
 			</div>
 		</div>
@@ -780,22 +846,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 5,
-				failParent: 0,
+				passParent: 3,
+				failParent: 3,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 3,
 				
 				passChild: 0,
-				failChild: 0,
+				failChild: 5,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 82,
-				exceptionsChild: 0,
+				infoChild: 83,
+				exceptionsChild: 5,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

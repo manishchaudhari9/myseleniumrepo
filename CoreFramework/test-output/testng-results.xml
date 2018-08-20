@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="2" failed="4" ignored="0" total="7" passed="1">
+<testng-results skipped="2" failed="6" ignored="0" total="8" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Stock Suite" duration-ms="165582" started-at="2018-08-19T23:30:23Z" finished-at="2018-08-19T23:33:08Z">
+  <suite name="Stock Suite" duration-ms="335985" started-at="2018-08-20T02:59:28Z" finished-at="2018-08-20T03:05:04Z">
     <groups>
     </groups>
-    <test name="Add Delete Stock Test" duration-ms="94778" started-at="2018-08-19T23:30:23Z" finished-at="2018-08-19T23:31:57Z">
+    <test name="Add Delete Stock Test" duration-ms="125756" started-at="2018-08-20T02:59:28Z" finished-at="2018-08-20T03:01:34Z">
       <class name="com.selenium.testcases.stocksuite.AddDelStockTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.selenium.testcases.stocksuite.AddDelStockTest@61a485d2]" name="init" is-config="true" duration-ms="310" started-at="2018-08-19T19:30:23Z" finished-at="2018-08-19T19:30:23Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.selenium.testcases.stocksuite.AddDelStockTest@3e2943ab]" name="init" is-config="true" duration-ms="3934" started-at="2018-08-19T22:59:28Z" finished-at="2018-08-19T22:59:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.stocksuite.AddDelStockTest@61a485d2]" name="initTest" is-config="true" duration-ms="1" started-at="2018-08-19T19:30:23Z" finished-at="2018-08-19T19:30:23Z">
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.stocksuite.AddDelStockTest@3e2943ab]" name="initTest" is-config="true" duration-ms="1163" started-at="2018-08-19T22:59:32Z" finished-at="2018-08-19T22:59:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method status="FAIL" signature="addStockTest(java.util.Hashtable)[pri:1, instance:com.selenium.testcases.stocksuite.AddDelStockTest@61a485d2]" name="addStockTest" duration-ms="90728" started-at="2018-08-19T19:30:23Z" data-provider="getData" finished-at="2018-08-19T19:31:54Z">
+        <test-method status="FAIL" signature="addStockTest(java.util.Hashtable)[pri:1, instance:com.selenium.testcases.stocksuite.AddDelStockTest@3e2943ab]" name="addStockTest" duration-ms="117087" started-at="2018-08-19T22:59:33Z" data-provider="getData" finished-at="2018-08-19T23:01:30Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ExpectedStockName=Tata Steel, Date=8/19/2018, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Quantity=100, StockName=Tata Steel Ltd, Browser=Mozilla}]]>
+                <![CDATA[{ExpectedStockName=Tata Steel, Date=8/19/2018, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Quantity=100, StockName=Tata Steel Ltd, Browser=Chrome}]]>
               </value>
             </param>
           </params>
@@ -45,62 +45,48 @@
 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
 	at org.testng.TestRunner.run(TestRunner.java:610)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.StaleElementReferenceException: The element reference of <td> is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'MANISH-PC', ip: '192.168.1.237', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_162'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 11024, moz:profile: C:\Users\Manish\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: e6a50978-a8e3-41fe-9c10-7e5ae3cdc06e
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
-	at com.selenium.keywords.AppKeywords.getRowWithCellData(AppKeywords.java:254)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 10, Size: 10
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at com.selenium.keywords.AppKeywords.getRowWithCellData(AppKeywords.java:253)
 	at com.selenium.keywords.AppKeywords.addStock(AppKeywords.java:106)
-	... 26 more
+	... 27 more
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.reflect.InvocationTargetException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addStockTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.stocksuite.AddDelStockTest@61a485d2]" name="quit" is-config="true" duration-ms="3729" started-at="2018-08-19T19:31:54Z" finished-at="2018-08-19T19:31:57Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.stocksuite.AddDelStockTest@3e2943ab]" name="quit" is-config="true" duration-ms="3195" started-at="2018-08-19T23:01:30Z" finished-at="2018-08-19T23:01:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method status="SKIP" signature="deleteStockTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.stocksuite.AddDelStockTest@61a485d2]" name="deleteStockTest" duration-ms="0" started-at="2018-08-19T19:31:57Z" data-provider="getData" depends-on-methods="com.selenium.testcases.stocksuite.AddDelStockTest.addStockTest" finished-at="2018-08-19T19:31:57Z">
+        <test-method status="SKIP" signature="deleteStockTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.stocksuite.AddDelStockTest@3e2943ab]" name="deleteStockTest" duration-ms="0" started-at="2018-08-19T23:01:34Z" data-provider="getData" depends-on-methods="com.selenium.testcases.stocksuite.AddDelStockTest.addStockTest" finished-at="2018-08-19T23:01:34Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method AddDelStockTest.deleteStockTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.stocksuite.AddDelStockTest@61a485d2] depends on not successfully finished methods]]>
+              <![CDATA[Method AddDelStockTest.deleteStockTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.stocksuite.AddDelStockTest@3e2943ab] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method AddDelStockTest.deleteStockTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.stocksuite.AddDelStockTest@61a485d2] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method AddDelStockTest.deleteStockTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.stocksuite.AddDelStockTest@3e2943ab] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
 	at org.testng.TestRunner.run(TestRunner.java:610)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
@@ -112,21 +98,21 @@ Session ID: e6a50978-a8e3-41fe-9c10-7e5ae3cdc06e
         </test-method> <!-- deleteStockTest -->
       </class> <!-- com.selenium.testcases.stocksuite.AddDelStockTest -->
     </test> <!-- Add Delete Stock Test -->
-    <test name="Portfolio Test" duration-ms="165582" started-at="2018-08-19T23:30:23Z" finished-at="2018-08-19T23:33:08Z">
+    <test name="Portfolio Test" duration-ms="210039" started-at="2018-08-20T03:01:34Z" finished-at="2018-08-20T03:05:04Z">
       <class name="com.selenium.testcases.stocksuite.BuySellStockTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.selenium.testcases.stocksuite.BuySellStockTest@32e6e9c3]" name="init" is-config="true" duration-ms="279" started-at="2018-08-19T19:30:23Z" finished-at="2018-08-19T19:30:23Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.selenium.testcases.stocksuite.BuySellStockTest@191ae03f]" name="init" is-config="true" duration-ms="273" started-at="2018-08-19T23:01:34Z" finished-at="2018-08-19T23:01:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.stocksuite.BuySellStockTest@32e6e9c3]" name="initTest" is-config="true" duration-ms="1" started-at="2018-08-19T19:30:23Z" finished-at="2018-08-19T19:30:23Z">
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.stocksuite.BuySellStockTest@191ae03f]" name="initTest" is-config="true" duration-ms="0" started-at="2018-08-19T23:01:34Z" finished-at="2018-08-19T23:01:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method status="FAIL" signature="buyOrSellStockTest(java.util.Hashtable)[pri:1, instance:com.selenium.testcases.stocksuite.BuySellStockTest@32e6e9c3]" name="buyOrSellStockTest" duration-ms="84031" started-at="2018-08-19T19:30:23Z" data-provider="getData" finished-at="2018-08-19T19:31:47Z">
+        <test-method status="FAIL" signature="buyOrSellStockTest(java.util.Hashtable)[pri:1, instance:com.selenium.testcases.stocksuite.BuySellStockTest@191ae03f]" name="buyOrSellStockTest" duration-ms="122929" started-at="2018-08-19T23:01:34Z" data-provider="getData" finished-at="2018-08-19T23:03:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Date=8/19/2018, Action=Buy, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Quantity=100, StockName=Tata Motors Ltd., Browser=Mozilla}]]>
+                <![CDATA[{Date=8/19/2018, Action=Buy, PurchasePrice=200, PortfolioName=Manish, Runmode=Y, Quantity=100, StockName=Tata Motors Ltd., Browser=Chrome}]]>
               </value>
             </param>
           </params>
@@ -152,38 +138,57 @@ Session ID: e6a50978-a8e3-41fe-9c10-7e5ae3cdc06e
 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
 	at org.testng.TestRunner.run(TestRunner.java:610)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.IndexOutOfBoundsException: Index: 10, Size: 10
-	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
-	at java.util.ArrayList.get(ArrayList.java:433)
-	at com.selenium.keywords.AppKeywords.getRowWithCellData(AppKeywords.java:253)
-	at com.selenium.keywords.AppKeywords.buySellStock(AppKeywords.java:141)
-	... 26 more
+Caused by: org.openqa.selenium.WebDriverException: unknown error: jQuery is not defined
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'MANISH-PC', ip: '192.168.1.237', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_162'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\Manish\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
+Session ID: 6b087b747e2edffae3cd664a98f00e45
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:482)
+	at com.selenium.keywords.GenericKeywords.waitForPageToLoad(GenericKeywords.java:213)
+	... 27 more
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.reflect.InvocationTargetException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- buyOrSellStockTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.stocksuite.BuySellStockTest@32e6e9c3]" name="quit" is-config="true" duration-ms="2877" started-at="2018-08-19T19:31:47Z" finished-at="2018-08-19T19:31:50Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.stocksuite.BuySellStockTest@191ae03f]" name="quit" is-config="true" duration-ms="1115" started-at="2018-08-19T23:03:37Z" finished-at="2018-08-19T23:03:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.stocksuite.BuySellStockTest@32e6e9c3]" name="initTest" is-config="true" duration-ms="1" started-at="2018-08-19T19:31:50Z" finished-at="2018-08-19T19:31:50Z">
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.stocksuite.BuySellStockTest@191ae03f]" name="initTest" is-config="true" duration-ms="1" started-at="2018-08-19T23:03:38Z" finished-at="2018-08-19T23:03:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method status="FAIL" signature="checkTransactionHistoryTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.stocksuite.BuySellStockTest@32e6e9c3]" name="checkTransactionHistoryTest" duration-ms="75654" started-at="2018-08-19T19:31:50Z" data-provider="getData" finished-at="2018-08-19T19:33:06Z">
+        <test-method status="FAIL" signature="checkTransactionHistoryTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.stocksuite.BuySellStockTest@191ae03f]" name="checkTransactionHistoryTest" duration-ms="84589" started-at="2018-08-19T23:03:38Z" data-provider="getData" finished-at="2018-08-19T23:05:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{PortfolioName=Manish, Runmode=Y, StockName=Tata Motors Ltd., Browser=Mozilla}]]>
+                <![CDATA[{PortfolioName=Manish, Runmode=Y, StockName=Tata Motors Ltd., Browser=Chrome}]]>
               </value>
             </param>
           </params>
@@ -209,10 +214,11 @@ Caused by: java.lang.IndexOutOfBoundsException: Index: 10, Size: 10
 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
 	at org.testng.TestRunner.run(TestRunner.java:610)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
@@ -221,38 +227,97 @@ Caused by: java.lang.IndexOutOfBoundsException: Index: 10, Size: 10
 	at java.util.ArrayList.get(ArrayList.java:433)
 	at com.selenium.keywords.AppKeywords.getRowWithCellData(AppKeywords.java:253)
 	at com.selenium.keywords.AppKeywords.checkHistory(AppKeywords.java:163)
-	... 26 more
+	... 27 more
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.reflect.InvocationTargetException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTransactionHistoryTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.stocksuite.BuySellStockTest@32e6e9c3]" name="quit" is-config="true" duration-ms="2718" started-at="2018-08-19T19:33:06Z" finished-at="2018-08-19T19:33:08Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.stocksuite.BuySellStockTest@191ae03f]" name="quit" is-config="true" duration-ms="1074" started-at="2018-08-19T23:05:03Z" finished-at="2018-08-19T23:05:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.selenium.testcases.stocksuite.BuySellStockTest -->
     </test> <!-- Portfolio Test -->
   </suite> <!-- Stock Suite -->
-  <suite name="My suite" duration-ms="0" started-at="2018-08-19T23:33:09Z" finished-at="2018-08-19T23:33:09Z">
+  <suite name="My suite" duration-ms="0" started-at="2018-08-20T03:05:05Z" finished-at="2018-08-20T03:05:05Z">
     <groups>
     </groups>
   </suite> <!-- My suite -->
-  <suite name="Portfolio Suite" duration-ms="126665" started-at="2018-08-19T23:28:16Z" finished-at="2018-08-19T23:30:23Z">
+  <suite name="Portfolio Suite" duration-ms="283239" started-at="2018-08-20T02:59:28Z" finished-at="2018-08-20T03:04:11Z">
     <groups>
     </groups>
-    <test name="Login Test" duration-ms="108231" started-at="2018-08-19T23:28:16Z" finished-at="2018-08-19T23:30:04Z">
+    <test name="Login Test" duration-ms="185572" started-at="2018-08-20T02:59:28Z" finished-at="2018-08-20T03:02:33Z">
       <class name="com.selenium.testcases.portfoliosuite.LoginTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@617c74e5]" name="init" is-config="true" duration-ms="2279" started-at="2018-08-19T19:28:16Z" finished-at="2018-08-19T19:28:18Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@36b0fcd5]" name="init" is-config="true" duration-ms="4101" started-at="2018-08-19T22:59:28Z" finished-at="2018-08-19T22:59:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@617c74e5]" name="initTest" is-config="true" duration-ms="622" started-at="2018-08-19T19:28:18Z" finished-at="2018-08-19T19:28:19Z">
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@36b0fcd5]" name="initTest" is-config="true" duration-ms="1068" started-at="2018-08-19T22:59:32Z" finished-at="2018-08-19T22:59:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@617c74e5]" name="loginTest" duration-ms="101715" started-at="2018-08-19T19:28:19Z" data-provider="getData" finished-at="2018-08-19T19:30:01Z">
+        <test-method status="FAIL" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@36b0fcd5]" name="loginTest" duration-ms="142295" started-at="2018-08-19T22:59:33Z" data-provider="getData" finished-at="2018-08-19T23:01:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=manish_chaudhari18, ExpectedResult=Loginsuccess, Password=ManishSarita, Runmode=Y, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.reflect.InvocationTargetException">
+            <full-stacktrace>
+              <![CDATA[java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.selenium.driver.DriverScript.executeKeywords(DriverScript.java:46)
+	at com.selenium.testcases.portfoliosuite.LoginTest.loginTest(LoginTest.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Got  result Loginfailure
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.selenium.keywords.GenericKeywords.assertAll(GenericKeywords.java:384)
+	at com.selenium.keywords.GenericKeywords.reportFailure(GenericKeywords.java:361)
+	at com.selenium.keywords.AppKeywords.validateLogin(AppKeywords.java:65)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.reflect.InvocationTargetException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@36b0fcd5]" name="quit" is-config="true" duration-ms="1452" started-at="2018-08-19T23:01:56Z" finished-at="2018-08-19T23:01:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@36b0fcd5]" name="initTest" is-config="true" duration-ms="1" started-at="2018-08-19T23:01:57Z" finished-at="2018-08-19T23:01:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="FAIL" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@36b0fcd5]" name="loginTest" duration-ms="36347" started-at="2018-08-19T23:01:57Z" data-provider="getData" finished-at="2018-08-19T23:02:33Z">
           <params>
             <param index="0">
               <value>
@@ -260,30 +325,143 @@ Caused by: java.lang.IndexOutOfBoundsException: Index: 10, Size: 10
               </value>
             </param>
           </params>
+          <exception class="java.lang.reflect.InvocationTargetException">
+            <full-stacktrace>
+              <![CDATA[java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.selenium.driver.DriverScript.executeKeywords(DriverScript.java:46)
+	at com.selenium.testcases.portfoliosuite.LoginTest.loginTest(LoginTest.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'MANISH-PC', ip: '192.168.1.237', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_162'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 11012, moz:profile: C:\Users\Manish\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: c623667e-a956-4227-bcfc-0cf519963bed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:291)
+	at com.selenium.keywords.GenericKeywords.takeSceenShot(GenericKeywords.java:371)
+	at com.selenium.keywords.GenericKeywords.reportFailure(GenericKeywords.java:353)
+	at com.selenium.keywords.GenericKeywords.getObject(GenericKeywords.java:313)
+	at com.selenium.keywords.AppKeywords.login(AppKeywords.java:23)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.reflect.InvocationTargetException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@617c74e5]" name="quit" is-config="true" duration-ms="3522" started-at="2018-08-19T19:30:01Z" finished-at="2018-08-19T19:30:04Z">
+        <test-method status="FAIL" signature="quit()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@36b0fcd5]" name="quit" is-config="true" duration-ms="0" started-at="2018-08-19T23:02:33Z" finished-at="2018-08-19T23:02:33Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Tried to run command without establishing a connection
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'MANISH-PC', ip: '192.168.1.237', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_162'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 11012, moz:profile: C:\Users\Manish\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: c623667e-a956-4227-bcfc-0cf519963bed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'MANISH-PC', ip: '192.168.1.237', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_162'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 11012, moz:profile: C:\Users\Manish\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: c623667e-a956-4227-bcfc-0cf519963bed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:445)
+	at com.selenium.keywords.GenericKeywords.quit(GenericKeywords.java:289)
+	at com.selenium.driver.DriverScript.quit(DriverScript.java:78)
+	at com.selenium.base.BaseTest.quit(BaseTest.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.selenium.testcases.portfoliosuite.LoginTest -->
     </test> <!-- Login Test -->
-    <test name="Portfolio Test" duration-ms="126657" started-at="2018-08-19T23:28:16Z" finished-at="2018-08-19T23:30:23Z">
+    <test name="Portfolio Test" duration-ms="97566" started-at="2018-08-20T03:02:34Z" finished-at="2018-08-20T03:04:11Z">
       <class name="com.selenium.testcases.portfoliosuite.PortFolioTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@26f67b76]" name="init" is-config="true" duration-ms="2262" started-at="2018-08-19T19:28:16Z" finished-at="2018-08-19T19:28:18Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@4215838f]" name="init" is-config="true" duration-ms="354" started-at="2018-08-19T23:02:34Z" finished-at="2018-08-19T23:02:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@26f67b76]" name="initTest" is-config="true" duration-ms="622" started-at="2018-08-19T19:28:18Z" finished-at="2018-08-19T19:28:19Z">
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@4215838f]" name="initTest" is-config="true" duration-ms="1" started-at="2018-08-19T23:02:34Z" finished-at="2018-08-19T23:02:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method status="FAIL" signature="createPortFolioTest(java.util.Hashtable)[pri:1, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@26f67b76]" name="createPortFolioTest" duration-ms="120550" started-at="2018-08-19T19:28:19Z" data-provider="getData" finished-at="2018-08-19T19:30:20Z">
+        <test-method status="FAIL" signature="createPortFolioTest(java.util.Hashtable)[pri:1, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@4215838f]" name="createPortFolioTest" duration-ms="95957" started-at="2018-08-19T23:02:34Z" data-provider="getData" finished-at="2018-08-19T23:04:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{PortfolioName=TestingPortfolio1, Runmode=Y, Browser=Mozilla}]]>
+                <![CDATA[{PortfolioName=TestingPortfolio1, Runmode=Y, Browser=Chrome}]]>
               </value>
             </param>
           </params>
@@ -309,59 +487,50 @@ Caused by: java.lang.IndexOutOfBoundsException: Index: 10, Size: 10
 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
 	at org.testng.TestRunner.run(TestRunner.java:610)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.JavascriptException: ReferenceError: jQuery is not defined
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'MANISH-PC', ip: '192.168.1.237', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_162'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9788, moz:profile: C:\Users\Manish\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ab207020-5b0c-430d-a94e-53fede7cd62d
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:482)
-	at com.selenium.keywords.GenericKeywords.waitForPageToLoad(GenericKeywords.java:213)
-	... 26 more
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Values Dont match. Got value as Manish
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.selenium.keywords.GenericKeywords.assertAll(GenericKeywords.java:384)
+	at com.selenium.keywords.GenericKeywords.reportFailure(GenericKeywords.java:361)
+	at com.selenium.keywords.GenericKeywords.waitTillSelectionToBe(GenericKeywords.java:284)
+	at com.selenium.keywords.AppKeywords.verifyPortFolio(AppKeywords.java:86)
+	... 27 more
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.reflect.InvocationTargetException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPortFolioTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@26f67b76]" name="quit" is-config="true" duration-ms="3122" started-at="2018-08-19T19:30:20Z" finished-at="2018-08-19T19:30:23Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@4215838f]" name="quit" is-config="true" duration-ms="1196" started-at="2018-08-19T23:04:10Z" finished-at="2018-08-19T23:04:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method status="SKIP" signature="deletePortFolioTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@26f67b76]" name="deletePortFolioTest" duration-ms="1" started-at="2018-08-19T19:30:23Z" data-provider="getData" depends-on-methods="com.selenium.testcases.portfoliosuite.PortFolioTest.createPortFolioTest" finished-at="2018-08-19T19:30:23Z">
+        <test-method status="SKIP" signature="deletePortFolioTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@4215838f]" name="deletePortFolioTest" duration-ms="0" started-at="2018-08-19T23:04:11Z" data-provider="getData" depends-on-methods="com.selenium.testcases.portfoliosuite.PortFolioTest.createPortFolioTest" finished-at="2018-08-19T23:04:11Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method PortFolioTest.deletePortFolioTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@26f67b76] depends on not successfully finished methods]]>
+              <![CDATA[Method PortFolioTest.deletePortFolioTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@4215838f] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method PortFolioTest.deletePortFolioTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@26f67b76] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method PortFolioTest.deletePortFolioTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@4215838f] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
 	at org.testng.TestRunner.run(TestRunner.java:610)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)

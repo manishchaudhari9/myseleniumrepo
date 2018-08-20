@@ -25,8 +25,7 @@ public class ExtentManager {
     		screenshotFolderPath=reportPath+"screenshots//";
     		System.out.println(reportPath+fileName);
     		createInstance(reportPath+fileName);
-    	}
-    	
+    	}	
         return extent;
     }
     
