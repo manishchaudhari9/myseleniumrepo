@@ -15,7 +15,10 @@ import com.aventstack.extentreports.Status;
 
 public class AppKeywords extends GenericKeywords{
 
+	String defaultUsername="manish_chaudhari18";
+	
 	public void login(){
+		System.out.println("Global variable value in Login Function : "+defaultUsername);
 		test.log(Status.INFO, "Logging in");
 //		click("money_xpath");
 //		click("signin_xpath");
@@ -26,7 +29,8 @@ public class AppKeywords extends GenericKeywords{
 		String password="";
 		
 		if(data.get("Username") == null){
-			username=envProp.getProperty("defaultUsername");
+//			username=envProp.getProperty("defaultUsername");
+			username=defaultUsername;
 			password=envProp.getProperty("defaultPass");
 		}else{
 			username=data.get("Username");
@@ -56,7 +60,9 @@ public class AppKeywords extends GenericKeywords{
 		boolean result = isElementPresent("portfolioSelection_xpath");
 		String expectedResult=data.get("ExpectedResult");
 		String actualResult="";
-		
+		System.out.println("Global variable value in validateLogin function : "+defaultUsername);
+		defaultUsername="Testing";
+		System.out.println("Global variable value in validateLogin function : "+defaultUsername);
 		if(result)	
 			actualResult="Loginsuccess";
 		else
@@ -254,8 +260,7 @@ public class AppKeywords extends GenericKeywords{
 				if(!cell.getText().trim().equals("") && data.contains(cell.getText()))
 					return ++rNum;
 			}
-		}
-		
+		}		
 		return -1;// not found
 	}
 	
