@@ -1,0 +1,22 @@
+Jenkins:
+URL: http://localhost:8080/
+User: Manish
+Pwd: jenkins
+
+GitHub:
+Uname: manishchaudhari9
+Pwd: Github1
+Repo Name: myseleniumrep
+
+*******  Git Commands  *******
+git add .
+git status
+git push origin master
+git commit -m "Updated"
+
+
+Go to below path and fire the command java -jar jenkins.war
+cd C:\JAVA-SELENIUM\Softwares
+java -jar jenkins.war
+
+localhost:8080
