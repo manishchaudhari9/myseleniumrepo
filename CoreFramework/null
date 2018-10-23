@@ -1,3 +1,78 @@
-1536801988077	geckodriver	INFO	geckodriver 0.21.0
-1536801988177	geckodriver	INFO	Listening on 127.0.0.1:33893
-1536801988657	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Manish\\AppData\\Local\\Temp\\rust_mozprofile.01MFmKHz3HLk"
+1539833388922	geckodriver	INFO	geckodriver 0.21.0
+1539833389034	geckodriver	INFO	Listening on 127.0.0.1:12850
+1539833389524	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Manish\\AppData\\Local\\Temp\\rust_mozprofile.TnxlvwALtogF"
+[Child 15256, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 12120, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+1539833405333	Marionette	INFO	Listening on port 52653
+1539833405557	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539833406109	Marionette	DEBUG	[6442450945] Frame script loaded
+1539833406294	Marionette	DEBUG	[6442450945] Frame script registered
+1539833416509	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1539833416778	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1539833421373	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://in.rediff.com/
+1539833421698	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450958
+1539833426171	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://in.rediff.com/
+1539833426488	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://in.rediff.com/
+1539833428862	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://in.rediff.com/
+1539833428875	Marionette	DEBUG	[6442450945] Received DOM event unload for http://in.rediff.com/
+1539833430086	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450949
+1539833430086	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450951
+1539833430087	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450954
+1539833430088	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450956
+1539833430088	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451000
+1539833430088	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450974
+1539833430089	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450991
+1539833430089	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450981
+1539833430089	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450964
+1539833430089	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450976
+1539833430090	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450977
+1539833430090	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450978
+1539833430090	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450979
+1539833430091	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450980
+1539833430091	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450970
+1539833430091	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450971
+1539833430092	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450995
+1539833430092	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450997
+1539833430092	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450959
+1539833430092	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450960
+1539833430092	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450968
+1539833431826	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://money.rediff.com/index.html
+1539833435177	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://money.rediff.com/index.html
+1539833435316	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for https://money.rediff.com/index.html
+1539833435751	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451007
+1539833435924	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451009
+1539833435929	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451010
+1539833435937	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451011
+1539833437075	Marionette	DEBUG	[6442450945] Received DOM event pagehide for https://money.rediff.com/index.html
+1539833437096	Marionette	DEBUG	[6442450945] Received DOM event unload for https://money.rediff.com/index.html
+JavaScript error: https://cdn.zorosrv.com/vpaid/units/18_41_0/infra/cmTagEXPANDABLE.js, line 11: TypeError: this.iframe.contentWindow is null
+JavaScript error: https://cdn.zorosrv.com/vpaid/units/18_41_0/infra/cmTagEXPANDABLE.js, line 11: TypeError: this.iframe.contentWindow is null
+1539833438689	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451037
+1539833438689	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451040
+1539833438689	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451022
+1539833438689	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451031
+1539833438689	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451047
+1539833438690	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451042
+1539833438690	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451044
+1539833438690	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451024
+1539833438690	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451032
+1539833438690	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451026
+1539833438690	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451018
+1539833438690	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451015
+1539833438691	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451019
+1539833438691	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451005
+1539833438691	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451034
+1539833439726	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://portfolio.rediff.com/portfolio-login
+1539833439844	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://portfolio.rediff.com/portfolio-login
+1539833440450	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1539833441445	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1539833466587	Marionette	INFO	Stopped listening on port 52653
+[Parent 12120, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13752, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 12120, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9756, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 12120, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9856, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9856, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 14216, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 12120, Gecko_IOThread] WARNING: pipe error: 232: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 513

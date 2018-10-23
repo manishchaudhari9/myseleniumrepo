@@ -3,13 +3,6 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Stock Suite]">
   <test name="Add Delete Stock Test(failed)">
     <classes>
-      <class name="com.selenium.testcases.stocksuite.BuySellStockTest">
-        <methods>
-          <include name="init"/>
-          <include name="quit"/>
-          <include name="initTest"/>
-        </methods>
-      </class> <!-- com.selenium.testcases.stocksuite.BuySellStockTest -->
       <class name="com.selenium.testcases.stocksuite.AddDelStockTest">
         <methods>
           <include name="init"/>
@@ -19,10 +12,24 @@
           <include name="initTest"/>
         </methods>
       </class> <!-- com.selenium.testcases.stocksuite.AddDelStockTest -->
+      <class name="com.selenium.testcases.stocksuite.BuySellStockTest">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+          <include name="initTest"/>
+        </methods>
+      </class> <!-- com.selenium.testcases.stocksuite.BuySellStockTest -->
     </classes>
   </test> <!-- Add Delete Stock Test(failed) -->
   <test name="Portfolio Test(failed)">
     <classes>
+      <class name="com.selenium.testcases.stocksuite.AddDelStockTest">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+          <include name="initTest"/>
+        </methods>
+      </class> <!-- com.selenium.testcases.stocksuite.AddDelStockTest -->
       <class name="com.selenium.testcases.stocksuite.BuySellStockTest">
         <methods>
           <include name="init"/>
@@ -32,13 +39,6 @@
           <include name="initTest"/>
         </methods>
       </class> <!-- com.selenium.testcases.stocksuite.BuySellStockTest -->
-      <class name="com.selenium.testcases.stocksuite.AddDelStockTest">
-        <methods>
-          <include name="init"/>
-          <include name="quit"/>
-          <include name="initTest"/>
-        </methods>
-      </class> <!-- com.selenium.testcases.stocksuite.AddDelStockTest -->
     </classes>
   </test> <!-- Portfolio Test(failed) -->
 </suite> <!-- Failed suite [Stock Suite] -->

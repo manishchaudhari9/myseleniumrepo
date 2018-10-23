@@ -6,7 +6,7 @@
       <class name="com.selenium.testcases.portfoliosuite.LoginTest">
         <methods>
           <include name="init"/>
-          <include name="loginTest" invocation-numbers="1"/>
+          <include name="loginTest" invocation-numbers="0"/>
           <include name="quit"/>
           <include name="initTest"/>
         </methods>
