@@ -12,6 +12,8 @@ import com.selenium.util.DataUtil;
 
 public class LoginTest extends BaseTest {
 	
+	public String s = "Test String for debugging";
+	
 	@Test(dataProvider="getData")
 	public void loginTest(Hashtable<String,String> data) throws Exception{		
 		test.log(Status.INFO, "Starting "+ testName);

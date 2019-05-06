@@ -45,7 +45,7 @@ public class GenericKeywords {
 	public SoftAssert softAssert = new SoftAssert();
 	
 	
-	/********************* Setter functions ***************************/
+	/********************* Getter & Setter functions ***************************/
 	public String getProceedOnFail() {
 		return proceedOnFail;
 	}
@@ -62,7 +62,6 @@ public class GenericKeywords {
 		this.test = test;
 	}
 
-
 	public void setProp(Properties prop) {
 		this.prop = prop;
 	}
@@ -78,9 +77,11 @@ public class GenericKeywords {
 	public void setData(Hashtable<String, String> data) {
 		this.data = data;
 	}
+	
     /*****************************************/	
 
 	public void openBrowser(){
+		
 		String browser=data.get(dataKey);
 		test.log(Status.INFO,"Opening Browser "+browser );
 		if(prop.getProperty("gridRun").equals("Y")) {
@@ -107,10 +108,6 @@ public class GenericKeywords {
 				cap = DesiredCapabilities.safari();
 				cap.setJavascriptEnabled(true);
 				cap.setPlatform(Platform.MAC);
-			}else if(browser.equalsIgnoreCase("Safari")) {
-				cap = DesiredCapabilities.safari();
-				cap.setJavascriptEnabled(true);
-				cap.setPlatform(Platform.MAC);
 			}
 			
 			try {
@@ -124,7 +121,7 @@ public class GenericKeywords {
 				// options
 				System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "null");
 				// invoke profile
-				System.setProperty("webdriver.gecko.driver", "C:\\JAVA-SELENIUM\\drivers\\geckodriver.exe");
+//				System.setProperty("webdriver.gecko.driver", "C:\\JAVA-SELENIUM\\drivers\\geckodriver.exe");
 				driver = new FirefoxDriver();
 			}else if(browser.equals("Chrome")){
 				// init options
@@ -141,16 +138,19 @@ public class GenericKeywords {
 		driver.manage().window().maximize();
 	}
 	
+	/*****************************************/	
 	public void navigate(){
 		test.log(Status.INFO,"Navigating to website "+envProp.getProperty(objectKey));
 		driver.get(envProp.getProperty(objectKey));
 	}
 
+	/*****************************************/	
 	public void click(){
 		test.log(Status.INFO,"Clicking "+prop.getProperty(objectKey));
 		getObject(objectKey).click();
 	}
 	
+	/*****************************************/	
 	public void click(String objectKey){
 		setObjectKey(objectKey);
 		click();
@@ -286,6 +286,7 @@ public class GenericKeywords {
 		if(driver!=null)
 			driver.quit();
 	}
+	
 	/********************* Utitlity Methods ************************/
 	// central function to extract Objects
 	public WebElement getObject(String objectKey){
@@ -300,19 +301,18 @@ public class GenericKeywords {
 		else if(objectKey.endsWith("_name"))
 			e = driver.findElement(By.name(prop.getProperty(objectKey)));
 
-		WebDriverWait wait = new WebDriverWait(driver,20);
-		// visibility of Object
-		wait.until(ExpectedConditions.visibilityOf(e));
-		// state of the object-  clickable
-		wait.until(ExpectedConditions.elementToBeClickable(e));
+		WebDriverWait wait = new WebDriverWait(driver,20);	
+		wait.until(ExpectedConditions.visibilityOf(e));	// visibility of Object
+		wait.until(ExpectedConditions.elementToBeClickable(e));	// state of the object-  clickable
 		
-		}catch(Exception ex){
-			// failure -  report that failure
-			reportFailure("Object Not Found "+ objectKey);
+		}catch(Exception ex){			
+			reportFailure("Object Not Found "+ objectKey);	// failure -  report that failure
 		}
 		return e;
 		
 	}
+	
+	/******* isElementPresent Method *******/
 	// true - present
 	// false - not present
 	public boolean isElementPresent(String objectKey){
@@ -333,6 +333,7 @@ public class GenericKeywords {
 			return true;
 	}
 	
+	/******* isElementInList Method *******/
 	public boolean isElementInList(){
 		// validate whether value is present in dropdown
 				List<WebElement> options = new Select(getObject(objectKey)).getOptions();
@@ -343,22 +344,6 @@ public class GenericKeywords {
 				return false;
 	}
 	
-	/******* Reporting Method ********/
-	public void reportFailure(String failureMsg){
-		// fail the test
-		test.log(Status.FAIL, failureMsg);
-		// take the screenshot, embed screenshot in reports
-		takeSceenShot();
-		// fail in testng
-		//Assert.fail(failureMsg);// stop on this line
-		if(proceedOnFail.equals("Y")){// soft assertion
-			softAssert.fail(failureMsg);
-		}else{
-			softAssert.fail(failureMsg);
-//			softAssert.assertAll();
-			assertAll();
-		}
-	}
 	
 	/******* Screenshot Method *******/
 	public void takeSceenShot(){
@@ -376,6 +361,23 @@ public class GenericKeywords {
 			e.printStackTrace();
 		}
 		
+	}
+	
+	/******* Reporting Method ********/
+	public void reportFailure(String failureMsg){
+		// fail the test
+		test.log(Status.FAIL, failureMsg);
+		// take the screenshot, embed screenshot in reports
+		takeSceenShot();
+		// fail in testng
+		//Assert.fail(failureMsg);// stop on this line
+		if(proceedOnFail.equals("Y")){// soft assertion
+			softAssert.fail(failureMsg);
+		}else{
+			softAssert.fail(failureMsg);
+//			softAssert.assertAll();
+			assertAll();
+		}
 	}
 	
 	public void assertAll(){

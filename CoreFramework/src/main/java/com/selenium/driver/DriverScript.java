@@ -21,9 +21,11 @@ public class DriverScript {
 		int rows = xls.getRowCount(Constants.KEYWORDS_SHEET);
 		System.out.println("Rows "+ rows);
 		app = new AppKeywords();
+		
 		// send prop to keywords class
 		app.setEnvProp(envProp);
 		app.setProp(prop);
+		
 		// send the data
 		app.setData(testData);
 		app.setExtentTest(test);

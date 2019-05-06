@@ -1,78 +1,213 @@
-1539833388922	geckodriver	INFO	geckodriver 0.21.0
-1539833389034	geckodriver	INFO	Listening on 127.0.0.1:12850
-1539833389524	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Manish\\AppData\\Local\\Temp\\rust_mozprofile.TnxlvwALtogF"
-[Child 15256, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Parent 12120, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
-1539833405333	Marionette	INFO	Listening on port 52653
-1539833405557	Marionette	WARN	TLS certificate errors will be ignored for this session
-1539833406109	Marionette	DEBUG	[6442450945] Frame script loaded
-1539833406294	Marionette	DEBUG	[6442450945] Frame script registered
-1539833416509	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
-1539833416778	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
-1539833421373	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://in.rediff.com/
-1539833421698	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450958
-1539833426171	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://in.rediff.com/
-1539833426488	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://in.rediff.com/
-1539833428862	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://in.rediff.com/
-1539833428875	Marionette	DEBUG	[6442450945] Received DOM event unload for http://in.rediff.com/
-1539833430086	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450949
-1539833430086	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450951
-1539833430087	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450954
-1539833430088	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450956
-1539833430088	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451000
-1539833430088	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450974
-1539833430089	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450991
-1539833430089	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450981
-1539833430089	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450964
-1539833430089	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450976
-1539833430090	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450977
-1539833430090	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450978
-1539833430090	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450979
-1539833430091	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450980
-1539833430091	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450970
-1539833430091	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450971
-1539833430092	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450995
-1539833430092	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450997
-1539833430092	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450959
-1539833430092	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450960
-1539833430092	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450968
-1539833431826	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://money.rediff.com/index.html
-1539833435177	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://money.rediff.com/index.html
-1539833435316	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for https://money.rediff.com/index.html
-1539833435751	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451007
-1539833435924	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451009
-1539833435929	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451010
-1539833435937	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451011
-1539833437075	Marionette	DEBUG	[6442450945] Received DOM event pagehide for https://money.rediff.com/index.html
-1539833437096	Marionette	DEBUG	[6442450945] Received DOM event unload for https://money.rediff.com/index.html
-JavaScript error: https://cdn.zorosrv.com/vpaid/units/18_41_0/infra/cmTagEXPANDABLE.js, line 11: TypeError: this.iframe.contentWindow is null
-JavaScript error: https://cdn.zorosrv.com/vpaid/units/18_41_0/infra/cmTagEXPANDABLE.js, line 11: TypeError: this.iframe.contentWindow is null
-1539833438689	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451037
-1539833438689	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451040
-1539833438689	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451022
-1539833438689	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451031
-1539833438689	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451047
-1539833438690	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451042
-1539833438690	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451044
-1539833438690	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451024
-1539833438690	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451032
-1539833438690	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451026
-1539833438690	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451018
-1539833438690	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451015
-1539833438691	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451019
-1539833438691	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451005
-1539833438691	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451034
-1539833439726	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://portfolio.rediff.com/portfolio-login
-1539833439844	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://portfolio.rediff.com/portfolio-login
-1539833440450	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
-1539833441445	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
-1539833466587	Marionette	INFO	Stopped listening on port 52653
-[Parent 12120, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 13752, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Parent 12120, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 9756, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Parent 12120, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 9856, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 9856, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[GPU 14216, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Parent 12120, Gecko_IOThread] WARNING: pipe error: 232: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 513
+1556799421406	geckodriver	INFO	geckodriver 0.21.0
+1556799421416	geckodriver	INFO	Listening on 127.0.0.1:32390
+1556799421818	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Manish\\AppData\\Local\\Temp\\rust_mozprofile.Rfa1pVahxSlm"
+1556799424587	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556799424588	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556799424588	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556799424735	Marionette	TRACE	Received observer notification profile-after-change
+1556799424783	Marionette	TRACE	Received observer notification toplevel-window-ready
+1556799424819	Marionette	TRACE	Received observer notification command-line-startup
+1556799424819	Marionette	TRACE	Received observer notification nsPref:changed
+1556799424819	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1556799425641	Marionette	TRACE	Received observer notification toplevel-window-ready
+1556799426730	Marionette	TRACE	Received observer notification sessionstore-windows-restored
+1556799426730	Marionette	TRACE	Waiting until startup recorder finished recording startup scripts...
+1556799426851	Marionette	TRACE	All scripts recorded.
+1556799426852	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1556799426852	Marionette	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1556799426852	Marionette	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1556799426852	Marionette	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1556799426852	Marionette	DEBUG	Setting recommended pref browser.newtabpage.enabled to false
+1556799426852	Marionette	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1556799426853	Marionette	DEBUG	Setting recommended pref browser.search.update to false
+1556799426853	Marionette	DEBUG	Setting recommended pref browser.tabs.disableBackgroundZombification to false
+1556799426853	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1556799426853	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnOpen to false
+1556799426853	Marionette	DEBUG	Setting recommended pref browser.usedOnWindows10.introURL to 
+1556799426854	Marionette	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1556799426854	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1556799426854	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1556799426854	Marionette	DEBUG	Setting recommended pref dom.disable_open_during_load to false
+1556799426854	Marionette	DEBUG	Setting recommended pref dom.file.createInChild to true
+1556799426854	Marionette	DEBUG	Setting recommended pref dom.max_chrome_script_run_time to 0
+1556799426854	Marionette	DEBUG	Setting recommended pref dom.max_script_run_time to 0
+1556799426854	Marionette	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1556799426854	Marionette	DEBUG	Setting recommended pref extensions.webservice.discoverURL to http://%(server)s/dummy/discoveryURL
+1556799426854	Marionette	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1556799426855	Marionette	DEBUG	Setting recommended pref network.http.speculative-parallel-limit to 0
+1556799426855	Marionette	DEBUG	Setting recommended pref security.fileuri.strict_origin_policy to false
+1556799426855	Marionette	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1556799426855	Marionette	DEBUG	Setting recommended pref signon.autofillForms to false
+1556799426855	Marionette	DEBUG	Setting recommended pref signon.rememberSignons to false
+1556799426855	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1556799426911	Marionette	INFO	Listening on port 59778
+1556799426911	Marionette	DEBUG	Remote service is active
+1556799427236	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:59793
+1556799427239	Marionette	DEBUG	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1556799427240	Marionette	WARN	TLS certificate errors will be ignored for this session
+1556799427309	Marionette	TRACE	[6442450945] Frame script loaded
+1556799427314	Marionette	TRACE	[6442450945] Frame script registered
+1556799427319	Marionette	DEBUG	0 <- [1,1,null,{"sessionId":"50f1a23c-69b2-4d55-91a9-8374bfff9b4e","capabilities":{"browserName":"firefox","browserVersion":"66.0. ... alse,"moz:webdriverClick":true,"capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}}]
+1556799427335	Marionette	DEBUG	0 -> [0,2,"WebDriver:SetTimeouts",{"implicit":20000}]
+1556799427336	Marionette	DEBUG	0 <- [1,2,null,{"value":null}]
+1556799427343	Marionette	DEBUG	0 -> [0,3,"WebDriver:MaximizeWindow",{}]
+1556799427344	Marionette	DEBUG	0 <- [1,3,null,{"x":-8,"y":-8,"width":1320,"height":784}]
+1556799427350	Marionette	DEBUG	0 -> [0,4,"WebDriver:Navigate",{"url":"http://in.rediff.com"}]
+1556799427359	Marionette	TRACE	[6442450945] Received DOM event beforeunload for about:blank
+1556799427527	Marionette	TRACE	[6442450945] Received DOM event pagehide for about:blank
+1556799428661	Marionette	TRACE	[6442450945] Received DOM event DOMContentLoaded for http://in.rediff.com/
+1556799430448	Marionette	TRACE	[6442450945] Received DOM event pageshow for http://in.rediff.com/
+1556799430452	Marionette	DEBUG	0 <- [1,4,null,{"value":null}]
+1556799430476	Marionette	DEBUG	0 -> [0,5,"WebDriver:FindElement",{"using":"xpath","value":"//html/body/div[1]/div/div[2]/a[2]"}]
+1556799430522	Marionette	DEBUG	0 <- [1,5,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"1352423b-4058-4452-a929-585ebcfe3157"}}]
+1556799430637	Marionette	DEBUG	0 -> [0,6,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"1352423b-4058-4452-a929-585ebcfe3157"}],"newS ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1556799430684	Marionette	DEBUG	0 <- [1,6,null,{"value":true}]
+1556799430714	Marionette	DEBUG	0 -> [0,7,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"1352423b-4058-4452-a929-585ebcfe3157"}],"newS ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1556799430780	Marionette	DEBUG	0 <- [1,7,null,{"value":true}]
+1556799430785	Marionette	DEBUG	0 -> [0,8,"WebDriver:IsElementEnabled",{"id":"1352423b-4058-4452-a929-585ebcfe3157"}]
+1556799430796	Marionette	DEBUG	0 <- [1,8,null,{"value":true}]
+1556799430801	Marionette	DEBUG	0 -> [0,9,"WebDriver:ElementClick",{"id":"1352423b-4058-4452-a929-585ebcfe3157"}]
+1556799430812	Marionette	TRACE	[6442450945] Received DOM event beforeunload for http://in.rediff.com/
+1556799431802	Marionette	TRACE	[6442450945] Received DOM event pagehide for http://in.rediff.com/
+1556799431808	Marionette	TRACE	[6442450945] Received DOM event unload for http://in.rediff.com/
+1556799431919	Marionette	TRACE	[6442450945] Received observer notification outer-window-destroyed
+1556799431920	Marionette	TRACE	[6442450945] Received observer notification outer-window-destroyed
+1556799431921	Marionette	TRACE	[6442450945] Received observer notification outer-window-destroyed
+1556799431921	Marionette	TRACE	[6442450945] Received observer notification outer-window-destroyed
+1556799431922	Marionette	TRACE	[6442450945] Received observer notification outer-window-destroyed
+1556799431922	Marionette	TRACE	[6442450945] Received observer notification outer-window-destroyed
+1556799431922	Marionette	TRACE	[6442450945] Received observer notification outer-window-destroyed
+1556799433224	Marionette	TRACE	[6442450945] Received DOM event DOMContentLoaded for https://money.rediff.com/index.html
+1556799435209	Marionette	TRACE	[6442450945] Received DOM event pageshow for https://money.rediff.com/index.html
+1556799435210	Marionette	DEBUG	0 <- [1,9,null,{"value":null}]
+1556799435217	Marionette	DEBUG	0 -> [0,10,"WebDriver:FindElement",{"using":"xpath","value":"//*[@id='signin_info']/a[1]"}]
+1556799435237	Marionette	DEBUG	0 <- [1,10,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"d6cde2f7-5f37-4adf-bee5-02e736810bf3"}}]
+1556799435252	Marionette	DEBUG	0 -> [0,11,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"d6cde2f7-5f37-4adf-bee5-02e736810bf3"}],"new ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1556799435270	Marionette	DEBUG	0 <- [1,11,null,{"value":true}]
+1556799435280	Marionette	DEBUG	0 -> [0,12,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"d6cde2f7-5f37-4adf-bee5-02e736810bf3"}],"new ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1556799435297	Marionette	DEBUG	0 <- [1,12,null,{"value":true}]
+1556799435302	Marionette	DEBUG	0 -> [0,13,"WebDriver:IsElementEnabled",{"id":"d6cde2f7-5f37-4adf-bee5-02e736810bf3"}]
+1556799435309	Marionette	DEBUG	0 <- [1,13,null,{"value":true}]
+1556799435315	Marionette	DEBUG	0 -> [0,14,"WebDriver:ElementClick",{"id":"d6cde2f7-5f37-4adf-bee5-02e736810bf3"}]
+1556799435383	Marionette	TRACE	[6442450945] Received DOM event beforeunload for https://money.rediff.com/index.html
+1556799435601	Marionette	TRACE	[6442450945] Received DOM event pagehide for https://money.rediff.com/index.html
+1556799435603	Marionette	TRACE	[6442450945] Received DOM event unload for https://money.rediff.com/index.html
+1556799435803	Marionette	TRACE	[6442450945] Received observer notification outer-window-destroyed
+1556799435803	Marionette	TRACE	[6442450945] Received observer notification outer-window-destroyed
+1556799435803	Marionette	TRACE	[6442450945] Received observer notification outer-window-destroyed
+1556799435804	Marionette	TRACE	[6442450945] Received observer notification outer-window-destroyed
+1556799435804	Marionette	TRACE	[6442450945] Received observer notification outer-window-destroyed
+1556799435804	Marionette	TRACE	[6442450945] Received observer notification outer-window-destroyed
+1556799435954	Marionette	TRACE	[6442450945] Received DOM event DOMContentLoaded for https://portfolio.rediff.com/portfolio-login
+1556799436217	Marionette	TRACE	[6442450945] Received DOM event pageshow for https://portfolio.rediff.com/portfolio-login
+1556799436222	Marionette	DEBUG	0 <- [1,14,null,{"value":null}]
+1556799436231	Marionette	DEBUG	0 -> [0,15,"WebDriver:FindElement",{"using":"css selector","value":"#useremail"}]
+1556799436236	Marionette	DEBUG	0 <- [1,15,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"8f6a74df-6602-401f-a835-414c14d142cc"}}]
+1556799436250	Marionette	DEBUG	0 -> [0,16,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"8f6a74df-6602-401f-a835-414c14d142cc"}],"new ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1556799436275	Marionette	DEBUG	0 <- [1,16,null,{"value":true}]
+1556799436293	Marionette	DEBUG	0 -> [0,17,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"8f6a74df-6602-401f-a835-414c14d142cc"}],"new ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1556799436309	Marionette	DEBUG	0 <- [1,17,null,{"value":true}]
+1556799436312	Marionette	DEBUG	0 -> [0,18,"WebDriver:IsElementEnabled",{"id":"8f6a74df-6602-401f-a835-414c14d142cc"}]
+1556799436316	Marionette	DEBUG	0 <- [1,18,null,{"value":true}]
+1556799436339	Marionette	DEBUG	0 -> [0,19,"WebDriver:ElementSendKeys",{"id":"8f6a74df-6602-401f-a835-414c14d142cc","text":"manish_chaudhari18","value":["m","a","n","i","s","h","_","c","h","a","u","d","h","a","r","i","1","8"]}]
+1556799436362	Marionette	DEBUG	0 <- [1,19,null,{"value":null}]
+1556799436368	Marionette	DEBUG	0 -> [0,20,"WebDriver:FindElement",{"using":"css selector","value":"#emailsubmit"}]
+1556799436372	Marionette	DEBUG	0 <- [1,20,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"009ab3c2-be47-49bd-bf86-eee6ae9a12c0"}}]
+1556799436380	Marionette	DEBUG	0 -> [0,21,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"009ab3c2-be47-49bd-bf86-eee6ae9a12c0"}],"new ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1556799436398	Marionette	DEBUG	0 <- [1,21,null,{"value":true}]
+1556799436407	Marionette	DEBUG	0 -> [0,22,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"009ab3c2-be47-49bd-bf86-eee6ae9a12c0"}],"new ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1556799436422	Marionette	DEBUG	0 <- [1,22,null,{"value":true}]
+1556799436425	Marionette	DEBUG	0 -> [0,23,"WebDriver:IsElementEnabled",{"id":"009ab3c2-be47-49bd-bf86-eee6ae9a12c0"}]
+1556799436429	Marionette	DEBUG	0 <- [1,23,null,{"value":true}]
+1556799436433	Marionette	DEBUG	0 -> [0,24,"WebDriver:ElementClick",{"id":"009ab3c2-be47-49bd-bf86-eee6ae9a12c0"}]
+1556799436679	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1556799436680	Marionette	DEBUG	0 <- [1,24,null,{"value":null}]
+1556799436689	Marionette	DEBUG	0 -> [0,25,"WebDriver:FindElement",{"using":"css selector","value":"#userpass"}]
+1556799436695	Marionette	DEBUG	0 <- [1,25,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"c57104b6-ebaa-4daa-80c9-6d90ee466625"}}]
+1556799436708	Marionette	DEBUG	0 -> [0,26,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"c57104b6-ebaa-4daa-80c9-6d90ee466625"}],"new ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1556799436726	Marionette	DEBUG	0 <- [1,26,null,{"value":true}]
+1556799436734	Marionette	DEBUG	0 -> [0,27,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"c57104b6-ebaa-4daa-80c9-6d90ee466625"}],"new ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1556799436750	Marionette	DEBUG	0 <- [1,27,null,{"value":true}]
+1556799436753	Marionette	DEBUG	0 -> [0,28,"WebDriver:IsElementEnabled",{"id":"c57104b6-ebaa-4daa-80c9-6d90ee466625"}]
+1556799436758	Marionette	DEBUG	0 <- [1,28,null,{"value":true}]
+1556799436765	Marionette	DEBUG	0 -> [0,29,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"c57104b6-ebaa-4daa-80c9-6d90ee466625"}],"new ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1556799436782	Marionette	DEBUG	0 <- [1,29,null,{"value":true}]
+1556799436786	Marionette	DEBUG	0 -> [0,30,"WebDriver:FindElement",{"using":"css selector","value":"#userpass"}]
+1556799436787	Marionette	DEBUG	0 <- [1,30,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"c57104b6-ebaa-4daa-80c9-6d90ee466625"}}]
+1556799436795	Marionette	DEBUG	0 -> [0,31,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"c57104b6-ebaa-4daa-80c9-6d90ee466625"}],"new ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1556799436812	Marionette	DEBUG	0 <- [1,31,null,{"value":true}]
+1556799436819	Marionette	DEBUG	0 -> [0,32,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"c57104b6-ebaa-4daa-80c9-6d90ee466625"}],"new ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1556799436836	Marionette	DEBUG	0 <- [1,32,null,{"value":true}]
+1556799436838	Marionette	DEBUG	0 -> [0,33,"WebDriver:IsElementEnabled",{"id":"c57104b6-ebaa-4daa-80c9-6d90ee466625"}]
+1556799436842	Marionette	DEBUG	0 <- [1,33,null,{"value":true}]
+1556799436846	Marionette	DEBUG	0 -> [0,34,"WebDriver:ElementSendKeys",{"id":"c57104b6-ebaa-4daa-80c9-6d90ee466625","text":"ManishSarita","value":["M","a","n","i","s","h","S","a","r","i","t","a"]}]
+1556799436858	Marionette	DEBUG	0 <- [1,34,null,{"value":null}]
+1556799436861	Marionette	DEBUG	0 -> [0,35,"WebDriver:FindElement",{"using":"css selector","value":"#loginsubmit"}]
+1556799436878	Marionette	DEBUG	0 <- [1,35,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"4e174142-df7c-4f50-80e2-41a0cff52c6d"}}]
+1556799436887	Marionette	DEBUG	0 -> [0,36,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"4e174142-df7c-4f50-80e2-41a0cff52c6d"}],"new ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1556799436904	Marionette	DEBUG	0 <- [1,36,null,{"value":true}]
+1556799436912	Marionette	DEBUG	0 -> [0,37,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"4e174142-df7c-4f50-80e2-41a0cff52c6d"}],"new ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1556799436927	Marionette	DEBUG	0 <- [1,37,null,{"value":true}]
+1556799436929	Marionette	DEBUG	0 -> [0,38,"WebDriver:IsElementEnabled",{"id":"4e174142-df7c-4f50-80e2-41a0cff52c6d"}]
+1556799436933	Marionette	DEBUG	0 <- [1,38,null,{"value":true}]
+1556799436937	Marionette	DEBUG	0 -> [0,39,"WebDriver:ElementClick",{"id":"4e174142-df7c-4f50-80e2-41a0cff52c6d"}]
+1556799437153	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1556799437154	Marionette	DEBUG	0 <- [1,39,null,{"value":null}]
+1556799442165	Marionette	DEBUG	0 -> [0,40,"WebDriver:GetAlertText",{}]
+1556799442167	Marionette	DEBUG	0 <- [1,40,{"error":"no such alert","message":"","stacktrace":"WebDriverError@chrome://marionette/content/error.js:179:5\nNoSuchAl ... et@chrome://marionette/content/server.js:235:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:493:9\n"},null]
+1556799442192	Marionette	DEBUG	0 -> [0,41,"WebDriver:FindElements",{"using":"css selector","value":"#password_id"}]
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1556799462200	Marionette	DEBUG	0 <- [1,41,null,[]]
+1556799462216	Marionette	DEBUG	0 -> [0,42,"WebDriver:FindElements",{"using":"xpath","value":"//select[@id='portfolioid']"}]
+1556799462232	Marionette	DEBUG	0 <- [1,42,null,[{"element-6066-11e4-a52e-4f735466cecf":"8be3499b-1d7c-4d30-b72e-a45006cdb897"}]]
+1556799462249	Marionette	DEBUG	0 -> [0,43,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1556799462250	Marionette	INFO	Stopped listening on port 59778
+1556799462300	Marionette	TRACE	Received observer notification quit-application
+1556799462306	Marionette	DEBUG	0 <- [1,43,null,{"cause":"shutdown"}]
+1556799462338	Marionette	DEBUG	0 -> [0,44,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1556799462338	Marionette	DEBUG	0 <- [1,44,{"error":"invalid session id","message":"Tried to run command without establishing a connection","stacktrace":"WebDrive ... et@chrome://marionette/content/server.js:235:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:493:9\n"},null]
+[Child 13824, Chrome_ChildThre1556ad] WARNING: pipe error: 109: fi7le994623 z:/build/build/src/ipc/chromium/59	Msarrci/onette	DEBcUhGro	mCel/ocsoemdm on/icpc_channel_win.cc, line 33o2n
+[Child 13824, Chrome_CnheicltdiTohnr e0a
+d] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Parent 15332, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 6564, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 6564, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chro[Child 14280, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 14280, Chrome_ChildThread] WARNING: pipe error: 109: 1556799462547	Marionette	TRACE	Received observer notification xpcom-will-shutdown
+1556799462547	Marionette	DEBUG	Resetting recommended pref app.update.disabledForTesting
+1556799462547	Marionette	DEBUG	Resetting recommended pref apz.content_response_timeout
+1556799462547	Marionette	DEBUG	Resetting recommended pref browser.contentblocking.introCount
+1556799462547	Marionette	DEBUG	Resetting recommended pref browser.download.panel.shown
+1556799462547	Marionette	DEBUG	Resetting recommended pref browser.newtabpage.enabled
+1556799462548	Marionette	DEBUG	Resetting recommended pref browser.pagethumbnails.capturing_disabled
+1556799462548	Marionette	DEBUG	Resetting recommended pref browser.search.update
+1556799462548	Marionette	DEBUG	Resetting recommended pref browser.tabs.disableBackgroundZombification
+1556799462548	Marionette	DEBUG	Resetting recommended pref browser.tabs.warnOnCloseOtherTabs
+1556799462549	Marionette	DEBUG	Resetting recommended pref browser.tabs.warnOnOpen
+1556799462549	Marionette	DEBUG	Resetting recommended pref browser.usedOnWindows10.introURL
+1556799462549	Marionette	DEBUG	Resetting recommended pref browser.urlbar.suggest.searches
+1556[79946254G9	MarPU 
+###!!! [Child][RunMessage] Eriroonre:t tCeh	aDnEnBeUG	Resetting relc ocmlmoesnidnegd:  ptroeof  ldaate to send/recv, messages will be lost
+
+4404, Chrome_ChildThread]tareporting.policy.dataSubmissionPolicyAccepted
+1556799462549	Marionette	DEBUG	Resetting recommended pref dom.disable_beforeunload
+1556799462549	Marionette	DEBUG	Resetting recommended pref dom.disable_open_during_load
+1556799462549	Marionette	DEBUG	Resetting recommended pref dom.file.createInChild
+1556799462549	Marionette	DEBUG	Resetting recommended pref dom.max_chrome_script_run_time
+1556799462549	Marionette	DEBUG	Resetting recommended pref dom.max_script_run_time
+1556799462550	Marionette	DEBUG	Resetting recommended pref extensions.getAddons.cache.enabled
+1556799462550	Marionette	DEBUG	Resetting recommended pref extensions.webservice.discoverURL
+1556799462550	Marionette	DEBUG	Resetting recommended pref network.http.prompt-temp-redirect
+1556799462550	Marionette	DEBUG	Resetting recommended pref network.http.speculative-parallel-limit
+1556799462550	Marionette	DEBUG	Resetting recommended pref security.fileuri.strict_origin_policy
+1556799462550	Marionette	DEBUG	Resetting recommended pref security.notification_enable_delay
+1556799462550	Marionette	DEBUG	Resetting recommended pref signon.autofillForms
+1556799462550	Marionette	DEBUG	Resetting recommended pref signon.rememberSignons
+1556799462550	Marionette	DEBUG	Resetting recommended pref toolkit.cosmeticAnimations.enabled
+1556799462551	Marionette	DEBUG	Remote service is inactive

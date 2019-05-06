@@ -20,11 +20,11 @@ public class AppKeywords extends GenericKeywords{
 	public void login(){
 		System.out.println("Global variable value in Login Function : "+defaultUsername);
 		test.log(Status.INFO, "Logging in");
-//		click("money_xpath");
-//		click("signin_xpath");
+		click("money_xpath");
+		click("signin_xpath");
 		
-		getObject("money_xpath").click();
-		getObject("signin_xpath").click();
+//		getObject("money_xpath").click();
+//		getObject("signin_xpath").click();
 		String username="";
 		String password="";
 		
@@ -71,6 +71,7 @@ public class AppKeywords extends GenericKeywords{
 			reportFailure("Got  result "+actualResult );
 	}
 	
+	/*****************************************/	
 	public void defaultLogin(){
 		test.log(Status.INFO, "Logging in with default ID");
 
@@ -80,19 +81,20 @@ public class AppKeywords extends GenericKeywords{
 		System.out.println("Default password "+password );
 	}
 
+	/*****************************************/	
 	public void CreatePortfolio(){
 		test.log(Status.INFO, "Creating portfolio ");
 		waitTillSelectionToBe("portfolioSelection_xpath",data.get(dataKey));
 		
 	}
 	
-	
+	/*****************************************/	
 	public void verifyPortFolio(){
 		test.log(Status.INFO, "Verifying portfolio name "+data.get(dataKey));
 		waitTillSelectionToBe("portfolioSelection_xpath",data.get(dataKey));
 		
 	}
-	
+	/*****************************************/	
 	public void addStock(){
 		test.log(Status.INFO, "Adding Stockdetails");
 		waitForPageToLoad();
@@ -118,6 +120,7 @@ public class AppKeywords extends GenericKeywords{
 		}
 			
 	}
+	/*****************************************/	
 	
 	public void deleteStock(){
 		waitForPageToLoad();
@@ -141,6 +144,7 @@ public class AppKeywords extends GenericKeywords{
 			test.log(Status.INFO, "Stock deleted successfully");
 		}
 	}
+	/*****************************************/	
 	
 	public void buySellStock(){
 		test.log(Status.INFO, "Finding Stock");
@@ -163,6 +167,7 @@ public class AppKeywords extends GenericKeywords{
 
 	}
 	
+	/*****************************************/	
 	public void checkHistory(){
 		waitForPageToLoad();
 		test.log(Status.INFO, "Checking history");
@@ -202,7 +207,7 @@ public class AppKeywords extends GenericKeywords{
 		// fix the decimals - Math
 	}
 	
-	
+	/*****************************************/	
 	public void selectDate(String d){
 		// day, month , year
 		Date current = new Date();
@@ -235,6 +240,7 @@ public class AppKeywords extends GenericKeywords{
 		
 	}
 	
+	/*****************************************/	
 //	public int getRowWithCellData(String data){
 //		List<WebElement> rows = driver.findElements(By.xpath("//table[@id='stock']/tbody/tr"));
 //		for(int rNum=0;rNum<rows.size();rNum++){
@@ -250,6 +256,7 @@ public class AppKeywords extends GenericKeywords{
 //		return -1;// not found
 //	}
 	
+	/*****************************************/	
 	public int getRowWithCellData(String data){
 		List<WebElement> rows = driver.findElements(By.xpath("//table[@id='stock']/tbody/tr"));
 		for(int rNum=1;rNum<=rows.size();rNum++){

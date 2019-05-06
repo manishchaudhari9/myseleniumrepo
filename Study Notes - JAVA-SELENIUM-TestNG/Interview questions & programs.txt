@@ -1,0 +1,129 @@
+https://javarevisited.blogspot.com/2017/07/top-50-java-programs-from-coding-Interviews.html
+
+Arrays
+List
+Map
+Sets
+
+Difference between JVM and JRE and JDK
+JVM is a Java virtual machine that resides logically in the software and the hardware.
+
+JRE - Java Runtime Environment is a combinarion of JVM + Library Set
+
+JDK - 
+
+Min requirement to run java class file?
+
+  -- For plain execution you only need a JRE (Java Runtime Environment). If you want to compile some code you need a JDK(Java Developer Kit). The JDK includes the JRE.
+
+
+Differnce between Array and ArrayList
+   - Array size needs to be defined. ArrayList is dynamic.
+   - Adding/ Removing elements from ArryList is very easy.
+   - Arrays are faster than Arraylist
+
+
+Differnce between ArrayList and LinkedList
+-- ArrayList follows the concept of Dynamic Array, LinkedList follows the concept of Double Linked list.
+-- ArrayList uses the shift up concept, LinkedList follows the previous and next Node concept that makes the add element in between two elements in the list operation vary fast.
+-- You should use LinkedList in the case where you want to add the element in between the two elements in the given list.
+-- In case of searching, ArrayList is faster than the LinkedList because of its indexing. LinkedList does not use indexing
+-- AddFirst and AddLast functions gives you more flexibility in adding an elements to LinkedList. However, this is not available in ArrayList
+
+
+Differnce between Hashtable and Hashmap.
+List of Hashtables/ Hashmaps.
+
+
+Different flavours of FOR loop
+How to check the data type of variable in java - varName.getClass().getName()
+How to define an array.
+*****************************
+Difference between == and equals.
+- There are two ways to check if two Strings are equal or not – using “==” operator or using equals method. When we use “==” operator, it checks for the value of String as well as the reference but in our programming, most of the time we are checking equality of String for value only. So we should use the equals method to check if two Strings are equal or not.
+There is another function equalsIgnoreCase that we can use to ignore case.
+*****************************
+How convert String into an array? - toCharArray()
+*****************************
+How convert Array into String? - toString()
+*****************************
+Reverse the string - use stringbuilder class
+Reverse an array - 
+
+*****************************
+Create a copy of an array
+1. int[] arrCopy = Arrays.copyOf(arr, arr.length); /// We can also use Arrays.clone
+2. 
+*****************************
+Sort Array in ascending order.- Arrays.sort(arrCopy);
+*****************************
+How to remove duplicate from array
+*****************************
+Count duplicates in an array or List
+*****************************
+How may times the charecter occure in a string?
+*****************************
+How may times the word occure in a string?
+*****************************
+List Char/ word count for each char/ word? A - 2, C - 1
+*****************************
+Swap 2 numbers
+*****************************
+collection. function
+*****************************
+Iterate thru Map - multiple ways
+
+*****************************
+Difference between String, StringBuffer and StringBuilder?
+The string is immutable and final in Java, so whenever we do String manipulation, it creates a new String. String manipulations are resource consuming, so java provides two utility classes for String manipulations – StringBuffer and StringBuilder.
+StringBuffer and StringBuilder are mutable classes. StringBuffer operations are thread-safe and synchronized where StringBuilder operations are not thread-safe. So in a multi-threaded environment, we should use StringBuffer but in the single-threaded environment, we should use StringBuilder.
+StringBuilder performance is fast than StringBuffer because of no overhead of synchronization.
+
+*****************************
+Difference between an Integer and int
+- int is a premitive datatype and Integer is Non-premitive data type.
+- All collection method can be applied on Integer data type but not on int datatype.
+
+*****************************
+Convert String to Integer and vice a versa, double etc.
+
+*****************************
+Comparable and Comparator in Java.
+
+To sort an Object by its property, you have to make the Object implement the Comparable interface and override the compareTo() method. Lets see the new Fruit class again.
+
+*****************************
+difference between treeset and hashset.
+- Treeset is ordered 
+*****************************
+Difference between HashMap and TreeMap in Java
+*****************************
+What is super keyword in JAVA? Where and why it is used?
+
+
+
+Notes:
+collection - topic
+Collection - Interface
+Collections - Class
+
+Array is faster than Collection (ArrayList)
+ArrayList implements List interface and List extends Collection interface.
+C (Interface) --> Lists (Interface) --> ArrayList (Class)
+3. In Collection if you do not define the class (i.e. int, String etc.), By default it is object type.
+4. Collection doesn't work with index number
+5. 
+
+Collections.sort - Can sort the list of integers, String etc. But not the objects. 
+
+
+List<Integer> list = new ArrayList<Integer>();
+Hashmap<Integer, Integer> map = 
+
+
+
+
+
+
+
+

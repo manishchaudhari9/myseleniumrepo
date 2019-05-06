@@ -1,0 +1,810 @@
+Is it mandatory to use child class in constructor of parent class to acheive composition?
+How to make sure singleton pattern creates only single object if there are two class loaders? What will happen if there are two class loaders?
+
+What is the relationship between Collection interface and Iterator interface?
+What is the purpose of generated id in searilization?
+Generated id is getting used in the deserialization process.
+
+How caching works in java? Any code?
+Tell the scenario where LinkedList must be used? Why?
+What is the diff bet ArrayList and LinkedList
+Which list should be used for insertion and deletion operation
+What are method overriding rules
+How HashMap works internally
+Difference between List and Set
+What is Reflection in Java
+How to create Annotations in Java
+What is Singleton class
+What is Volatile
+What is the use of id used during searilization of Object
+How Hashmap uses hashcode() and equals() method
+How to create Stackoverflow error in Java
+How to create immutable class/object in Java
+How to find out common elements between two arrays without using any Collection API(preferably in single for loop)
+What is volatile and transient in Java
+How to synchronize Hashmap
+Why null is not allowed in Hashtable?
+Basic sql queries
+How many ways are there to connect to the database?
+What is shallow and deep cloning
+Where is ResultSet resides? in JDK API or any other third party API
+Explain where Singleton pattern is required in code?
+Difference between Statement and PreparedStatement?
+What is sql injection?
+What are DDL and DML statements?
+Diff bet stament.execute and statement.executeUpdate
+Explain Class.forName()
+
+In Spring, what is the default scope of the bean?
+What is Autowired 
+How to access method annoted as @Autowired in service layer(method has dependency on JDBC Template) in Junit test case without using any 
+mocking framework or spring api
+
+What is the use of interface in java?
+Is it a good idea to use vector(or any other synchronized collection) within synchronized block?
+How to find out if a linked list is circular?
+What precautions needs to be taken before autowiring bean in your class?
+What factors needs to be considered before writing rest API?
+Have you ever encountered with performance issue? How its resolved?
+How to reduce hashing collision? Basically what provisions needs to make to reduce the bucket size?
+
+**************************************************************************************************************************************************
+Difference between ArrayList and LinkedLIst
+1) ArrayList internally uses dynamic array to store the elements. Elements are stored in consecutive memory locations.	
+LinkedList internally uses doubly linked list to store the elements. Elements are not stored in consecutive memory locations.
+2) Retrieval of elements in the ArrayList is faster than the LinkedList. Because all elements in ArrayList are index based.
+Retrieval of elements in LinkedList is very slow compared to ArrayList. Because to retrieve an element, you have to traverse from beginning or end 
+(Whichever is closer to that element) to reach that element.
+3) ArrayList class can act as a list only because it implements List only.	
+LinkedList class can act as a list and queue both because it implements List and Deque interfaces.
+4) Insertions and Removals in the middle of the ArrayList are very slow. Because after each insertion and removal, elements need to be shifted.
+Insertions and Removals from any position in the LinkedList are faster than the ArrayList. Because there is no need to shift the elements after every 
+insertion and removal. Only references of previous and next elements are to be changed.
+5) ArrayList is an index based data structure where each element is associated with an index.
+Elements in the LinkedList are called as nodes, where each node consists of three things – Reference to previous element, Actual value of the 
+element and Reference to next element.
+6) ArrayList requires less memory compared to LinkedList. Because ArrayList holds only actual data and it’s index.
+LinkedList requires more memory compared to ArrayList. Because, each node in LinkedList holds data and reference to next and previous elements.
+
+Similarities Between ArrayList And LinkedList In Java :
+
+Both ArrayList and LinkedList implement List interface.
+Both ArrayList and LinkedList are Cloneable and Serializable.
+Both ArrayList and LinkedList maintain insertion order.
+Both are non synchronized.
+*************************************************************************************************************************************************
+
+Diff bet Hashmap, Hashtable, LinkedHashMap and TreeMap
+Insertion order
+HashMap does not maintains insertion order in java.
+Hashtable does not maintains insertion order in java.
+LinkedHashMap  maintains insertion order in java.
+TreeMap is sorted by natural order of keys in java.
+
+Performance
+HashMap is not synchronized, hence its operations are faster as compared to Hashtable.
+Hashtable is synchronized, hence its operations are slower as compared to HashMap.
+If we are not working in multithreading environment jdk recommends us to use HashMap.
+LinkedHashMap must be used only when we want to maintain insertion order. Time and space overhead is there because for maintaining order it 
+	internally uses Doubly Linked list.
+TreeMap must be used only when we want sorting based on natural order. Otherwise sorting operations cost performance. (Comparator is called for 
+	sorting purpose)
+
+Null keys and values
+HashMap allows to store one null key and many null values i.e. many keys can have null value in java.
+Hashtable does not allow to store null key or null value. 
+Any attempt to store null key or value throws runtimeException (NullPointerException) in java.
+LinkedHashMap allows to store one null key and many null values i.e. any key can have null value in java.
+TreeMap does not allow to store null key but allow many null values. 
+Any attempt to store null key throws runtimeException (NullPointerException) in java.
+
+Implementation uses?
+HashMap use buckets
+Hashtable use buckets
+LinkedHashMap uses doubly linked lists
+TreeMap uses Red black tree
+
+***************************************************************************************************************************************************
+Diff bet HashSet	LinkedHashSet	TreeSet
+How they work internally?	
+HashSet uses HashMap internally to store it’s elements.	
+LinkedHashSet uses  LinkedHashMap internally to store it’s elements.	
+TreeSet uses TreeMap internally to store it’s elements.
+
+Order Of Elements	
+HashSet doesn’t maintain any order of elements.	
+LinkedHashSet maintains insertion order of elements. i.e elements are placed as they are inserted.	
+TreeSet orders the elements according to supplied Comparator. If no comparator is supplied, elements will be placed in their natural ascending order.
+
+Performance	
+HashSet gives better performance than the LinkedHashSet and TreeSet.	
+The performance of LinkedHashSet is between HashSet and TreeSet. It’s performance is almost similar to HashSet. But slightly in the slower side as it 
+	also maintains LinkedList internally to maintain the insertion order of elements.	
+TreeSet gives less performance than the HashSet and LinkedHashSet as it has to sort the elements after each insertion and removal operations.
+
+Insertion, Removal And Retrieval Operations	
+HashSet gives performance of order O(1) for insertion, removal and retrieval operations.	
+LinkedHashSet also gives performance of order O(1) for insertion, removal and retrieval operations.	
+TreeSet gives performance of order O(log(n)) for insertion, removal and retrieval operations.
+
+How they compare the elements?	
+HashSet uses equals() and hashCode() methods to compare the elements and thus removing the possible duplicate elements.	
+LinkedHashSet also uses equals() and hashCode() methods to compare the elements.	
+TreeSet uses compare() or compareTo() methods to compare the elements and thus removing the possible duplicate elements. 
+
+Null elements	
+HashSet allows maximum one null element.	
+LinkedHashSet also allows maximum one null element.	
+TreeSet doesn’t allow even a single null element. If you try to insert null element into TreeSet, it throws NullPointerException.
+
+**************************************************************************************************************************************************
+ConcurrentHashMap :
+You should use ConcurrentHashMap when you need very high concurrency in your project.
+It is thread safe without synchronizing the whole map.
+Reads can happen very fast while write is done with a lock.
+There is no locking at the object level.
+The locking is at a much finer granularity at a hashmap bucket level.
+ConcurrentHashMap doesn’t throw a ConcurrentModificationException if one thread tries to modify it while another is iterating over it.
+ConcurrentHashMap uses multitude of locks.
+
+SynchronizedHashMap :
+Synchronization at Object level.
+Every read/write operation needs to acquire lock.
+Locking the entire collection is a performance overhead.
+This essentially gives access to only one thread to the entire map & blocks all the other threads.
+It may cause contention.
+SynchronizedHashMap returns Iterator, which fails-fast on concurrent modification.
+********************************************************************************************************************************
+Fail fast Vs Fail safe :
+Concurrent Modification: Concurrent Modification in programming means to modify an object concurrently when another task is already running over it. 
+For example, in Java to modify a collection when another thread is iterating over it. Some Iterator implementations (including those of all the 
+general purpose collection implementations provided by the JRE) may choose to throw ConcurrentModificationException if this behavior is detected.
+
+Fail Fast And Fail Safe Iterators in Java
+Iterators in java are used to iterate over the Collection objects. Fail-Fast iterators immediately throw ConcurrentModificationException if there is 
+structural modification of the collection. Structural modification means adding, removing or updating any element from collection while a thread is 
+iterating over that collection. Iterator on ArrayList, HashMap classes are some examples of fail-fast Iterator.
+
+Fail-Safe iterators don’t throw any exceptions if a collection is structurally modified while iterating over it. This is because, they operate on 
+the clone of the collection, not on the original collection and that’s why they are called fail-safe iterators. Iterator on CopyOnWriteArrayList, 
+ConcurrentHashMap classes are examples of fail-safe Iterator.
+********************************************************************************************************************************
+Volatile :-
+the volatile keyword in Java is used as an indicator to Java compiler and Thread that do not cache value of this variable and always read it from 
+main memory. So if you want to share any variable in which read and write operation is atomic by implementation e.g. read and write in an int or a 
+boolean variable then  you can declare them as volatile variable.
+
+The Java volatile keyword cannot be used with method or class and it can only be used with a variable. Java volatile keyword also guarantees 
+visibility and ordering, after Java 5 write to any volatile variable happens before any read into the volatile variable. By the way use of 
+volatile keyword also prevents compiler or JVM from the reordering of code or moving away them from synchronization barrier.
+********************************************************************************************************************************
+Immutable class:-
+		final class Employee{  
+		private final String pancardNumber;  
+		  
+		public Employee(String pancardNumber){  
+		this.pancardNumber=pancardNumber;  
+		}  
+		  
+		public String getPancardNumber(){  
+		return pancardNumber;  
+		}  
+	} 
+The above class is immutable because:
+The instance variable of the class is final i.e. we cannot change the value of it after creating an object.
+The class is final so we cannot create the subclass.
+There is no setter methods i.e. we have no option to change the value of the instance variable.
+Values can be assigned through constructor only.
+These points makes this class as immutable. 
+   
+********************************************************************************************************************************
+Stackoverflow error in Java
+
+A StackOverflowError is to the stack what an OutOfMemoryError is to the heap: it simply signals that there is no more memory available.
+
+public class Test4 {
+	public void myMethod(){
+		System.out.println("in myMethod");
+		myMethod1();
+	}
+	public void myMethod1(){
+		System.out.println("in myMethod1");
+		myMethod();
+	}
+	public static void main(String[] a){
+		System.out.println("in main");
+		Test4 aa = new Test4();
+		aa.myMethod();
+	}
+}
+********************************************************************************************************************************
+Difference between String and StringBuffer/StringBuilder in Java
+
+1. Well, the most important difference between String and StringBuffer/StringBuilder in java is that String object is immutable whereas 
+   StringBuffer/StringBuilder objects are mutable.
+2. StringBuffer and StringBuilder have the same methods with one difference and that’s of synchronization. StringBuffer is synchronized 
+   ( which means it is thread safe and hence you can use it when you implement threads for your methods) whereas StringBuilder is not 
+	synchronized( which implies it isn’t thread safe).
+3. Every immutable object in Java is thread safe, that implies String is also thread safe. String can not be used by two threads simultaneously.
+4. concat() method accepts string only. append() method can accept strings as well as primitives.
+********************************************************************************************************************************
+Marker Interface :-
+
+“An interface is called a marker interface when it is provided as a handle by Java interpreter to mark a class so that it can provide special 
+behaviour to it at runtime and they do not have any method declarations”.
+In summary marker interface in Java is used to indicate something to compiler, JVM or any other tool but Annotation is better way of doing 
+same thing.
+
+Java Marker Interface Examples
+java.lang.Cloneable
+java.io.Serializable
+********************************************************************************************************************************
+Hashmap internal working :-
+
+1.	HashMap works on the principal of hashing.
+2.	Map.Entry interface - This interface gives a map entry (key-value pair). HashMap in Java stores both key and value object, in bucket, as Entry 
+object which implements this nested interface Map.Entry.
+3.	hashCode() -HashMap provides put(key, value) for storing and get(key) method for retrieving Values from HashMap. When put() method is used to 
+	store (Key, Value) pair, HashMap implementation calls hashcode on Key object to calculate a hash that is used to find a bucket where Entry object 
+	will be stored. When get() method is used to retrieve value, again key object is used to calculate a hash which is used then to find a bucket 
+	where that particular key is stored.
+4.	equals() - equals() method is used to compare objects for equality. In case of HashMap key object is used for comparison, also using equals() 
+method Map knows how to handle hashing collision (hashing collision means more than one key having the same hash value, thus assigned to the same 
+bucket. In that case objects are stored in a linked list.
+Where hashCode method helps in finding the bucket where that key is stored, equals method helps in finding the right key as there may be more than 
+one key-value pair stored in a single bucket.
+
+During put(key, value) following operation happens,
+	1. Hashcode is calculated.
+	2. Index is calculated. By default index size is 16.
+	3. key|value|hashcode|null(Entry object) gets stored in bucket(or node) as per the index. Null is because currently this node holds single value.
+	4. If index of the next key is same(known as hashing collision) then bucket(or node) acts as LinkedList and key|value|hashcode|null(Entry object) 
+	   stored at same index and previous nodes null is replaced with current key|value|hashcode|null(Entry object) of current key. 
+During get(key) following operation happens	
+	1. Hashcode is calculated.
+	2. Index is calculated
+	3. Hashcode and key stored at specified index is verified. If found same then Entry is returned.
+	4. In case of multiple key|value|hashcode|null (Entry object) at some index then first hashcode is verified, if not same 
+	key|value|hashcode|null(Entry) at next node is verified.
+
+If we have too many unequal keys which are generating same hash value or index(TREEIFY_THRESHOLD = 8) then in Java 8 contents of bucket/node switches
+from LinkedList of Entry objects to a balanced tree. 		
+hashcode() method gets called while put and get operations. equals() is called only during get operation.
+********************************************************************************************************************************
+Shallow copy and deep copy
+
+	Shallow copy : New object is created with exact copy of primitive values and references of other objects
+	Deep copy : New object is created with exact copy of primitive values and new other objects
+	
+Both shallow copy and deep copy are related to cloning process. The default version of clone() method 
+creates the shallow copy of an object. To create the deep copy of an object, you have to override the clone() 
+method. 
+********************************************************************************************************************************
+Statement and PreparedStatement :-
+
+PreSt can execute pre compile queries. It accepts parameters at runtime.
+	
+Once you've created a Statement object, you can then use it to execute an SQL statement with one of its three execute methods.
+
+	1. boolean execute (String SQL): Returns a boolean value of true if a ResultSet object can be retrieved; otherwise, it returns false. 
+	Use this method to execute SQL DDL statements or when you need to use truly dynamic SQL.
+
+	2. int executeUpdate (String SQL): Returns the number of rows affected by the execution of the SQL statement. Use this method to 
+	   execute SQL statements 
+	   for which you expect to get a number of rows affected - for example, an INSERT, UPDATE, or DELETE statement.
+
+	3. ResultSet executeQuery (String SQL): Returns a ResultSet object. Use this method when you expect to get a result set, 
+	   as you would with a SELECT statement.	
+	
+The CallableStatement Objects
+Just as a Connection object creates the Statement and PreparedStatement objects, it also creates the CallableStatement object, which would be used 
+to execute a call to a database stored procedure.	
+
+********************************************************************************************************************************
+Java 5 features
+
+Generics.
+For/in loop.
+Autoboxing/Unboxing.
+Typesafe Enums.
+Varargs.
+Static Import.
+Annotations (Metadata)
+
+********************************************************************************************************************************
+Java 6 Features
+
+The important feature of JavaSE 6 is premain method (also known as instrumentation).
+
+Instrumentation (premain method) (Java 6)
+Collections Framework Enhancements:
+Java SE 6 API provides bi-directional collection access. New collection interfaces includes Deque, NavigableSet, NavigableMap.
+java.io Enhancements:
+	One new class is provided: Console - Contains methods to access a character-based console device. 
+	New methods were added to File:
+Security Features and Enhancements:
+	SSLParameters,Elliptic Curve Cryptography (ECC) in SunPKCS11
+********************************************************************************************************************************
+Java 7 Features
+
+The important features of JavaSE 7 are try with resource, catching multiple exceptions etc.
+
+String in switch statement (Java 7)
+Binary Literals (Java 7)
+The try-with-resources (Java 7)
+Caching Multiple Exceptions by single catch (Java 7)
+Underscores in Numeric Literals (Java 7)
+
+Java 7 introduced the diamond operator (<>) to reduce the verbosity of generics code. For instance, instead of having to declare a List's type in 
+both its declaration and its constructor, you can now simplify the constructor declaration with <>, and the compiler will infer the type.
+
+Following code is a bug as per Sonar tool
+List<String> strings = new ArrayList<String>();  // Noncompliant
+Map<String,List<Integer>> map = new HashMap<String,List<Integer>>();  // Noncompliant
+
+List<String> strings = new ArrayList<>();
+Map<String,List<Integer>> map = new HashMap<>();
+
+Memory leak issue in sub string is solved in Java 7. Refer following example,
+String str = "hellodsdsdhellosdsd";
+String sub = str.substring(1,5);
+Syso(sub);
+
+If we debug above code and observe value of sub, it will show char array of whole string also. So the whole char array will not be garbage collected.
+
+********************************************************************************************************************************
+Java 8 features :-
+Some of the important Java 8 features are;
+
+forEach() method in Iterable interface
+default and static methods in Interfaces
+Functional Interfaces and Lambda Expressions
+Java Stream API for Bulk Data Operations on Collections
+Java Time API
+Collection API improvements
+Concurrency API improvements
+Java IO improvements
+Miscellaneous Core API improvements
+********************************************************************************************************************************
+Singly-Linked list: Each node contains a pointer to the next node, except last node that points to NULL. 
+Doubly-Linked list: Each node has pointer to next node as well as previous node. Tail node's next pointer and head node's previous pointer points 
+		to NULL.
+Circular-linked list: Each node contains a pointer to the next node, except last node that points to head
+
+********************************************************************************************************************************
+Class Variables In Java :
+
+Class variables, also called as static variables, are declared with the keyword static.
+Class variables are common to all instances of that class i.e these variables will be shared by all objects of that class. Hence, changes made 
+to these variables through one object will reflect in all objects.
+		ClassVariables obj1 = new ClassVariables();
+        ClassVariables obj2 = new ClassVariables();
+         
+        //accessing class variables through obj1
+        System.out.println(obj1.i);      //Output : 10
+        System.out.println(obj1.s);      //Output : STATIC
+         
+        //accessing class variables through obj2
+        System.out.println(obj2.i);      //Output : 10
+        System.out.println(obj2.s);      //Output : STATIC
+         
+        //Making changes to class variables through obj2
+        obj2.i = 20;
+        obj2.s = "STATIC - STATIC";
+         
+        //accessing class variables through obj1
+        System.out.println(obj1.i);      //Output : 20
+        System.out.println(obj1.s);      //Output : STATIC - STATIC
+		
+Instance Variables In Java :
+
+Instance variables, also called as non-static variables are declared without static keyword.
+Instance variables are not common to all instances of a class. Each object will maintain it’s own copy of instance variables. Hence, changes 
+made to instance variables through one object will not reflect in another object.		
+
+		InstanceVariables obj1 = new InstanceVariables();
+        InstanceVariables obj2 = new InstanceVariables();
+         
+        //obj1 instance variables
+        System.out.println(obj1.i);       //Output : 10
+        System.out.println(obj1.s);       //Output : NON-STATIC
+         
+        //obj2 instance variables
+        System.out.println(obj2.i);       //Output : 10
+        System.out.println(obj2.s);       //Output : NON-STATIC
+         
+        //changing obj1 instance variables
+        obj1.i = 20;
+        obj1.s = "INSTANCE VARIABLE";
+         
+        //obj1 instance variables
+        System.out.println(obj1.i);       //Output : 20
+        System.out.println(obj1.s);       //Output : INSTANCE VARIABLE
+                 
+        //obj2 instance variables
+        System.out.println(obj2.i);       //Output : 10
+        System.out.println(obj2.s);       //Output : NON-STATIC
+********************************************************************************************************************************
+ClassNotFoundException In Java :
+
+	public class MainClass
+	{
+		public static void main(String[] args)
+		{
+			try
+			{
+				Class.forName("oracle.jdbc.driver.OracleDriver");
+			}
+			catch (ClassNotFoundException e)
+			{
+				e.printStackTrace();
+			}}}
+If you run the above program without updating the classpath with required JAR files, you will get the exception like below,
+java.lang.ClassNotFoundException: oracle.jdbc.driver.OracleDriver
+
+NoClassDefFoundError In Java :
+
+NoClassDefFoundError is an error which is thrown when Java Runtime System tries to load the definition of a class and class definition is no longer 
+available. The required class definition was present at compile time but it was missing at run time. For example, compile the below program.
+
+class A
+{}
+ 
+public class B
+{
+    public static void main(String[] args)
+    {
+        A a = new A();
+    }
+}
+When you compile the above program, two .class files will be generated. One is A.class and another one is B.class. If you remove the A.class file 
+and run the B.class file, Java Runtime System will throw NoClassDefFoundError like below,
+Exception in thread "main" java.lang.NoClassDefFoundError: A
+********************************************************************************************************************************
+If method returns a value and also has try, catch and finally blocks in it, then following two rules need to follow.
+1) If finally block returns a value then try and catch blocks may or may not return a value.
+2) If finally block does not return a value then both try and catch blocks must return a value.
+
+********************************************************************************************************************************
+Stack. A stack is a collection that is based on the last-in-first-out (LIFO) policy. By tradition, we name the stack insert method push() and the 
+stack remove operation pop(). We also include a method to test whether the stack is empty.
+
+Queue. A queue supports the insert and remove operations using a first-in first-out (FIFO) discipline. By convention, we name the queue insert 
+operation enqueue and the remove operation dequeue.
+
+********************************************************************************************************************************
+Generic Type Arrays
+
+Array in any language have same meaning i.e. an array is a collection of similar type of elements. In java, pushing any incompatible type in an 
+array on runtime will throw ArrayStoreException. It means array preserve their type information in runtime, and generics use type erasure or 
+remove any type information in runtime. Due to above conflict, instantiating a generic array in java is not permitted.
+
+		public class GenericArray<T> {
+			// this one is fine
+			public T[] notYetInstantiatedArray;  
+			// causes compiler error; Cannot create a generic array of T
+			public T[] array = new T[5];
+		}
+		
+a) You can’t have static field of type
+You can not define a static generic parametrized member in your class. Any attempt to do so will generate compile time error: Cannot make a static 
+reference to the non-static type T.
+
+public class GenericsExample<T>
+{
+   private static T member; //This is not allowed
+}
+
+b) You can not create an instance of T
+Any attempt to create an instance of T will fail with error: Cannot instantiate the type T.
+
+public class GenericsExample<T>
+{
+   public GenericsExample(){
+      new T();
+   }
+}
+
+c) Generics are not compatible with primitives in declarations
+Yes, it’s true. You can’t declare generic expression like List or Map<String, double>. Definitely you can use the wrapper classes in place of 
+primitives and then use primitives when passing the actual values. These value primitives are accepted by using auto-boxing to convert primitives to 
+respective wrapper classes.
+
+final List<int> ids = new ArrayList<>();    //Not allowed
+
+final List<Integer> ids = new ArrayList<>(); //Allowed
+
+d) You can’t create Generic exception class
+
+Sometimes, programmer might be in need of passing an instance of generic type along with exception being thrown. This is not possible to do in Java.
+
+// causes compiler error
+public class GenericException<T> extends Exception {}		
+
+**************************************************************************************************************************************************
+
+What is Bounded and Unbounded wildcards in Generics ?
+
+Bounded Wildcards are those which impose bound on Type. There are two kinds of Bounded wildcards <? extends T> which impose an upper bound by 
+ensuring that type must be sub class of T and <? super T> where its imposing lower bound by ensuring Type must be super class of T. This Generic 
+Type must be instantiated with Type within bound otherwise it will result in compilation error. On the other hand <?> represent an unbounded type 
+because <?> can be replace with any Type.
+**************************************************************************************************************************************************
+What is difference between List<? extends T>  and  List <? super T> ?
+Both of List declaration is example of bounded wildcards, List<? extends T> will accept any List with Type extending T while List<? super T> will 
+accept any List with type super class of T. for Example List<? extends Number> can accept List<Integer> or List<Float>.
+**************************************************************************************************************************************************
+
+Aggregation (HAS-A)
+HAS-A relationship is based on usage, rather than inheritance. In other words, class A has-a relationship with class B, if code in class A has a 
+reference to an instance of class B.
+	class Student
+	{
+	 String name;
+	 Address ad;
+	}
+Here you can say that Student has-a Address.
+
+Composition is restricted form of Aggregation. For example a class Car cannot exist without Engine.
+	class Car
+	{
+	 private Engine engine;
+	 Car(Engine en)
+	 {
+	  engine = en;
+	 }
+	}
+
+When to use Inheritance and Aggregation?
+When you need to use property and behaviour of a class without modifying it inside your class. In such case Aggregation is a better option. 
+Whereas when you need to use and modify property and behaviour of a class inside your class, its best to use Inheritance.
+
+Example 2: 
+public class Window { 
+}
+
+public class Wall { 
+	private Window window; 
+	public Wall() {
+		this.window = new Window();
+	} 
+}
+
+Wall class has reference to Window class by declaring an instance member  private Window window;
+Wall has a no argument constructor in which a Window object is created.
+So whenever you create a Wall using new Wall(),  automatically a new Window()  is created and assigned to window instance member.
+In this scenario we cannot set window from outside. It simply cannot exist outside the Wall.
+Now if we make wall = null;  then window object is also removed, because it does not have a outside reference.
+So the existence of Window depends completely upon existence of Wall.
+So this composition example explains that composition is a strong association. The owned object cannot exist when the owner does not exist.
+********************************************************************************************************************************
+Difference between equals method and "=="
+	1. equals() is method while == is operator.
+	2. equals() compares objects only. == compares primitives as well as objects.
+	3. equals() used for checking equality of two objects defined by business logic. "==" compare two objects based on memory reference. 
+********************************************************************************************************************************
+Why String is immutable
+
+Security : String is widely used as parameter for many java classes, e.g. network connection, opening files, etc. Were String not immutable, a 
+connection or file would be changed and lead to serious security threat. Mutable strings could cause security problem in Reflection too, as the 
+parameters are strings.
+
+Efficiency : The hashcode of string is frequently used in Java. For example, in a HashMap. Being immutable guarantees that hashcode will always the 
+same, so that it can be cached without worrying the changes. That means, there is no need to calculate hashcode every time it is used.
+********************************************************************************************************************************
+Throwable is a class
+
+********************************************************************************************************************************
+Strategy pattern is used when we have multiple algorithm for a specific task and client decides the actual implementation to be used at runtime.
+One of the best example of strategy pattern is Collections.sort() method that takes Comparator parameter. Based on the different implementations of 
+Comparator interfaces, the Objects are getting sorted in different ways.
+********************************************************************************************************************************
+1. Write a POJO to exclude a field during serilization and include it in deserilization : -
+	@JsonProperty(access = Access.WRITE_ONLY)/*Use this property only during desearilization*/
+    private int testProp;
+    
+    public int getTestProp() {
+		return testProp;
+	}
+    
+   @JsonProperty("test_prop")
+    public void setTestProp(int testProp) {
+		this.testProp = testProp;
+	}
+********************************************************************************************************************************
+Can we write custom marker interface? How?
+
+How JVM invoke this specific behavior
+ObjectOutputStream and ObjectInputStream will check your class whether or not it implementes Serializable, Externalizable. If yes it will continue or 
+else will thrown NonSerializableException.
+
+How to write our own marker interface
+Create an interface without any method and that is your marker interface.
+	public interface IMarkerEntity {}
+If any class which implement this interface will be taken as database entity by your application.
+
+Sample Code:
+public boolean save(Object object) throws InvalidEntityException {
+   if(!(object instanceof IMarkerEntity)) {
+       throw new InvalidEntityException("Invalid Entity Found, cannot proceed);
+   } 
+   database.save(object);
+}
+
+You can add methods to a marker interface, but that mixes the marker pattern with other conceptual uses for interfaces and can be confusing. 
+Marker interfaces in Java can (and probably should) be replaced with annotations.
+
+********************************************************************************************************************************
+Java memory leak :
+Java’s automatic memory management relies on GC to periodically look for unused objects and remove them. Simplifying a bit we can say that a memory 
+leak in Java is a situation where some objects are no longer used by the application but Garbage Collection fails to recognize it. As a result these 
+unused objects remain in Java heap space indefinitely. This pileup will eventually trigger the java.lang.OutOfMemoryError: Java heap space error.
+
+ the following Java code tries to allocate an array of 2M integers. When you compile it and launch with 12MB of Java heap space (java -Xmx12m OOM), 
+ it fails with the java.lang.OutOfMemoryError: Java heap space message. With 13MB Java heap space the program runs just fine.
+
+class OOM {
+  static final int SIZE=2*1024*1024;
+  public static void main(String[] a) {
+    int[] i = new int[SIZE];
+   }
+}
+********************************************************************************************************************************
+Why lambdas
+->Enables functional programming
+->Readable and consice code(reduces boiler plate code)
+->Enables support for parallel processing
+->Upto Java 7 everything we want to execute needs to be part of class. Using lambdas we can just write code block and pass it as an argument. Means we 
+can pass action as a parameter using lambda.
+->We can pass lambda expression inline as parameters to method just like we pass strings, ints etc.
+
+Functional programming Vs Object oriented programming
+Using functional programming we can write more readable, maintainable code in certain situations.
+Functional programming is just another tool in our tool box to use when the use case arises. 
+********************************************************************************************************************************
+Functional Interface : 
+The interface which has only one abstract method and one or more non abstract methods is called as Functional Interface.
+We need to declare annotation as @FunctionalInterface if we want our interface to be used for lambada expression(so that other developer should 
+not add any abstract method to it).
+The @FunctionalInterface annotation is completely optional. Java compiler does not require it for lambda type. But it is good practice to add it.
+********************************************************************************************************************************
+What is the purpose of introducing default methods in Java 8
+In a typical design based on abstractions, where an interface has one or multiple implementations, if one or more methods are added to the interface, 
+all the implementations will be forced to implement them too. Otherwise, the design will just break down.
+
+Default interface methods are an efficient way to deal with this issue. They allow us to add new methods to an interface that are automatically 
+available in the implementations. Thus, there’s no need to modify the implementing classes.
+
+In this way, backward compatibility is neatly preserved without having to refactor the implementers.
+The most typical use of default methods in interfaces is to incrementally provide additional functionality to a given type without 
+breaking down the implementing classes.
+********************************************************************************************************************************
+Static Interface Methods
+Aside from being able to declare default methods in interfaces, Java 8 allows us to define and implement static methods in interfaces.
+
+Since static methods don’t belong to a particular object, they are not part of the API of the classes implementing the interface, and 
+they have to be called by using the interface name preceding the method name.
+********************************************************************************************************************************
+Following error will be displayed if we combine default and static in a single method of interface
+
+	Illegal combination of modifiers for the interface method hello2; only one of abstract, default, or static permitted
+********************************************************************************************************************************
+Output of Arrays.List() is not mutable.
+********************************************************************************************************************************
+What is diamond problem in java
+Suppose there is a class A which has a method test().
+Suppose there is a class B which extends A and one more class C which also extends A.
+So B n C overridden test() method.
+Suppose there is one more class D and it extends classes B and C.
+If D dont have any implementation of test() and if it invokes test() method as below,
+D d = new D();
+d.test();
+
+It cannot be decided which test() method needs to be invoked from B or C. Thats why multiple inheritance is not possible in java.
+
+********************************************************************************************************************************
+Explain time complexity : 
+O(1) does not necessarily mean "quickly". It means that the time it takes is constant, and not based on the size of the input to the function. 
+Constant could be fast or slow. 
+O(1) always execute in the same time regardless of dataset n. An example of O(1) would be an ArrayList accessing its element with index.
+
+O(n) also known as Linear Order, the performance will grow linearly and in direct proportion to the size of the input data. An example of O(n) would 
+be an ArrayList insertion and deletion at random position. As each subsequent insertion/deletion at random position will cause the elements in the 
+ArrayList to shift left right of its internal array in order to maintain its linear structure, not to mention about the creation of a new arrays and 
+the copying of elements from the old to new array which takes up expensive processing time hence, detriment the performance.
+
+O(n) means that the time the function takes will change in direct proportion to the size of the input to the function, 
+denoted by n. Again, it could be fast or slow, but it will get slower as the size of n increases.
+********************************************************************************************************************************
+Explain space complexity : 
+Let's say I create some data structure with a fixed size, and no matter what I do to the data structure, it will always have the same fixed size. 
+Operations performed on this data structure are therefore O(1).
+
+An example, let's say I have an array of fixed size 100. Any operation I do, whether that is reading from the array or updating an element, that 
+operation will be O(1) on the array. The array's size (and thus the amount of memory it's using) is not changing.
+
+Another example, let's say I have a LinkedList to which I add elements. Every time I add an element to the LinkedList, that is a O(N) operation 
+to the list because I am growing the amount of memory required to hold all of it's elements together.
+********************************************************************************************************************************
+Difference between Serializable and Externalizable in Java
+
+1) One of the obvious difference between Serializable and Externalizable is that Serializable is a marker interface i.e. does not contain any method 
+but Externalizable interface contains two methods writeExternal() and readExternal().
+
+2) The second difference between Serializable vs Externalizable is responsibility of Serialization. When a class implements Serializable interface, 
+default Serialization process gets kicked of and that takes responsibility of serializing super class state. When any class in Java implement 
+java.io.Externalizable than its your responsibility to implement Serialization process i.e. preserving all important information.
+
+3) This difference between Serializable and Externalizable is performance. You can not do much to improve performance of default serialization 
+process except reducing number of fields to be serialized by using transient and static keyword but with Externalizable interface you have full 
+control over Serialization process.
+********************************************************************************************************************************
+There are two kinds of streams in Java - Input/Output streams, and Java8 streams.
+
+I/O Streams: These are sequences of bytes that you can read from (InputStream and its subclasses) or write to (OutputStream and its subclasses). 
+
+Java 8 streams are basically a generalization of lists: they are sequences of objects; the difference is in how you use them.
+
+Suppose, for example that you have a list of Person objects, and you want to make a list of all the pets belonging to people over 35 years old. 
+In Java 7, you would do it like this:
+
+List List<Pet> pets = new ArrayList<>(); 
+for (Person p : people)  {
+    if (p.getAge() > 35) {
+		pets.add(p.getPet());
+    } 
+}
+
+In Java8, you can do this:
+
+List<Pet> pets = people.stream()
+    . filter((p) -> p.getAge() > 35)
+    . map(Person::getPet)
+    . collect(Collectors.toList()); 
+Instead of operating on elements of the list, you’re telling the stream to apply functions to itself. 
+
+********************************************************************************************************************************
+Difference between wait and sleep method
+
+Simply put, wait() is an instance method that’s used for thread synchronization.
+It can be called on any object, as it’s defined right on java.lang.Object, but it can only be called from a synchronized block. It releases the lock on the 
+object so that another thread can jump in and acquire a lock.
+
+On the other hand, Thread.sleep() is a static method that can be called from any context. Thread.sleep() pauses the current thread and does not 
+release any locks.
+
+private static Object LOCK = new Object();
+ 
+private static void sleepWaitExamples() 
+  throws InterruptedException {
+  
+    Thread.sleep(1000);
+    System.out.println(
+      "Thread '" + Thread.currentThread().getName() +
+      "' is woken after sleeping for 1 second");
+  
+    synchronized (LOCK) {
+        LOCK.wait(1000);
+        System.out.println("Object '" + LOCK + "' is woken after" +
+          " waiting for 1 second");
+    }
+}
+Running this example will produce the following output:
+
+Thread ‘main’ is woken after sleeping for 1 second
+Object ‘java.lang.Object@31befd9f’ is woken after waiting for 1 second.
+
+When we use the sleep() method, a thread gets started after a specified time interval, unless it is interrupted.
+
+For wait(), the waking up process is a bit more complicated. We can wake the thread by calling either the notify() or notifyAll() methods on the 
+monitor that is being waited on.
+
+Use notifyAll() instead of notify() when you want to wake all threads that are in the waiting state. Similarly to the wait() method itself, notify(), 
+and notifyAll() have to be called from the synchronized context.
+
+In general, we should use sleep() for controlling execution time of one thread and wait() for multi-thread-synchronization.
+********************************************************************************************************************************
+********************************************************************************************************************************
+********************************************************************************************************************************
+
+

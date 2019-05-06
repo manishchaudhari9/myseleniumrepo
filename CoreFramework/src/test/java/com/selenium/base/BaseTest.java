@@ -35,6 +35,7 @@ public class BaseTest {
 		// properties file
 		prop = new Properties();
 		envProp = new Properties();
+		
 		// init prop file
 		try {
 			FileInputStream fs = new FileInputStream(System.getProperty("user.dir")+"//src//test//resources//env.properties");
@@ -47,6 +48,7 @@ public class BaseTest {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		
 		// init the xls file
 		// how do i come to know the suite ?
 		System.out.println(envProp.getProperty(suiteName+"_xls"));
@@ -79,7 +81,7 @@ public class BaseTest {
 	@DataProvider
 	public Object[][] getData(Method method){
 		// You can also use xls file object to read data
-		//System.out.println("Inside data Provider "+method.getName());
+		System.out.println("Inside data Provider "+method.getName());
 		testName=method.getName();
 		return DataUtil.getTestData(testName, xls);
 	}
