@@ -20,3 +20,5 @@ cd C:\JAVA-SELENIUM\Softwares
 java -jar jenkins.war
 
 localhost:8080
+
+pritesh9983
