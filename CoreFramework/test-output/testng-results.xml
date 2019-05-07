@@ -1,52 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="1" failed="0" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="155691" started-at="2019-05-06T12:57:02Z" finished-at="2019-05-06T12:59:38Z">
+  <suite name="Default suite" duration-ms="47591" started-at="2019-05-06T17:42:30Z" finished-at="2019-05-06T17:43:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="155691" started-at="2019-05-06T12:57:02Z" finished-at="2019-05-06T12:59:38Z">
-      <class name="com.selenium.testcases.portfoliosuite.PortFolioTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@5e3a8624]" name="init" is-config="true" duration-ms="698" started-at="2019-05-06T18:27:02Z" finished-at="2019-05-06T18:27:03Z">
+    <test name="Default test" duration-ms="47591" started-at="2019-05-06T17:42:30Z" finished-at="2019-05-06T17:43:18Z">
+      <class name="com.selenium.testcases.portfoliosuite.LoginTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@5e3a8624]" name="init" is-config="true" duration-ms="640" started-at="2019-05-06T23:12:30Z" finished-at="2019-05-06T23:12:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@5e3a8624]" name="initTest" is-config="true" duration-ms="240" started-at="2019-05-06T18:27:03Z" finished-at="2019-05-06T18:27:03Z">
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@5e3a8624]" name="initTest" is-config="true" duration-ms="193" started-at="2019-05-06T23:12:31Z" finished-at="2019-05-06T23:12:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method status="PASS" signature="createPortFolioTest(java.util.Hashtable)[pri:1, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@5e3a8624]" name="createPortFolioTest" duration-ms="79012" started-at="2019-05-06T18:27:03Z" data-provider="getData" finished-at="2019-05-06T18:28:22Z">
+        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@5e3a8624]" name="loginTest" duration-ms="45643" started-at="2019-05-06T23:12:31Z" data-provider="getData" finished-at="2019-05-06T23:13:17Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{PortfolioName=TestingPortfolio2, Runmode=Y, Browser=Chrome}]]>
+                <![CDATA[{Username=manish_chaudhari18, ExpectedResult=Loginsuccess, Password=ManishSarita, Runmode=Y, Browser=Chrome}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createPortFolioTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@5e3a8624]" name="quit" is-config="true" duration-ms="1071" started-at="2019-05-06T18:28:22Z" finished-at="2019-05-06T18:28:23Z">
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@5e3a8624]" name="quit" is-config="true" duration-ms="997" started-at="2019-05-06T23:13:17Z" finished-at="2019-05-06T23:13:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method status="FAIL" signature="deletePortFolioTest(java.util.Hashtable)[pri:2, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@5e3a8624]" name="deletePortFolioTest" duration-ms="73835" started-at="2019-05-06T18:28:23Z" data-provider="getData" depends-on-methods="com.selenium.testcases.portfoliosuite.PortFolioTest.createPortFolioTest" finished-at="2019-05-06T18:29:37Z">
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@5e3a8624]" name="initTest" is-config="true" duration-ms="0" started-at="2019-05-06T23:13:18Z" finished-at="2019-05-06T23:13:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="SKIP" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@5e3a8624]" name="loginTest" duration-ms="0" started-at="2019-05-06T23:13:18Z" data-provider="getData" finished-at="2019-05-06T23:13:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{PortfolioName=TestingPortfolio2, Runmode=Y, Browser=Chrome}]]>
+                <![CDATA[{Username=manish_chaudhari18, ExpectedResult=Loginsuccess, Password=ManishSarita, Runmode=N, Browser=Mozilla}]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.reflect.InvocationTargetException">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Runmode is set to NO]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.reflect.InvocationTargetException
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at com.selenium.driver.DriverScript.executeKeywords(DriverScript.java:48)
-	at com.selenium.testcases.portfoliosuite.PortFolioTest.deletePortFolioTest(PortFolioTest.java:34)
+              <![CDATA[org.testng.SkipException: Runmode is set to NO
+	at com.selenium.testcases.portfoliosuite.LoginTest.loginTest(LoginTest.java:22)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -72,28 +74,17 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.AssertionError: The following asserts failed:
-	Could not delete the option
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at com.selenium.keywords.GenericKeywords.assertAll(GenericKeywords.java:384)
-	at com.selenium.keywords.GenericKeywords.reportFailure(GenericKeywords.java:379)
-	at com.selenium.keywords.GenericKeywords.validateElementNotInList(GenericKeywords.java:249)
-	... 31 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.reflect.InvocationTargetException -->
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deletePortFolioTest -->
-        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@5e3a8624]" name="initTest" is-config="true" duration-ms="0" started-at="2019-05-06T18:28:23Z" finished-at="2019-05-06T18:28:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.portfoliosuite.PortFolioTest@5e3a8624]" name="quit" is-config="true" duration-ms="753" started-at="2019-05-06T18:29:37Z" finished-at="2019-05-06T18:29:38Z">
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@5e3a8624]" name="quit" is-config="true" duration-ms="84" started-at="2019-05-06T23:13:18Z" finished-at="2019-05-06T23:13:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-      </class> <!-- com.selenium.testcases.portfoliosuite.PortFolioTest -->
+      </class> <!-- com.selenium.testcases.portfoliosuite.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

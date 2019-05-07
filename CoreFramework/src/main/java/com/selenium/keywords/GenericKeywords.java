@@ -366,9 +366,8 @@ public class GenericKeywords {
 	/******* Reporting Method ********/
 	public void reportFailure(String failureMsg){
 		// fail the test
-		test.log(Status.FAIL, failureMsg);
-		// take the screenshot, embed screenshot in reports
-		takeSceenShot();
+		test.log(Status.FAIL, failureMsg);		
+		takeSceenShot();	// take the screenshot, embed screenshot in reports
 		// fail in testng
 		//Assert.fail(failureMsg);// stop on this line
 		if(proceedOnFail.equals("Y")){// soft assertion

@@ -3,15 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.selenium.testcases.portfoliosuite.PortFolioTest">
+      <class name="com.selenium.testcases.portfoliosuite.LoginTest">
         <methods>
-          <include name="deletePortFolioTest" invocation-numbers="0"/>
           <include name="init"/>
-          <include name="createPortFolioTest"/>
+          <include name="loginTest" invocation-numbers="1"/>
           <include name="quit"/>
           <include name="initTest"/>
         </methods>
-      </class> <!-- com.selenium.testcases.portfoliosuite.PortFolioTest -->
+      </class> <!-- com.selenium.testcases.portfoliosuite.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
