@@ -28,7 +28,7 @@ public class DataUtil {
 		}
 		System.out.println("Total Rows "+ totalRows);
 		
-		// read the data
+		// Read the data
 		dataStartRowNumber=testStartRowNum+2;
 		Hashtable<String,String> table=null;
 		int finalRows = dataStartRowNumber+totalRows;
@@ -39,7 +39,6 @@ public class DataUtil {
 			for(int cNum=0;cNum<totalCols;cNum++){// put data in hashtable
 				String data = xls.getCellData(Constants.DATA_SHEET, cNum, rNum);
 				String key = xls.getCellData(Constants.DATA_SHEET, cNum, colStartRowNum);
-				//System.out.println(key+" --- "+data);
 				table.put(key, data);
 			}
 			System.out.println(table);
