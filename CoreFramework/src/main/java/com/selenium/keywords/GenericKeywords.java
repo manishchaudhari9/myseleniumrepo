@@ -86,7 +86,7 @@ public class GenericKeywords {
 		test.log(Status.INFO,"Opening Browser "+browser );
 		if(prop.getProperty("gridRun").equals("Y")) {
 			
-			// run on grid
+			// Run on GRID
 			DesiredCapabilities cap=null;
 			if(browser.equalsIgnoreCase("Mozilla")) {
 				cap = DesiredCapabilities.firefox();
@@ -116,7 +116,7 @@ public class GenericKeywords {
 				e.printStackTrace();
 			}	
 			
-		}else {// run on normal browser
+		} else {	// Run on local Browser
 			if(browser.equals("Mozilla")){
 				// options
 				System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "null");
@@ -133,9 +133,10 @@ public class GenericKeywords {
 			}
 		}
 		
-		// max and set implicit wait
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		// Maximize browser and set implicit wait
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
 	}
 	
 	/*****************************************/	
@@ -148,14 +149,14 @@ public class GenericKeywords {
 	public void click(){
 		test.log(Status.INFO,"Clicking "+prop.getProperty(objectKey));
 		getObject(objectKey).click();
-	}
+	}	
 	
-	/*****************************************/	
 	public void click(String objectKey){
 		setObjectKey(objectKey);
 		click();
 	}
 	
+	/*****************************************/	
 	public void type(){
 		test.log(Status.INFO,"Typing in "+prop.getProperty(objectKey)+" . Data - "+data.get(dataKey));
 		getObject(objectKey).sendKeys(data.get(dataKey));
@@ -167,21 +168,21 @@ public class GenericKeywords {
 		type();
 	}
 	
+	/*****************************************/	
 	public void select(){
 		test.log(Status.INFO,"Selecting from "+prop.getProperty(objectKey)+" . Data - "+data.get(dataKey));
 		if(!isElementInList())
-			reportFailure("Option not found in list "+ data.get(dataKey));
-		
+			reportFailure("Option not found in list "+ data.get(dataKey));	
 		new Select(getObject(objectKey)).selectByVisibleText(data.get(dataKey));
 	}
 	
-
+	/*****************************************/	
 	public void clear(){
 		test.log(Status.INFO,"Clearing "+prop.getProperty(objectKey));
 		getObject(objectKey).clear();
 	}
 
-	
+	/*****************************************/	
 	public double round(double value, int places) {
 	    if (places < 0) throw new IllegalArgumentException();
 
@@ -191,6 +192,7 @@ public class GenericKeywords {
 	    return (double) tmp / factor;
 	}
 	
+	/*****************************************/	
 	public void waitForPageToLoad(){
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		int i=0;
@@ -220,6 +222,7 @@ public class GenericKeywords {
 			}
 		}
 	
+	/*****************************************/	
 	public void acceptAlert(){
 		test.log(Status.INFO, "Switching to alert");
 		
@@ -235,7 +238,7 @@ public class GenericKeywords {
 		
 	}
 	
-	
+	/*****************************************/	
 	public void wait(int timeSec){
 		try {
 			Thread.sleep(timeSec*1000);
@@ -244,10 +247,13 @@ public class GenericKeywords {
 		}
 	}
 	
+	/*****************************************/	
 	public void validateElementNotInList(){
 		if(isElementInList())
 			reportFailure("Could not delete the option");
 	}
+	
+	/*****************************************/	
 	public void validateTitle(){
 		test.log(Status.INFO,"Validating title - "+prop.getProperty(objectKey) );
 		String expectedTitle = prop.getProperty(objectKey);
@@ -258,6 +264,7 @@ public class GenericKeywords {
 		}
 	}
 	
+	/*****************************************/	
 	public void validateElementPresent(){
 		if(!isElementPresent(objectKey)){
 			// report failure
@@ -265,6 +272,7 @@ public class GenericKeywords {
 		}
 	}
 	
+	/*****************************************/	
 	public void waitTillSelectionToBe(String objectkey , String expected) {
 		int i=0;
 		String actual="";
@@ -282,6 +290,7 @@ public class GenericKeywords {
 		reportFailure("Values Dont match. Got value as "+actual);		
 	}
 	
+	/*****************************************/
 	public void quit(){
 		if(driver!=null)
 			driver.quit();
@@ -362,6 +371,11 @@ public class GenericKeywords {
 		}
 		
 	}
+
+	/******* assertAll Method ********/
+	public void assertAll(){
+		softAssert.assertAll();	//To capture all the failures from all soft asserts.
+	}
 	
 	/******* Reporting Method ********/
 	public void reportFailure(String failureMsg){
@@ -374,12 +388,9 @@ public class GenericKeywords {
 			softAssert.fail(failureMsg);
 		}else{
 			softAssert.fail(failureMsg);
-//			softAssert.assertAll();
 			assertAll();
 		}
 	}
 	
-	public void assertAll(){
-		softAssert.assertAll();
-	}
+
 }

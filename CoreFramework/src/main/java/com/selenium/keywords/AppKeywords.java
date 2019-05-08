@@ -22,9 +22,7 @@ public class AppKeywords extends GenericKeywords{
 		test.log(Status.INFO, "Logging in");
 		click("money_xpath");
 		click("signin_xpath");
-		
-//		getObject("money_xpath").click();
-//		getObject("signin_xpath").click();
+
 		String username="";
 		String password="";
 		

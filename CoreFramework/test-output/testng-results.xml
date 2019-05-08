@@ -2,20 +2,20 @@
 <testng-results skipped="1" failed="0" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="47591" started-at="2019-05-06T17:42:30Z" finished-at="2019-05-06T17:43:18Z">
+  <suite name="Default suite" duration-ms="42928" started-at="2019-05-08T05:19:40Z" finished-at="2019-05-08T05:20:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="47591" started-at="2019-05-06T17:42:30Z" finished-at="2019-05-06T17:43:18Z">
+    <test name="Default test" duration-ms="42928" started-at="2019-05-08T05:19:40Z" finished-at="2019-05-08T05:20:23Z">
       <class name="com.selenium.testcases.portfoliosuite.LoginTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@5e3a8624]" name="init" is-config="true" duration-ms="640" started-at="2019-05-06T23:12:30Z" finished-at="2019-05-06T23:12:31Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@5e3a8624]" name="init" is-config="true" duration-ms="662" started-at="2019-05-08T10:49:40Z" finished-at="2019-05-08T10:49:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@5e3a8624]" name="initTest" is-config="true" duration-ms="193" started-at="2019-05-06T23:12:31Z" finished-at="2019-05-06T23:12:31Z">
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@5e3a8624]" name="initTest" is-config="true" duration-ms="210" started-at="2019-05-08T10:49:40Z" finished-at="2019-05-08T10:49:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@5e3a8624]" name="loginTest" duration-ms="45643" started-at="2019-05-06T23:12:31Z" data-provider="getData" finished-at="2019-05-06T23:13:17Z">
+        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@5e3a8624]" name="loginTest" duration-ms="40924" started-at="2019-05-08T10:49:41Z" data-provider="getData" finished-at="2019-05-08T10:50:22Z">
           <params>
             <param index="0">
               <value>
@@ -26,15 +26,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@5e3a8624]" name="quit" is-config="true" duration-ms="997" started-at="2019-05-06T23:13:17Z" finished-at="2019-05-06T23:13:18Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@5e3a8624]" name="quit" is-config="true" duration-ms="972" started-at="2019-05-08T10:50:22Z" finished-at="2019-05-08T10:50:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@5e3a8624]" name="initTest" is-config="true" duration-ms="0" started-at="2019-05-06T23:13:18Z" finished-at="2019-05-06T23:13:18Z">
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@5e3a8624]" name="initTest" is-config="true" duration-ms="0" started-at="2019-05-08T10:50:23Z" finished-at="2019-05-08T10:50:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method status="SKIP" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@5e3a8624]" name="loginTest" duration-ms="0" started-at="2019-05-06T23:13:18Z" data-provider="getData" finished-at="2019-05-06T23:13:18Z">
+        <test-method status="SKIP" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@5e3a8624]" name="loginTest" duration-ms="10" started-at="2019-05-08T10:50:23Z" data-provider="getData" finished-at="2019-05-08T10:50:23Z">
           <params>
             <param index="0">
               <value>
@@ -48,7 +48,7 @@
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Runmode is set to NO
-	at com.selenium.testcases.portfoliosuite.LoginTest.loginTest(LoginTest.java:22)
+	at com.selenium.testcases.portfoliosuite.LoginTest.loginTest(LoginTest.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -80,7 +80,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@5e3a8624]" name="quit" is-config="true" duration-ms="84" started-at="2019-05-06T23:13:18Z" finished-at="2019-05-06T23:13:18Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.testcases.portfoliosuite.LoginTest@5e3a8624]" name="quit" is-config="true" duration-ms="97" started-at="2019-05-08T10:50:23Z" finished-at="2019-05-08T10:50:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
